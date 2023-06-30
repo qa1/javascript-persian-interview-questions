@@ -13,7 +13,10 @@ puppeteer:
      margin: { top: '40px', bottom: '55px', right: '40px', left: '40px'}
      displayHeaderFooter: true
      headerTemplate: '<div />'
-     footerTemplate: '<div />'
+     footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;font-family: BYekan;direction:rtl;position: relative; bottom: -15px">
+    <span style="position: relative; top:50px"><span class="pageNumber"></span></span>
+    <img style="width:100px;float:right;display: inline-block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACcCAMAAAANmRRNAAAAOVBMVEUAAABYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtolEGJAAAAE3RSTlMAWUhRPmYIESkgNnAwGXiAjqC4Jm454QAABztJREFUeNrs2AGOAyEIBVBAEK1Os/c/7dZtO2M2PUA/4d3gB5EApZRSSimllFJKKaWUUorGKYTJTPhcmCfBm8yC/65cLIvxLcJ0hgUpRiN4UTrDIhTDQ3TGgymFUDlEOR4itMefcqMYJEiPkArFcCv0We1Yj67xpwhSmBmrVs60OaauCEVuvRIYdlocOMITt65SVgRtoBHIm4r8DBFtqPP93c9F3bA+p11/RphOi2B9TrthtYaYiJ1pM4EPisx7LOAg9d7p5MBBSI0u0KuVyRakE67jXumtQB8Xi0VZrcYMMEiWNrbVChqXdyTwIHX0V+MjD5JFxysRo64h/6+lfBC2Y9Qgx0axKMfGMQNMxGuYKPj/u3AJMBFfmwn2anWSQeTwg2QxBV+trs3EsVerExv4anUarviD5Leba9tuGgaCe9fVTsL/fyy0cZCJ0AWc4B7mzZAedxxrZzS76gc8/geK+Am+/B+vFsAtwVdBUGRm+oD8QMze+xAW55wZDEFX+CpAXXyOUUToA/wJ3IE/8JNnzBvPjebtyyyStu8zc24JwW885Xc06fbt8193PPMJGnkkUrdPno4vq9t4bkRRDc6AHbsvefbPL6vAKcDlEJHsUrk6tZGF8RAR2mKugsxwAo4+wMgl5oJz066Ix1zK1jM5v23S3uWZhyEWrIcCTxhl7j9AufCQiqF9xlxfYZCrmbJFMtUOldK1Yqw09gRw6wE6NfCqYeIxJP8Fur3tB6gZAKJ2lYbjrmdybrbtERqgO8Wo6EbVWxlOb5I6bFt8uEOUXf/7tLScP3/afoBlfZCyQUGt46LnD6lgnKgDxomsJ0NJTh9SaZuUqFBgpFJRKWHjoo+JNNaT9o0RJz2+Y5X2iHy6ePwBEu9OEpIFp986hxUVDnAfqqObLhupk4iY2rzGLHuxtxDjdWVkycu+jhOcA/SdAlxhYXIAyzbamBPXDfgI54AFWtCaoy3pdr2IbHO+JTUtYhLgHAi3OdLTkCwicgyS0Ko5jiImBufAY/+/tqqKyGXONydctk98neNKvSRF430xFApFZNA917ywGpwJDK1RZfpYDa3MTZTdk9flo6Ie1vECy9z24o1p62zdXZKRsvEvNJM/2prUIRPVtEyYFL8dPXjsrqAHY72EqgF/AJRhHcgQI/gkY5OS9M8Ot12ueX+pfPTkliWGHlIAMFU3SlKc2h/lXsKiApWYHDmChsk6n8D7bdc8SlJYYQev40NjC2os13r8CBqtDkabJKdqA5OS4v5Kl4kaEnYWTOUwEfAXPx6hltXXJqW9YJGmEr6ADyoh2WEiENbYmUvasCTumxTcX0ae3AV4xXBYTCL9XGvY3OsVUApdk5JCa/F3F1jeUrD0ktONiFBD47OAUi9JkQQFmud9QUwftNo/MK/aZcn3S4+huo5JUarirSYwV77lNUQgrmHiEH1epR1FuWTd3VUvtBYl+CvUQ9HhIrBHSL/PdtWassfa9ZRdyTR62ZbCKc/YBkm5rLF2mWOa2Ze9qV2jWr8nNZyiVUlKJSZRh2/DGyMdKp6HO3ei1TfaPYjDjVe59zuTaLmEmd8jJPq9ybUU5jq/7s1EIKQ4JbScwlZ6WmIiPFLEYxg1V2ylKV/tV/nt76o0V4DRv4lIAaoB6cRPYySo4JIr8daoa/Xm3iynuf5RvlygBulUASZ5PxEItxVmYNdkbc/scWy93z0bc7mG2fjCtw+GqRs51nf3zyJCmrqPCCRsnjJG6dqKtxIp/l1xst3DKTTERPBfCQn/nojXytj39DkkeuaXqnjrvULCvnesSwZMSg8Nn1VHaawVuLyZSFGyUDYfg/1RXKWa5S9efXTzeVgOBgWDk8wlAXGrTLV76hCPdBhvsfxNyMuIzBKDjdT1af5IdardU4d4Sep46/gUni4/2y7ITPHRtaDYOAhVwGqTezOnaM9iwnJIEXspgvORCO/ZuUMZN3DiJczaNUr+SUwEXzI83NkjOX9vyFBpjLU+7Fc/K0VhL6Or78db4Q+IjGwosUXh+/cjfrl/Ia4ifaHZJbtXR0m9eKuQnIfD0XqzEOXRAV/B6rcNp5esX6mIST/eQi3FZwqCk+vNQpYb3huxeTEowGSzb3opxG513ffHtladn5V4pPnCkfnO534PkocAxRRGb3od4pEO9dv+5K9taZgnsp8ZWXZ8SvGacBqmao+dCdLcX95i5HF6NYzje2GULZ8CJHrTnIPr7b2rQhxWyAqTsKGs4zj8HWfoZu56i6SILNG7kUAviTcxUYMXQWWaSE6DNoTVBmH/rdbdlGQUX0bEDXLLMee69+DCZhBI16UUuKqbEvFlIa/HcQDbTqIGKu98putDUN0zH0wLoL6KCPN0HUCCMROrt5mfgsqPArf8UogNNcBLoH6WyJKmBufaSVsxCCR+K8TkrxleAaezkfhcyScZiNEmqEke8cS3BK9A5h5L7pi4eTPQ9WC2foM5fAdxoS47LLn9fAAAAABJRU5ErkJggg==" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACcCAMAAAANmRRNAAAAM1BMVEUAAABYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVtYWVsrbnhhAAAAEXRSTlMAWUhRMz5mCBEpIHB6GY6ftSRD8gQAAAclSURBVHja7NhdjsMwCATgARv/tnv/467Qtitb6gE6iO8peQsieEKQUkoppZRSSimllFJK6d9AECIVMVQRDdKWoZHa0rIt3yfUtLQwbZmR2hJnWmakQ6xJkFJgDTEM6QhhCmKoBTGYIgY1MKmr47PClYoqIkU/lSMTXPqqWrwcq08cSAPxKGfADerTt0/zcoraihAjY5rq/lG1yfl6XWobVl4nAfW3iircqH/lLLA687D3tsFK6nXH25Hr0YX4CDvzcD14x/3Kw8b1/XhZRyHKvPQea1V/PMHLFG+NelVUw0vljZB7rdpse8mtzPcFcYQ4eQ342rwR4rp0wG3iCHFPCfLfdApc38wRcuRho/9JZxogQlyxABHiSg0QIU4W9xby1mUAm37SgSEBIsQtwaDeQo4YaQEmHTAb/BHy2821rikOwlByIQECuu//tHuxDq0osFu7dvf8Gj+rk5SSk5wEb3z4z3VHnoPzP13eVtjV/R+4oBtCNYRQUooxMvsfwJ8gIpDT6Kv+upi6WMrVUvoJWIF+AX/Ce8/MsXwq4AVeWfrLqG9XfGaqXyyNKZUQVDsZ5yegAouhi6UhZwq/LNUdQv7fhwe3RaSI++6Muk8AH622wLiz3v8IiB9eg8NdjvCHHIGy/FGFLOKdS/wBNIMB4uv0xj+11xnaAUAoboioboUT9Bu3Y1lqpcqMHUTKvrPER2PMXkC3sqqPKKLIJxshhLQ2wiZMSSLRqYRXS0zuE9g+RhaH04wFhH9eIydLUDaPEckofgYQvl16v+YsA2vru19M+/c0kNzf2qbqJxhYQ7+mkO40o5Jg3SedJT4WY/by1iMCRSOt19LZEpSL0H2+TEqVGR+hXlBdhfDJEhRHIXqEH4jZXg/Fe6HwkKmfLEFxtBhf5Iq3cTmXqHEDwvTzA8V9BLiOmoU9AeULc9I1jZeWK85WVTlu2+lkvAwzFucCUnENJJ3ujEOqFFL10mUO2Pt8uVrR1lpx7lwJinNaKaQpGRXMJyYAeBicRXInS1Dqdm5zjAK2eBS+xppjuF9xsgRlgea0jTs1qapY4jQhs5xOQVkAtM2Ha1LVIPDPnYOEnPRECUqtQioCKQlqtxZTfjGlzdQRa0ZIObldsLj9OiF1PdxrquWAQ5xIUIqJDP2Qne1X2vwLvuTfOw4nNk5QvEUHNKDm7HYKg6br8OXJ/5ZupRJGCkoQUeeSuR7IdM/5tC2FsEAZHxKTuHlFIwWFF8EFOmaqQVV09lJIFEkTu7Jsn0QbJCgqEkbFmAsZ9x60U0t3NyBN6WsITaDoJCgx+/FAd8yxlqv7KCSBxMqH86I3QT9BISvN6jXgnNxuR2xRqnhCKGw3d7JugpIMnRvWlfAVbZB3pfEBjKe5eStome8pKJhT89kWAHvPcFaJZ7L4awQtlE6CEgS0F/DqNn+LIyi+J2p3ayq18Fok85knDvunetVeR7Shu2llUqj57DbotrC0dSynZvz7XRgQO1InCBF/veVn0iGScFAxM74rwg2FNAqKQrMcT59GkSNbRFAmW88AL1o8MWPnPlHN8fBQKQnCXKMumT5Pi9HSzJ1I2R+qfweY3EHmn3bxktFUKsGWjhXyI8wFX5SnXvocp6oGzNppOh3+2xtV0AoWXANkmDBF0KmAcwc6MuZDpGpNi5x5rkdmdGw/eJyAQnydx6pd1M0gX9Oxje1xlhDk9QGyOCsdpEs+eBpnTK4eXp5BBnPeuwmQOeB++nM8jYB/QSHJaLLFA+Icy/GOBJgQtOzRYrTU8HKvNpf43BFyb0OBEce0FFIMasdu4IfvHUGLb3Qk0kjQaqb/feZBRdYm7ZKOdsTTUNASbMS3+tG+H6EqMfNkrIl1//RbK2h5a8S3uRaPyGaaauyIJvZEAGT4Xj709EghChImqyIVehicbMF478QwEsFXa6nIe8f4wD9QSDScTZRS5nFDyEO46fuAyDF0NIsxIPUFrZjX1JZmSSDm+KrAqs09zBek6kF7cYuesX1By/yKA6fDBObma8NtSUr0tzUgz0rYS7rnoYkF+oIWSrUtTocJEG2bydl42QacdPAV8xVXiEsrTbtPXcihBt3Z3aUG61eFby1iuFYPhpEG/O/8opYOOV+wcuDs7krGX8EU12tAPB8yEdwIBDT3K1oI9ypERbST27ThauVBWc+4zDuSZHbyYQxhl1MNuhO1fkjM8k38Lzoo2pPIWjH+MMVLZaEQsjJKCUJkTwCCfL10zsuwzBd1gO5NYFSrHY8WyC0l60CUNp52xMv7JGHgpuNRQ1HJggslp9B0DEbWjdXa8D5HBJbCYw0Nd0K7NJTcsHkLST1HDtG3k4Bugm65hyLynPRJcadjPxzC9I4mcm8BXyIuQTdu6GAB0x+N0lmZdSSKewvs2525vVUPehTgcYqcpsV4Ce4d+Ja1k1N1aXo+SaXQF9x6+A4+TyvoMJMD8AAAAABJRU5ErkJggg==" style="float:left;width: 100px;display: inline-block" />
+  </div>'
 ---
 
 <div dir="rtl" align="right">
@@ -40,13 +43,12 @@ puppeteer:
 <br />
 <br />
 
-
 ### فهرست
 
 <div class="fehrest">
 
 | ردیف | سوال                                                                                                                                                                                     | صفحه |
-|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | 1    | [روش‌های ایجاد objectها توی جاواسکریپت کدوما هستن؟](#روشهای-ایجاد-objectها-توی-جاواسکریپت-کدوما-هستن)                                                                                    | 29   |
 | 2    | [زنجیره prototype چیه؟](#زنجیره-prototype-چیه)                                                                                                                                           | 31   |
 | 3    | [تفاوت‌های بین call، apply و bind کدوما هستن؟](#تفاوتهای-بین-Call،-Apply-و-Bind-چیا-هستن)                                                                                                | 31   |
@@ -468,9 +470,7 @@ puppeteer:
 | 419  | [چطوری propertyهای instance و غیر instanceای تعریف می‌کنی؟](#چطوری-propertyهای-instance-و-غیر-instanceای-تعریف-می‌کنی)                                                                   | 216  |
 | 420  | [تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟](#تفاوتهای-بین-isNaN-و-NumberisNaN-کدوما-هستن)                                                                                           | 216  |
 
-
 </div>
-
 
 {Pishgoftar}
 
@@ -478,410 +478,408 @@ puppeteer:
 <br />
 <br />
 
-
 1. ### روش‌های ایجاد objectها توی جاواسکریپت کدوما هستن؟
 
-     1. **سازنده آبجکت:** ساده‌ترین راه برای ایجاد یه آبجکت خالی استفاده از کلاس Objectـه. در حال حاضر این روش توصیه نمی‌شه.
+   1. **سازنده آبجکت:** ساده‌ترین راه برای ایجاد یه آبجکت خالی استفاده از کلاس Objectـه. در حال حاضر این روش توصیه نمی‌شه.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const object = new Object();
-     ```
+   ```js
+   const object = new Object();
+   ```
 
-     </span>
+    </span>
 
-     2. **متد استاتیک create روی Object:** متد استاتیک create روی Object با انتقال prototype آبجکت به عنوان پارامتر، یه آبجکت جدید ایجاد میکنه.
+   2. **متد استاتیک create روی Object:** متد استاتیک create روی Object با انتقال prototype آبجکت به عنوان پارامتر، یه آبجکت جدید ایجاد میکنه.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const object = Object.create(null);
-     ```
+   ```js
+   const object = Object.create(null);
+   ```
 
-     </span>
+    </span>
 
-     3. **استفاده از syntax آبجکت:**  با مقداردهی یه متغیر توسط یه آبجکت ساده داخل syntax آبجکت.
+   3. **استفاده از syntax آبجکت:** با مقداردهی یه متغیر توسط یه آبجکت ساده داخل syntax آبجکت.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const object = {
-       name: 'Ali Karimi',
-       age: 30,
-     };
-     ```
+   ```js
+   const object = {
+     name: "Ali Karimi",
+     age: 30,
+   };
+   ```
 
-     </span>
+    </span>
 
-     4. **constructor تابع:** هر تابعی که بخوایم رو ایجاد می‌کنیم و از طریق عملگر new یه نمونه آبجکت جدید می‌سازیم.
+   4. **constructor تابع:** هر تابعی که بخوایم رو ایجاد می‌کنیم و از طریق عملگر new یه نمونه آبجکت جدید می‌سازیم.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     function Person(name) {
-       const object = {};
-       object.name = name;
-       object.age = 30;
+   ```js
+   function Person(name) {
+     const object = {};
+     object.name = name;
+     object.age = 30;
 
-       return object;
+     return object;
+   }
+
+   const object = new Person("Ali Karimi");
+   ```
+
+    </span>
+
+   5. **constructor تابع به همراه prototype** شبیه سازنده تابع هستش اما از prototype برای متد‌ها و خصوصیاتشون استفاده میکنه.
+
+    <span dir="ltr" align="left">
+
+   ```js
+   function Person() {}
+   Person.prototype.name = "Ali Karimi";
+
+   const object = new Person();
+   ```
+
+    </span>
+
+   این معادل نمونه‌ای هستش که با متد ایجاد آبجکت با prototype تابع ایجاد شده و تابع رو با یه نمونه و پارامتر‌هاش به عنوان آرگومان فراخوانی میکنه.
+
+    <span dir="ltr" align="left">
+
+   ```js
+   function func() {}
+
+   new func(x, y, z);
+   ```
+
+    </span>
+
+   **(یا)**
+
+    <span dir="ltr" align="left">
+
+   ```js
+   // Create a new instance using function prototype.
+   const newInstance = Object.create(func.prototype)
+
+   // Call the function
+   const result = func.call(newInstance, x, y, z),
+
+   // If the result is a non-null object then use it otherwise just use the new instance.
+   console.log(result && typeof result === 'object' ? result : newInstance);
+   ```
+
+    </span>
+
+   6. **استفاده از کلاس‌های ES6:** توی ES6 کلمه کلیدی class رو برای ایجاد آبجکت‌ها معرفی کردن.
+
+    <span dir="ltr" align="left">
+
+   ```js
+   class Person {
+     constructor(name) {
+       this.name = name;
      }
+   }
 
-     const object = new Person('Ali Karimi');
-     ```
+   const object = new Person("Ali Karimi");
+   ```
 
-     </span>
+    </span>
 
-     5. **constructor تابع به همراه prototype** شبیه سازنده تابع هستش اما از prototype برای متد‌ها و خصوصیاتشون استفاده میکنه.
+   7. **الگو یا پترن Singleton:** آبجکت‌ای‌ـه که فقط یه بار قابل نمونه‌گیری هستش و فراخوانی‌های بعدی روی سازنده‌ش همون نمونه اولی رو برمی‌گردونه و اینطوری می‌شه مطمئن شد که به طور تصادفی نمونه‌های مختلف ایجاد نمی‌شه.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     function Person() {}
-     Person.prototype.name = 'Ali Karimi';
+   ```js
+   const object = new (function () {
+     this.name = "Ali Karimi";
+   })();
+   ```
 
-     const object = new Person();
-     ```
+    </span>
 
-     </span>
+    <br />
 
-     این معادل نمونه‌ای هستش که با متد ایجاد آبجکت با prototype تابع ایجاد شده و تابع رو با یه نمونه و پارامتر‌هاش به عنوان آرگومان فراخوانی میکنه.
-
-     <span dir="ltr" align="left">
-
-     ```js
-     function func() {};
-
-     new func(x, y, z);
-     ```
-
-     </span>
-
-     **(یا)**
-
-     <span dir="ltr" align="left">
-
-     ```js
-     // Create a new instance using function prototype.
-     const newInstance = Object.create(func.prototype)
-
-     // Call the function
-     const result = func.call(newInstance, x, y, z),
-
-     // If the result is a non-null object then use it otherwise just use the new instance.
-     console.log(result && typeof result === 'object' ? result : newInstance);
-     ```
-
-     </span>
-
-     6. **استفاده از کلاس‌های ES6:** توی ES6 کلمه کلیدی class رو برای ایجاد آبجکت‌ها معرفی کردن.
-
-     <span dir="ltr" align="left">
-
-     ```js
-     class Person {
-       constructor(name) {
-         this.name = name;
-       }
-     }
-
-     const object = new Person('Ali Karimi');
-     ```
-
-     </span>
-
-     7. **الگو یا پترن Singleton:** آبجکت‌ای‌ـه که فقط یه بار قابل نمونه‌گیری هستش و فراخوانی‌های بعدی روی سازنده‌ش همون نمونه اولی رو برمی‌گردونه و اینطوری می‌شه مطمئن شد که به طور تصادفی نمونه‌های مختلف ایجاد نمی‌شه.
-
-     <span dir="ltr" align="left">
-
-     ```js
-     const object = new (function () {
-       this.name = 'Ali Karimi';
-     })();
-     ```
-
-     </span>
-
-     <br />
-
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 2. ### زنجیره prototype چیه؟
 
-     **زنجیره prototype** برای ساخت انواع جدیدی از آبجکت‌ها بر‌اساس موارد موجود استفاده می‌شه. این کار شبیه ارث بری توی یه زبان مبتنی بر کلاس هستش. prototype روی نمونه آبجکت از طریق ویژگی **Object.getPrototypeOf(object)** یا \***\*proto\*\*** در دسترسه در حالی که prototype توی عملکرد سازنده‌ها از طریق object.prototype در دسترسه.
+   **زنجیره prototype** برای ساخت انواع جدیدی از آبجکت‌ها بر‌اساس موارد موجود استفاده می‌شه. این کار شبیه ارث بری توی یه زبان مبتنی بر کلاس هستش. prototype روی نمونه آبجکت از طریق ویژگی **Object.getPrototypeOf(object)** یا \***\*proto\*\*** در دسترسه در حالی که prototype توی عملکرد سازنده‌ها از طریق object.prototype در دسترسه.
 
-     <br />
+    <br />
 
-     <img src="images/prototype_chain.png" align="center" alt="زنجیره prototype چیه؟" />
+    <img src="images/prototype_chain.png" align="center" alt="زنجیره prototype چیه؟" />
 
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 3. ### تفاوت‌های بین call، apply و bind چیا هستن؟
 
-     **متد call:** متد call یه تابع با یه مقدار `this` و آرگومان‌های ارائه شده رو دونه دونه فراخوانی میکنه.
+   **متد call:** متد call یه تابع با یه مقدار `this` و آرگومان‌های ارائه شده رو دونه دونه فراخوانی میکنه.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const employee1 = {
-       firstName: 'John',
-       lastName: 'Rodson',
-     };
-     const employee2 = {
-       firstName: 'Jimmy',
-       lastName: 'Baily',
-     };
+   ```js
+   const employee1 = {
+     firstName: "John",
+     lastName: "Rodson",
+   };
+   const employee2 = {
+     firstName: "Jimmy",
+     lastName: "Baily",
+   };
 
-     function invite(greeting1, greeting2) {
-       console.log(
-         `${greeting1} ${this.firstName} ${this.lastName}, ${greeting2}`,
-       );
-     }
+   function invite(greeting1, greeting2) {
+     console.log(
+       `${greeting1} ${this.firstName} ${this.lastName}, ${greeting2}`
+     );
+   }
 
-     invite.call(employee1, 'Hello', 'How are you?'); // Hello John Rodson, How are you?
-     invite.call(employee2, 'Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
-     ```
+   invite.call(employee1, "Hello", "How are you?"); // Hello John Rodson, How are you?
+   invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+   ```
 
-     </span>
+    </span>
 
-     **متد apply:** تابع رو فراخوانی میکنه و بهمون اجازه میده تا آرگومان‌ها رو به عنوان یه آرایه منتقل کنیم.
+   **متد apply:** تابع رو فراخوانی میکنه و بهمون اجازه میده تا آرگومان‌ها رو به عنوان یه آرایه منتقل کنیم.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const employee1 = { firstName: 'John', lastName: 'Rodson' };
-     const employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
+   ```js
+   const employee1 = { firstName: "John", lastName: "Rodson" };
+   const employee2 = { firstName: "Jimmy", lastName: "Baily" };
 
-     function invite(greeting1, greeting2) {
-       console.log(
-         `${greeting1} ${this.firstName} ${this.lastName}, ${greeting2}`,
-       );
-     }
+   function invite(greeting1, greeting2) {
+     console.log(
+       `${greeting1} ${this.firstName} ${this.lastName}, ${greeting2}`
+     );
+   }
 
-     invite.apply(employee1, ['Hello', 'How are you?']); // Hello John Rodson, How are you?
-     invite.apply(employee2, ['Hello', 'How are you?']); // Hello Jimmy Baily, How are you?
-     ```
+   invite.apply(employee1, ["Hello", "How are you?"]); // Hello John Rodson, How are you?
+   invite.apply(employee2, ["Hello", "How are you?"]); // Hello Jimmy Baily, How are you?
+   ```
 
-     </span>
+    </span>
 
-     **متد bind:** یه تابع جدید برمی‌گردونه، در حالی که بهمون اجازه میده هر تعداد آرگومانی که می خوایم رو توی یه آرایه منتقل کنیم.
+   **متد bind:** یه تابع جدید برمی‌گردونه، در حالی که بهمون اجازه میده هر تعداد آرگومانی که می خوایم رو توی یه آرایه منتقل کنیم.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const employee1 = { firstName: 'John', lastName: 'Rodson' };
-     const employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
+   ```js
+   const employee1 = { firstName: "John", lastName: "Rodson" };
+   const employee2 = { firstName: "Jimmy", lastName: "Baily" };
 
-     function invite(greeting1, greeting2) {
-       console.log(
-         `${greeting1} ${this.firstName} ${this.lastName}, ${greeting2}`,
-       );
-     }
+   function invite(greeting1, greeting2) {
+     console.log(
+       `${greeting1} ${this.firstName} ${this.lastName}, ${greeting2}`
+     );
+   }
 
-     const inviteEmployee1 = invite.bind(employee1);
-     const inviteEmployee2 = invite.bind(employee2);
-     inviteEmployee1('Hello', 'How are you?'); // Hello John Rodson, How are you?
-     inviteEmployee2('Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
-     ```
+   const inviteEmployee1 = invite.bind(employee1);
+   const inviteEmployee2 = invite.bind(employee2);
+   inviteEmployee1("Hello", "How are you?"); // Hello John Rodson, How are you?
+   inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+   ```
 
-     </span>
+    </span>
 
-     متدهای `call` و `apply` تقریباً قابل تعویض هستن. هر دو بلافاصله تابع فعلی رو اجرا می‌کنن. شما باید تصمیم بگیرین که ارسال آرایه در آرایه آسون‌تره یا فهرستی از آرگومان‌های جدا شده با کاما. باید یادمون باشه که متد call برای کاما (فهرست جدا شده) و apply برای حالت آرایه‌ای‌ـه. در حالی که bind یه تابع جدید ایجاد میکنه و می‌تونه با دریافت «this» روی اولین پارامتر ارسال شده کانتکست آبجکت جدید ساخته رو تنظیم کنه.
+   متدهای `call` و `apply` تقریباً قابل تعویض هستن. هر دو بلافاصله تابع فعلی رو اجرا می‌کنن. شما باید تصمیم بگیرین که ارسال آرایه در آرایه آسون‌تره یا فهرستی از آرگومان‌های جدا شده با کاما. باید یادمون باشه که متد call برای کاما (فهرست جدا شده) و apply برای حالت آرایه‌ای‌ـه. در حالی که bind یه تابع جدید ایجاد میکنه و می‌تونه با دریافت «this» روی اولین پارامتر ارسال شده کانتکست آبجکت جدید ساخته رو تنظیم کنه.
 
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 4. ### فرمت JSON چیه و عملیات‌های معمول روی اون چیا هستن؟
 
-     **JSON** یه قالب داده مبتنی برمتن‌‌ـه که از syntax آبجکت جاواسکریپت (Javascript objext syntax) پیروی میکنه و توسط `Douglas Crockford` رایج شد. کاربردش زمانی‌ـه که بخواییم داده‌ها رو از طریق شبکه انتقال بدیم و اساسا یه فایل متنی با پسوند .json و نوع MIME از application/json داشته باشیم. اکثرا دو عملیات زیر روی JSON انجام میشه:
+   **JSON** یه قالب داده مبتنی برمتن‌‌ـه که از syntax آبجکت جاواسکریپت (Javascript objext syntax) پیروی میکنه و توسط `Douglas Crockford` رایج شد. کاربردش زمانی‌ـه که بخواییم داده‌ها رو از طریق شبکه انتقال بدیم و اساسا یه فایل متنی با پسوند .json و نوع MIME از application/json داشته باشیم. اکثرا دو عملیات زیر روی JSON انجام میشه:
 
-     <br />
+    <br />
 
-     **تجزیه (Parsing):** تبدیل یه رشته به یه آبجکت جاواسکریپت (native Object).
+   **تجزیه (Parsing):** تبدیل یه رشته به یه آبجکت جاواسکریپت (native Object).
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     JSON.parse(text);
-     ```
+   ```js
+   JSON.parse(text);
+   ```
 
-     </span>
+    </span>
 
-     **رشته‌سازی (stringify کردن):** تبدیل یه آبجکت جاواسکریپت به یه رشته تا بتونه از طریق شبکه منتقل بشه یا یه جایی ذخیره بشه.
+   **رشته‌سازی (stringify کردن):** تبدیل یه آبجکت جاواسکریپت به یه رشته تا بتونه از طریق شبکه منتقل بشه یا یه جایی ذخیره بشه.
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     JSON.stringify(object);
-     ```
+   ```js
+   JSON.stringify(object);
+   ```
 
-     </span>
+    </span>
 
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 5. ### هدف از متد slice روی آرایه‌ها چیه؟
 
-     متد **slice** عناصر انتخاب شده توی یه آرایه رو به عنوان یه آرایه جدید برمی‌گردونه. این عناصر رو از اولین آرگومان داده شده انتخاب میکنه و با آرگومان پایانی و اختیاری داده شده بدون در نظر گرفتن آخرین عنصر به پایان می‌رسونه. اگه آرگومان دوم رو حذف کنیم تا آخر آرایه همه عناصر رو انتخاب میکنه. چند تا مثال در مورد نحوه کارکردش ببینیم:
+   متد **slice** عناصر انتخاب شده توی یه آرایه رو به عنوان یه آرایه جدید برمی‌گردونه. این عناصر رو از اولین آرگومان داده شده انتخاب میکنه و با آرگومان پایانی و اختیاری داده شده بدون در نظر گرفتن آخرین عنصر به پایان می‌رسونه. اگه آرگومان دوم رو حذف کنیم تا آخر آرایه همه عناصر رو انتخاب میکنه. چند تا مثال در مورد نحوه کارکردش ببینیم:
 
-     <br />
+    <br />
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const arrayIntegers = [1, 2, 3, 4, 5];
-     const arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
-     const arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
-     const arrayIntegers3 = arrayIntegers.slice(4); // returns [5]
-     ```
+   ```js
+   const arrayIntegers = [1, 2, 3, 4, 5];
+   const arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
+   const arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
+   const arrayIntegers3 = arrayIntegers.slice(4); // returns [5]
+   ```
 
-     </span>
+    </span>
 
-     **نکته:** متد slice‌ آرایه اصلی رو تغییر نمیده ولی یه زیر‌مجموعه به عنوان یه آرایه جدید برمی‌گردونه.
+   **نکته:** متد slice‌ آرایه اصلی رو تغییر نمیده ولی یه زیر‌مجموعه به عنوان یه آرایه جدید برمی‌گردونه.
 
-     **[فهرست](#فهرست)**
-
+   **[فهرست](#فهرست)**
 
 6. ### هدف از متد splice روی آرایه‌ها چیه؟
 
-     متد **splice** برای اضافه کردن یه عنصر به آرایه یا حذف از اون استفاده می‌شه و مورد یا موارد حذف شده رو برمی‌گردونه. آرگومان اول موقعیت آرایه رو برای درج یا حذف مشخص میکنه در حالی که آرگومان اختیاری دوم تعداد عناصر برای حذف رو مشخص میکنه و مابقی هر آرگومان اضافه‌ای که به این متد ارسال بشه، به آرایه اضافه می‌شه. چند تا مثال در مورد نحوه کارکردش ببینیم:
+   متد **splice** برای اضافه کردن یه عنصر به آرایه یا حذف از اون استفاده می‌شه و مورد یا موارد حذف شده رو برمی‌گردونه. آرگومان اول موقعیت آرایه رو برای درج یا حذف مشخص میکنه در حالی که آرگومان اختیاری دوم تعداد عناصر برای حذف رو مشخص میکنه و مابقی هر آرگومان اضافه‌ای که به این متد ارسال بشه، به آرایه اضافه می‌شه. چند تا مثال در مورد نحوه کارکردش ببینیم:
 
-     <br />
+    <br />
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     const arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
-     const arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
-     const arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
+   ```js
+   const arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
+   const arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
+   const arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
 
-     const arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
-     const arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
-     const arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, 'a', 'b', 'c'); // returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
-     ```
+   const arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
+   const arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
+   const arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); // returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
+   ```
 
-     </span>
+    </span>
 
-     **نکته:** متد splice آرایه اصلی رو اصلاح میکنه یعنی متغیر اصلی رو تحت تاثیر قرار میده و آرایه حذف شده رو برمی‌گردونه.
+   **نکته:** متد splice آرایه اصلی رو اصلاح میکنه یعنی متغیر اصلی رو تحت تاثیر قرار میده و آرایه حذف شده رو برمی‌گردونه.
 
-
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 7. ### تفاوت متدهای slice و splice چیا هستن؟
 
-     | slice                                                | splice                                              |
-     |------------------------------------------------------|-----------------------------------------------------|
-     | آرایه اصلی رو تغییر نمیده (immutable یا تغییرناپذیر) | آرایه اصلی رو تغییر میده (mutable یا تغییرپذیر)     |
-     | زیر مجموعه آرایه اصلی رو برمی‌گردونه                 | عناصر حذف شده رو به عنوان آرایه برمی‌گردونه         |
-     | برای انتخاب عناصر از آرایه استفاده می‌شه             | برای درج عناصر به آرایه یا حذف از اون استفاده می‌شه |
+   | slice                                                | splice                                              |
+   | ---------------------------------------------------- | --------------------------------------------------- |
+   | آرایه اصلی رو تغییر نمیده (immutable یا تغییرناپذیر) | آرایه اصلی رو تغییر میده (mutable یا تغییرپذیر)     |
+   | زیر مجموعه آرایه اصلی رو برمی‌گردونه                 | عناصر حذف شده رو به عنوان آرایه برمی‌گردونه         |
+   | برای انتخاب عناصر از آرایه استفاده می‌شه             | برای درج عناصر به آرایه یا حذف از اون استفاده می‌شه |
 
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 8. ### تفاوت‌های Object و Map چیا هستن؟
 
-     **آبجکت‌ها** شبیه به **Mapها** هستن(البته خود Map هم آبجکته و اینجا منظور شاعر خود شخص Object رو میگه) از این جهت که هردو بهمون این امکان رو میدن که مقادیر رو روی کلید‌های مشخصی تعریف کنیم، مقادیر رو بازیابی کنیم، کلید‌ها رو حذف کنیم و ببینیم چیزی توی یه کلید ذخیره شده یا نه. به همین دلیل در طول تاریخ از آبجکت‌ها به عنوان Map و HashMap استفاده‌های زیادی شده. اما تفاوت‌های مهمی وجود داره که استفاده از Map رو توی موارد خاص ارجعیت میده.
+   **آبجکت‌ها** شبیه به **Mapها** هستن(البته خود Map هم آبجکته و اینجا منظور شاعر خود شخص Object رو میگه) از این جهت که هردو بهمون این امکان رو میدن که مقادیر رو روی کلید‌های مشخصی تعریف کنیم، مقادیر رو بازیابی کنیم، کلید‌ها رو حذف کنیم و ببینیم چیزی توی یه کلید ذخیره شده یا نه. به همین دلیل در طول تاریخ از آبجکت‌ها به عنوان Map و HashMap استفاده‌های زیادی شده. اما تفاوت‌های مهمی وجود داره که استفاده از Map رو توی موارد خاص ارجعیت میده.
 
-     1. کلید‌های یه آبجکت رشته‌ها و Symbolها هستن، در حالی که برای Map مقادیر مختلفی میتونه وجود داشته باشه که شامل توابع، آبجکت‌ها و هر نوع اولیه دیگه‌ای می‌شه.
-     2. کلید‌های Map مرتب میشن در حالی که کلید‌های اضافه شده به آبجکت اینطوری نیستن. بنابراین موقع تکرار روی اون، آبجکت map کلیدها رو به ترتیب اضافه شدنشون برمی‌گردونه.
-     3. اندازه Map رو می‌تونیم به راحتی با ویژگی سایز بدست بیاریم، در حالی که تعداد خصوصیات یه آبجکت باید به صورت دستی و با ساخت یه آرایه از روی کلیدها و یا مقادیرش حساب بشه.
-     4. Map قابل تکراره و میتونه مستقیما تکرار بشه، در حالی که تکرار روی یه آبجکت مستلزم بدست آوردن کلیدهای اون به روشی خاص و تکرار روی اونهاست.
-     5. آبجکت یه prototype داره، بنابراین کلید‌های پیش‌فرض توی Object وجود داره که که اگه دقت نکنیم ممکنه با کلید‌هامون برخورد کنه. از زمان ES5 می‌تونیم با استفاده از Map = Object.create(null)، این قضیه رو دور بزنیم ولی به‌ندرت این کار انجام می‌شه.
-     6. Map ممکنه توی سناریوهای شامل جمع و حذف مکرر جفت کلیدها عملکرد بهتری داشته باشه.
+   1. کلید‌های یه آبجکت رشته‌ها و Symbolها هستن، در حالی که برای Map مقادیر مختلفی میتونه وجود داشته باشه که شامل توابع، آبجکت‌ها و هر نوع اولیه دیگه‌ای می‌شه.
+   2. کلید‌های Map مرتب میشن در حالی که کلید‌های اضافه شده به آبجکت اینطوری نیستن. بنابراین موقع تکرار روی اون، آبجکت map کلیدها رو به ترتیب اضافه شدنشون برمی‌گردونه.
+   3. اندازه Map رو می‌تونیم به راحتی با ویژگی سایز بدست بیاریم، در حالی که تعداد خصوصیات یه آبجکت باید به صورت دستی و با ساخت یه آرایه از روی کلیدها و یا مقادیرش حساب بشه.
+   4. Map قابل تکراره و میتونه مستقیما تکرار بشه، در حالی که تکرار روی یه آبجکت مستلزم بدست آوردن کلیدهای اون به روشی خاص و تکرار روی اونهاست.
+   5. آبجکت یه prototype داره، بنابراین کلید‌های پیش‌فرض توی Object وجود داره که که اگه دقت نکنیم ممکنه با کلید‌هامون برخورد کنه. از زمان ES5 می‌تونیم با استفاده از Map = Object.create(null)، این قضیه رو دور بزنیم ولی به‌ندرت این کار انجام می‌شه.
+   6. Map ممکنه توی سناریوهای شامل جمع و حذف مکرر جفت کلیدها عملکرد بهتری داشته باشه.
 
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 9. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
 
-     جاواسکریپت مقایسه برابری سخت ( === ، !== ) و تبدیل نوع ( == ، != ) رو فراهم میکنه. عملگرهای سختگیرانه نوع متغیر رو در نظر می‌گیرند، در حالی که عملگرهای غیر دقیق، اصلاح/تبدیل نوع رو بر اساس مقادیر متغیرها انجام میدن. اپراتورهای سختگیر از شرایط زیر برای انواع مختلف پیروی می‌کنن.
+   جاواسکریپت مقایسه برابری سخت ( === ، !== ) و تبدیل نوع ( == ، != ) رو فراهم میکنه. عملگرهای سختگیرانه نوع متغیر رو در نظر می‌گیرند، در حالی که عملگرهای غیر دقیق، اصلاح/تبدیل نوع رو بر اساس مقادیر متغیرها انجام میدن. اپراتورهای سختگیر از شرایط زیر برای انواع مختلف پیروی می‌کنن.
 
-     1. دو رشته زمانی کاملاً برابر هستن که توالی کاراکترهای یکسان، طول یکسان و کاراکترهای مشابه در موقعیت‌های متناظر داشته باشن.
-     2. دو عدد زمانی که از نظر عددی مساوی باشن کاملاً برابر هستن. یعنی داشتن مقدار عددی یکسان.
+   1. دو رشته زمانی کاملاً برابر هستن که توالی کاراکترهای یکسان، طول یکسان و کاراکترهای مشابه در موقعیت‌های متناظر داشته باشن.
+   2. دو عدد زمانی که از نظر عددی مساوی باشن کاملاً برابر هستن. یعنی داشتن مقدار عددی یکسان.
 
-     دو مورد خاص در این مورد وجود داره:
+   دو مورد خاص در این مورد وجود داره:
 
-     1. NaN با هیچ چیز از جمله NaN برابر نیست.
-     2. صفرهای مثبت و منفی با هم برابرند.
-     3. اگه هر دو درست یا نادرست باشن، دو عملوند بولین کاملاً برابر هستن.
-     4. اگه دو شیء به یه شیء اشاره کنن کاملاً برابر هستن.
-     5. انواع Null و Undefined با === برابر نیستن، بلکه با == برابر هستن. یعنی
-          null === undefined --> false اما null == undefined --> true
+   1. NaN با هیچ چیز از جمله NaN برابر نیست.
+   2. صفرهای مثبت و منفی با هم برابرند.
+   3. اگه هر دو درست یا نادرست باشن، دو عملوند بولین کاملاً برابر هستن.
+   4. اگه دو شیء به یه شیء اشاره کنن کاملاً برابر هستن.
+   5. انواع Null و Undefined با === برابر نیستن، بلکه با == برابر هستن. یعنی
+      null === undefined --> false اما null == undefined --> true
 
-     یه چندتا مثال که موارد بالا رو پوشش میدن:
+   یه چندتا مثال که موارد بالا رو پوشش میدن:
 
-     <span dir="ltr" align="left">
+    <span dir="ltr" align="left">
 
-     ```js
-     0 == false   // true
-     0 === false  // false
-     1 == "1"     // true
-     1 === "1"    // false
-     null == undefined // true
-     null === undefined // false
-     '0' == false // true
-     '0' === false // false
-     []==[] or []===[] //false, refer different objects in memory
-     {}=={} or {}==={} //false, refer different objects in memory
-     ```
+   ```js
+   0 == false   // true
+   0 === false  // false
+   1 == "1"     // true
+   1 === "1"    // false
+   null == undefined // true
+   null === undefined // false
+   '0' == false // true
+   '0' === false // false
+   []==[] or []===[] //false, refer different objects in memory
+   {}=={} or {}==={} //false, refer different objects in memory
+   ```
 
-     </span>
+    </span>
 
-     **[فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 10. ### توابع lambda یا arrow-function چی هستن؟
 
-     arrow function ‌ها به صورت ساده‌تر و کوتاه‌تر تعریف میشن و **شئ this** ، **متغیر جادویی argumants** ، **متد super** یا **new.target** ندارن. این توابع بدون متد هستن و به عنوان سازنده یا constructor استفاده نمیشن.
+    arrow function ‌ها به صورت ساده‌تر و کوتاه‌تر تعریف میشن و **شئ this** ، **متغیر جادویی argumants** ، **متد super** یا **new.target** ندارن. این توابع بدون متد هستن و به عنوان سازنده یا constructor استفاده نمیشن.
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 11. ### یه تابع first-class چجور تابعی‌ـه؟
 
-     توی جاواسکریپت، توابع آبجکت‌های کلاس اول یا first class هستن. توابع کلاس اول توی هر زبان برنامه‌نویسی، زمانی معنی میدن که توابع توی اون زبان باهاشون مثل بقیه متغیر‌ها رفتار بشه.
+    توی جاواسکریپت، توابع آبجکت‌های کلاس اول یا first class هستن. توابع کلاس اول توی هر زبان برنامه‌نویسی، زمانی معنی میدن که توابع توی اون زبان باهاشون مثل بقیه متغیر‌ها رفتار بشه.
 
-     برای مثال، توی جاواسکریپت، یه تابع می‌تونه به عنوان آرگومان به یه تابع دیگه پاس داده بشه، می‌تونه به عنوان مقدار نهایی یه تابع دیگه برگشت داده بشه و می‌تونه به یه متغیر دیگه به عنوان مقدار اختصاص داده بشه. برای مثال توی کد زیر، تابع handler به عنوان callback به یه تابع listener پاس داده شده.
+    برای مثال، توی جاواسکریپت، یه تابع می‌تونه به عنوان آرگومان به یه تابع دیگه پاس داده بشه، می‌تونه به عنوان مقدار نهایی یه تابع دیگه برگشت داده بشه و می‌تونه به یه متغیر دیگه به عنوان مقدار اختصاص داده بشه. برای مثال توی کد زیر، تابع handler به عنوان callback به یه تابع listener پاس داده شده.
 
      <span dir="ltr" align="left">
 
-     ```js
-     const handler = () => console.log('This is a click handler function');
+    ```js
+    const handler = () => console.log("This is a click handler function");
 
-     /**
+    /**
      * Usage of `handler` method
      */
-     document.addEventListener('click', handler);
-     ```
+    document.addEventListener("click", handler);
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 12. ### یه تابع first-order چجور تابعی‌ـه؟
 
-     تابع مرتبه اول یا first-order تابعیه که هیچ تابع دیگه‌ای رو به عنوان آرگومان قبول نمیکنه و هیچ تابعی رو هم به عنوان مقدار برگشتی یا return value برنمی‌گردونه. مثل:
+    تابع مرتبه اول یا first-order تابعیه که هیچ تابع دیگه‌ای رو به عنوان آرگومان قبول نمیکنه و هیچ تابعی رو هم به عنوان مقدار برگشتی یا return value برنمی‌گردونه. مثل:
 
      <span dir="ltr" align="left">
 
-     ```js
-     const firstOrder = () => console.log('I am a first order function!');
-     ```
+    ```js
+    const firstOrder = () => console.log("I am a first order function!");
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 13. ### یه تابع higher-order چجور تابعی‌ـه؟
 
-     توابع مرتبه بالا توابعی هستن که یه تابع رو به عنوان پارامتر ورودی دریافت و یا به عنوان خروجی ارسال میکنن. مثل:
+    توابع مرتبه بالا توابعی هستن که یه تابع رو به عنوان پارامتر ورودی دریافت و یا به عنوان خروجی ارسال میکنن. مثل:
 
      <span dir="ltr" align="left">
 
-     ```js
-     const firstOrderFunc = () => console.log('Hello I am a First order function');
-     const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
+    ```js
+    const firstOrderFunc = () =>
+      console.log("Hello I am a First order function");
+    const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
 
-     higherOrder(firstOrderFunc);
-     ```
+    higherOrder(firstOrderFunc);
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 14. ### یه تابع unary چجور تابعی‌ـه؟
 
@@ -932,7 +930,8 @@ puppeteer:
     const impureAddNumber = (number) => numberArray.push(number);
 
     // Pure
-    const pureAddNumber = (number) => (argNumberArray) => argNumberArray.concat([number]);
+    const pureAddNumber = (number) => (argNumberArray) =>
+      argNumberArray.concat([number]);
 
     // Display the results
     console.log(impureAddNumber(6)); // returns 1
@@ -1059,56 +1058,56 @@ puppeteer:
 
 21. ### Temporal-Dead-Zone چیه؟
 
-     Temporal Dead Zone رفتاری توی جاواسکریپت‌ـه که موقع تعریف متغیر با کلمات کلیدی let و const رخ میده، نه با کلمه کلیدی var. توی اکما‌سکریپت 6، دستیابی به متغیر let و const قبل از تعریفش (توی scope خودش) باعث خطای refrence می‌شه. فاصله زمانی ایجاد اون، بین ایجاد اتصال متغیر و تعریف اون، منطقه Temporal Dead هستش. بیاین با یه مثال ببینیم:
+    Temporal Dead Zone رفتاری توی جاواسکریپت‌ـه که موقع تعریف متغیر با کلمات کلیدی let و const رخ میده، نه با کلمه کلیدی var. توی اکما‌سکریپت 6، دستیابی به متغیر let و const قبل از تعریفش (توی scope خودش) باعث خطای refrence می‌شه. فاصله زمانی ایجاد اون، بین ایجاد اتصال متغیر و تعریف اون، منطقه Temporal Dead هستش. بیاین با یه مثال ببینیم:
 
      <span dir="ltr" align="left">
 
-     ```js
-     function somemethod() {
-       console.log(counter1); // undefined
-       console.log(counter2); // ReferenceError
-       var counter1 = 1;
-       let counter2 = 2;
-     }
-     ```
+    ```js
+    function somemethod() {
+      console.log(counter1); // undefined
+      console.log(counter2); // ReferenceError
+      var counter1 = 1;
+      let counter2 = 2;
+    }
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 22. ### IIFE(توابع بلافاصله صدا زده شده) چی هستن؟
 
-     IIFE (فراخوانی عملکرد بلافاصله) یه تابع جاواسکریپت‌ـه که به محض تعریف اجرا می‌شه.
-     تعریف اون به این صورته:
+    IIFE (فراخوانی عملکرد بلافاصله) یه تابع جاواسکریپت‌ـه که به محض تعریف اجرا می‌شه.
+    تعریف اون به این صورته:
 
      <span dir="ltr" align="left">
 
-     ```js
-     (function () {
-       // logic here
-     }());
-     ```
+    ```js
+    (function () {
+      // logic here
+    })();
+    ```
 
      </span>
 
      <br />
 
-     دلیل اصلی استفاده از IIFE بدست آوردن حریم خصوصی داده‌هاست، چون محیط خارجی به متغیر‌هایی که توی IIFE تعریف شده دسترسی نداره. برای مثال، اگه سعی کنیم با IIFE به متغیر‌ها دسترسی پیدا کنیم این خطا رو می‌گیریم:
+    دلیل اصلی استفاده از IIFE بدست آوردن حریم خصوصی داده‌هاست، چون محیط خارجی به متغیر‌هایی که توی IIFE تعریف شده دسترسی نداره. برای مثال، اگه سعی کنیم با IIFE به متغیر‌ها دسترسی پیدا کنیم این خطا رو می‌گیریم:
 
      <span dir="ltr" align="left">
 
-     ```js
-     (function () {
-       const message = 'IIFE';
-       console.log(message);
-     }());
+    ```js
+    (function () {
+      const message = "IIFE";
+      console.log(message);
+    })();
 
-     console.log(message); // Error: message is not defined
-     ```
+    console.log(message); // Error: message is not defined
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 23. ### مزایای استفاده از moduleها چیه؟
 
@@ -1137,17 +1136,16 @@ puppeteer:
       const cache = {};
       return (value) => {
         if (value in cache) {
-          console.log('Fetching from cache');
-    
+          console.log("Fetching from cache");
+
           return cache[value];
           // Here, cache.value cannot be used as property name starts with the number which is not a valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
         }
-        console.log('Calculating result');
+        console.log("Calculating result");
         const result = value + 20;
-    
+
         cache[value] = result;
         return result;
-    
       };
     };
 
@@ -1170,7 +1168,7 @@ puppeteer:
 
     ```js
     console.log(message); // output : undefined
-    var message = 'The variable Has been hoisted';
+    var message = "The variable Has been hoisted";
     ```
 
      </span>
@@ -1182,7 +1180,7 @@ puppeteer:
     ```js
     let message;
     console.log(message);
-    message = 'The variable Has been hoisted';
+    message = "The variable Has been hoisted";
     ```
 
      </span>
@@ -1250,9 +1248,9 @@ puppeteer:
       return greetingInfo;
     }
 
-    const myFunction = welcome('John');
-    myFunction('Welcome '); // Output: Welcome John
-    myFunction('Hello Mr.'); // output: Hello Mr.John
+    const myFunction = welcome("John");
+    myFunction("Welcome "); // Output: Welcome John
+    myFunction("Hello Mr."); // output: Hello Mr.John
     ```
 
      </span>
@@ -1332,7 +1330,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    document.cookie = 'username=John';
+    document.cookie = "username=John";
     ```
 
      </span>
@@ -1359,7 +1357,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    document.cookie = 'username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC';
+    document.cookie = "username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC";
     ```
 
      </span>
@@ -1369,7 +1367,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    document.cookie = 'username=John; path=/services';
+    document.cookie = "username=John; path=/services";
     ```
 
      </span>
@@ -1384,7 +1382,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    document.cookie = 'username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;';
+    document.cookie =
+      "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
     ```
 
      </span>
@@ -1396,7 +1395,7 @@ puppeteer:
 41. ### تفاوت‌های بین cookie و local-storage و session-storage چیا هستن؟
 
     | ویژگی                               | Cookie                                   | Local storage      | Session storage         |
-    |-------------------------------------|------------------------------------------|--------------------|-------------------------|
+    | ----------------------------------- | ---------------------------------------- | ------------------ | ----------------------- |
     | قابل دسترسی از طرف client یا server | هردو server و client                     | فقط client         | فقط client              |
     | طول عمر                             | پیکربندی‌شده با استفاده از گزینه اکسپایر | تا وقتی که حذف بشه | تا وقتی که تب بسته‌نشده |
     | پشتیبانی از SSL                     | پشتیبانی می‌شه                           | پشتیبانی نمی‌شه    | پشتیبانی نمی‌شه         |
@@ -1412,23 +1411,23 @@ puppeteer:
 
 43. ### چطوری به web-storage دسترسی پیدا می‌کنی؟
 
-     آبجکت window ویژگی‌های `WindowLocalStorage` و `WindowSessionStorage` رو که دارای ویژگی‌های `localStorage` و `sessionStorage` هستن رو پشتیبانی میکنه. این خصوصیات نمونه ای از شئ Storage رو ایجاد میکنه که از طریق اون می‌شه موارد داده رو برای یه دامنه خاص و نوع ذخیره سازی (session یا محلی) تنظیم، بازیابی و حذف کرد.
+    آبجکت window ویژگی‌های `WindowLocalStorage` و `WindowSessionStorage` رو که دارای ویژگی‌های `localStorage` و `sessionStorage` هستن رو پشتیبانی میکنه. این خصوصیات نمونه ای از شئ Storage رو ایجاد میکنه که از طریق اون می‌شه موارد داده رو برای یه دامنه خاص و نوع ذخیره سازی (session یا محلی) تنظیم، بازیابی و حذف کرد.
 
      <br />
 
-     برای مثال، می‌تونیم روی اشیای ذخیره سازی محلی مثل زیر بخونیم و بنویسیم:
+    برای مثال، می‌تونیم روی اشیای ذخیره سازی محلی مثل زیر بخونیم و بنویسیم:
 
      <br />
      <span dir="ltr" align="left">
 
-     ```js
-     localStorage.setItem('logo', document.getElementById('logo').value);
-     localStorage.getItem('logo');
-     ```
+    ```js
+    localStorage.setItem("logo", document.getElementById("logo").value);
+    localStorage.getItem("logo");
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 44. ### چه متد‌هایی روی session-storage قابل استفاده هستن؟
 
@@ -1438,13 +1437,13 @@ puppeteer:
 
     ```js
     // Save data to sessionStorage
-    sessionStorage.setItem('key', 'value');
+    sessionStorage.setItem("key", "value");
 
     // Get saved data from sessionStorage
-    const data = sessionStorage.getItem('key');
+    const data = sessionStorage.getItem("key");
 
     // Remove saved data from sessionStorage
-    sessionStorage.removeItem('key');
+    sessionStorage.removeItem("key");
 
     // Remove all saved data from sessionStorage
     sessionStorage.clear();
@@ -1458,37 +1457,31 @@ puppeteer:
 
 45. ### رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟
 
-     StorageEvent رویدادی هستش که با همزمان با تغییر یه محل ذخیره‌سازی تو یه context صفحه دیگه‌ای فراخوانی می‌شه. این امکان بهمون قابلیت پردازش تغییرات مقادیر ذخیره‌سازی شده توسط یه EventHandler رو میده. ساختار کد اون یه چیزی مث کد زیر میشه:
+    StorageEvent رویدادی هستش که با همزمان با تغییر یه محل ذخیره‌سازی تو یه context صفحه دیگه‌ای فراخوانی می‌شه. این امکان بهمون قابلیت پردازش تغییرات مقادیر ذخیره‌سازی شده توسط یه EventHandler رو میده. ساختار کد اون یه چیزی مث کد زیر میشه:
 
      <span dir="ltr" align="left">
 
-     ```js
-     window.onstorage = functionRef;
-     ```
+    ```js
+    window.onstorage = functionRef;
+    ```
 
      </span>
 
-     برای مثال استفاده از رویداد onstorage رو ببینیم که کلید ذخیره و مقادیر اونو ثبت میکنه:
+    برای مثال استفاده از رویداد onstorage رو ببینیم که کلید ذخیره و مقادیر اونو ثبت میکنه:
 
      <span dir="ltr" align="left">
 
-     ```js
-     window.onstorage = function (e) {
-       console.log(
-         `The ${
-           e.key
-         } key has been changed from ${
-           e.oldValue
-         } to ${
-           e.newValue
-         }.`,
-       );
-     };
-     ```
+    ```js
+    window.onstorage = function (e) {
+      console.log(
+        `The ${e.key} key has been changed from ${e.oldValue} to ${e.newValue}.`
+      );
+    };
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 46. ### چرا به web-storage نیاز داریم؟
 
@@ -1503,7 +1496,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    if (typeof Storage !== 'undefined') {
+    if (typeof Storage !== "undefined") {
       // Code for localStorage/sessionStorage.
     } else {
       // Sorry! No Web Storage support..
@@ -1521,7 +1514,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    if (typeof Worker !== 'undefined') {
+    if (typeof Worker !== "undefined") {
       // code for Web worker support.
     } else {
       // Sorry! No Web Worker support..
@@ -1534,79 +1527,79 @@ puppeteer:
 
 49. ### یه مثال از web-workerها می‌تونی بزنی؟
 
-     یه مثال ساده برای شروع استفاده از web worker‌ها میتونه مثال شمارنده باشه که برای اجرای اون باید مراحل زیر رو دنبال کنیم:
+    یه مثال ساده برای شروع استفاده از web worker‌ها میتونه مثال شمارنده باشه که برای اجرای اون باید مراحل زیر رو دنبال کنیم:
 
      <br />
 
-     1. **ساخت یه فایل Web Worker**: برای افزایش مقدار شمارشی، باید یه اسکریپت بنویسیم که این کار رو انجام میده. بیاین اسمشو counter.js بذاریم
+    1. **ساخت یه فایل Web Worker**: برای افزایش مقدار شمارشی، باید یه اسکریپت بنویسیم که این کار رو انجام میده. بیاین اسمشو counter.js بذاریم
 
      <span dir="ltr" align="left">
 
-     ```js
-     let i = 0;
+    ```js
+    let i = 0;
 
-     function timedCount() {
-       i += 1;
-       postMessage(i);
-       setTimeout('timedCount()', 500);
-     }
+    function timedCount() {
+      i += 1;
+      postMessage(i);
+      setTimeout("timedCount()", 500);
+    }
 
-     timedCount();
-     ```
+    timedCount();
+    ```
 
      </span>
 
-     اینجا از روش postMessage برای ارسال پیام به صفحه HTML استفاده می‌شه.
+    اینجا از روش postMessage برای ارسال پیام به صفحه HTML استفاده می‌شه.
 
      <br />
 
-     2. **ایجاد شی Web Worker**: با بررسی پشتیبانی مرورگر می‌تونیم یه شی Web Worker ایجاد کنیم. بیاین اسم این فایل رو web_worker_example.js بذاریم.
+    2. **ایجاد شی Web Worker**: با بررسی پشتیبانی مرورگر می‌تونیم یه شی Web Worker ایجاد کنیم. بیاین اسم این فایل رو web_worker_example.js بذاریم.
 
      <span dir="ltr" align="left">
 
-     ```js
-     if (typeof w === 'undefined') {
-       w = new Worker('counter.js');
-     }
-     ```
+    ```js
+    if (typeof w === "undefined") {
+      w = new Worker("counter.js");
+    }
+    ```
 
      </span>
 
-     روی همین شئ ما می‌تونیم پیام‌ها رو از web worker دریافت کنیم:
+    روی همین شئ ما می‌تونیم پیام‌ها رو از web worker دریافت کنیم:
 
      <span dir="ltr" align="left">
 
-     ```js
-     w.onmessage = function (event) {
-       document.getElementById('message').innerHTML = event.data;
-     };
-     ```
-
-     </span>
-     <br />
-
-     3. **پایان دادن به web Worker**: ‌می‌دونیم که Web Workerها تا زمان خاتمه یافتن پیام‌ها(حتی بعد از اتمام یه اسکریپت خارجی) به گوش دادن ادامه میدن. برای قطع کردن گوش دادن به پیام‌ها می‌تونیم از دستور terminate استفاده کنیم.
-
-     <span dir="ltr" align="left">
-
-     ```js
-     w.terminate();
-     ```
+    ```js
+    w.onmessage = function (event) {
+      document.getElementById("message").innerHTML = event.data;
+    };
+    ```
 
      </span>
      <br />
 
-     4. **استفاده مجدد از web worker**: اگه متغیر worker رو undefined مقداردهی کنیم، می‌تونیم از کد نوشته شده مجددا استفاده کنیم.
+    3. **پایان دادن به web Worker**: ‌می‌دونیم که Web Workerها تا زمان خاتمه یافتن پیام‌ها(حتی بعد از اتمام یه اسکریپت خارجی) به گوش دادن ادامه میدن. برای قطع کردن گوش دادن به پیام‌ها می‌تونیم از دستور terminate استفاده کنیم.
 
      <span dir="ltr" align="left">
 
-     ```js
-     w = undefined;
-     ```
+    ```js
+    w.terminate();
+    ```
+
+     </span>
+     <br />
+
+    4. **استفاده مجدد از web worker**: اگه متغیر worker رو undefined مقداردهی کنیم، می‌تونیم از کد نوشته شده مجددا استفاده کنیم.
+
+     <span dir="ltr" align="left">
+
+    ```js
+    w = undefined;
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 50. ### محدودیت‌های web-workerها روی DOM چیا هستن؟
 
@@ -1647,7 +1640,7 @@ puppeteer:
       },
       (reject) => {
         // if we want to rejest, we can call `reject()` cb method
-      },
+      }
     );
 
     /**
@@ -1663,7 +1656,7 @@ puppeteer:
     ![Screenshot](images/promises.png)
 
     **[فهرست](#فهرست)**
-    
+
     <br />
     <br />
 
@@ -1698,7 +1691,7 @@ puppeteer:
     }
 
     function outerFunction(callback) {
-      const name = prompt('Please enter your name.');
+      const name = prompt("Please enter your name.");
       callback(name);
     }
 
@@ -1721,12 +1714,12 @@ puppeteer:
     function firstFunction() {
       // Simulate a code delay
       setTimeout(() => {
-        console.log('First function called');
+        console.log("First function called");
       }, 1000);
     }
 
     function secondFunction() {
-      console.log('Second function called');
+      console.log("Second function called");
     }
 
     firstFunction();
@@ -1778,10 +1771,10 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    if (typeof EventSource !== 'undefined') {
-      const source = new EventSource('sse_generator.js');
+    if (typeof EventSource !== "undefined") {
+      const source = new EventSource("sse_generator.js");
       source.onmessage = function (event) {
-        document.getElementById('output').innerHTML += `${event.data}<br>`;
+        document.getElementById("output").innerHTML += `${event.data}<br>`;
       };
     }
     ```
@@ -1797,7 +1790,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    if (typeof EventSource !== 'undefined') {
+    if (typeof EventSource !== "undefined") {
       // Server-sent events supported. Let's have some code here!
     } else {
       // No server-sent events supported
@@ -1813,7 +1806,7 @@ puppeteer:
     این پایین یه لیست از eventهای موجود برای SSE رو ذکر می‌کنیم:
 
     | ایونت     | توضیحات                                          |
-    |-----------|--------------------------------------------------|
+    | --------- | ------------------------------------------------ |
     | onopen    | موقعی که اتصال به سرور باز می‌شه استفاده می‌شه   |
     | onmessage | این event زمانی استفاده می‌شه که پیامی دریافت شه |
     | onerror   | زمانی اتفاق میوفته که خطایی رخ بده               |
@@ -1885,22 +1878,23 @@ puppeteer:
 
      </span>
 
-     توی بلوک‌های کد بالا، نتیجه هر Promise به زنجیره‌های then بعدی منتقل می‌شه، فرآیندشون به شکل زیر انجام میشه:
-     1. Promise اول توی 1 ثانیه حل می‌شه،
-     2. پس از اون then با چاپ مقدار `1` توی کنسول، فراخوانی می‌شه و یه Promise با مقدار result ضربدر 2 برمی‌گردونه.
-     3. پس از اون result به callback بعدی منتقل شده و با چاپ مقدار `2` و برگردوندن یه Promise با result ضربدر 3.
-     4. در نهایت مقدار به آخرین callback رسیده و با چاپ مقدار `6` توی کنسول، یه Promise با result ضربدر 4 برمی‌گردونه`.
+    توی بلوک‌های کد بالا، نتیجه هر Promise به زنجیره‌های then بعدی منتقل می‌شه، فرآیندشون به شکل زیر انجام میشه:
 
     1. Promise اول توی 1 ثانیه حل می‌شه،
-    2. پس از اون «.then» با ثبت نتیجه (1) فراخوانی می‌شه و سپس یه Promise با مقدار نتیجه \* 2 برمی‌گردونه.
-    3. پس از اون مقدار به بعدی منتقل شد. سپس با ثبت نتیجه (2) و برگردوندن یه Promise با نتیجه \*3.
-    4. در نهایت مقدار به آخرین . سپس با ثبت نتیجه (6) و یه Promise با نتیجه \* 4، handler`.
+    2. پس از اون then با چاپ مقدار `1` توی کنسول، فراخوانی می‌شه و یه Promise با مقدار result ضربدر 2 برمی‌گردونه.
+    3. پس از اون result به callback بعدی منتقل شده و با چاپ مقدار `2` و برگردوندن یه Promise با result ضربدر 3.
+    4. در نهایت مقدار به آخرین callback رسیده و با چاپ مقدار `6` توی کنسول، یه Promise با result ضربدر 4 برمی‌گردونه`.
+
+    5. Promise اول توی 1 ثانیه حل می‌شه،
+    6. پس از اون «.then» با ثبت نتیجه (1) فراخوانی می‌شه و سپس یه Promise با مقدار نتیجه \* 2 برمی‌گردونه.
+    7. پس از اون مقدار به بعدی منتقل شد. سپس با ثبت نتیجه (2) و برگردوندن یه Promise با نتیجه \*3.
+    8. در نهایت مقدار به آخرین . سپس با ثبت نتیجه (6) و یه Promise با نتیجه \* 4، handler`.
 
     **[فهرست](#فهرست)**
 
 64. ### کاربرد متد promise.all چیه؟
 
-     Promise.all یه Promiseـه که آرایه‌ای از Promise‌ها رو به عنوان ورودی می‌گیره(یک تکرار) و زمانی resolve می‌شه که همه Promise‌ها resolve بشن، و اگه یکی از اونها رد شه reject میشه. برای مثال، تیکه کد زیر رو ببینیم:
+    Promise.all یه Promiseـه که آرایه‌ای از Promise‌ها رو به عنوان ورودی می‌گیره(یک تکرار) و زمانی resolve می‌شه که همه Promise‌ها resolve بشن، و اگه یکی از اونها رد شه reject میشه. برای مثال، تیکه کد زیر رو ببینیم:
 
      <span dir="ltr" align="left">
 
@@ -1916,22 +1910,22 @@ puppeteer:
 
      </span>
 
-     **نکته:** ترتیب خروجی Promise‌ها طبق همون ترتیب آرایه ورودی ایجاد میشه.
+    **نکته:** ترتیب خروجی Promise‌ها طبق همون ترتیب آرایه ورودی ایجاد میشه.
 
     **[فهرست](#فهرست)**
 
 65. ### هدف از متد race روی Promise چیه؟
 
-     متد Promise.race یه آرایه از Promiseها رو می‌گیره و نتیجه اولین Promiseای resolve یا reject شده رو برمی‌گردونه. بیاین مثالی از متد race رو در نظر بگیریم که تو اون Promise2 اول resolve می‌شه:
+    متد Promise.race یه آرایه از Promiseها رو می‌گیره و نتیجه اولین Promiseای resolve یا reject شده رو برمی‌گردونه. بیاین مثالی از متد race رو در نظر بگیریم که تو اون Promise2 اول resolve می‌شه:
 
      <span dir="ltr" align="left">
 
     ```js
     const promise1 = new Promise((resolve, reject) => {
-      setTimeout(resolve, 500, 'one');
+      setTimeout(resolve, 500, "one");
     });
     const promise2 = new Promise((resolve, reject) => {
-      setTimeout(resolve, 100, 'two');
+      setTimeout(resolve, 100, "two");
     });
 
     Promise.race([promise1, promise2]).then((value) => {
@@ -1945,45 +1939,45 @@ puppeteer:
 
 66. ### حالت strict توی جاواسکریپت چی کار میکنه؟
 
-     Strict Mode یکی از قابلیت‌های ارائه شده توی ES5 هست که به ما این امکان رو میده که یه برنامه یا یه تابع رو تو یه حالت اجرایی "سخت‌تر" قرار بدیم. به این ترتیب از انجام بعضی اقدامات جلوگیری میکنه و استثنا(Exception)های بیشتری رو ایجاد میکنه. عبارت تحت اللفظی "usestrict" به مرورگر دستور میده تا از کد جاواسکریپت در حالت Strict استفاده کنه.
+    Strict Mode یکی از قابلیت‌های ارائه شده توی ES5 هست که به ما این امکان رو میده که یه برنامه یا یه تابع رو تو یه حالت اجرایی "سخت‌تر" قرار بدیم. به این ترتیب از انجام بعضی اقدامات جلوگیری میکنه و استثنا(Exception)های بیشتری رو ایجاد میکنه. عبارت تحت اللفظی "usestrict" به مرورگر دستور میده تا از کد جاواسکریپت در حالت Strict استفاده کنه.
 
     **[فهرست](#فهرست)**
 
 67. ### چرا به حالت strict نیاز داریم؟
 
-     حالت سخت گیرانه(strict mode) برای نوشتن جاواسکریپت "امن" و حصول اطمینان از اطلاع از "syntax بد" برای جلوگیری از خطاهای واقعی استفاده میشه. برای مثال، ایجاد تصادفی یه متغیر گلوبال رو با ایجاد یه Exception حذف میکنه و یا یه خطا برای انتساب به یه ویژگی غیرقابل نوشتن، یه ویژگی فقط گیرنده، یه ویژگی غیرموجود، یه متغیر غیرموجود یا یه ویژگی غیر قابل نوشتن ایجاد میکنه.
+    حالت سخت گیرانه(strict mode) برای نوشتن جاواسکریپت "امن" و حصول اطمینان از اطلاع از "syntax بد" برای جلوگیری از خطاهای واقعی استفاده میشه. برای مثال، ایجاد تصادفی یه متغیر گلوبال رو با ایجاد یه Exception حذف میکنه و یا یه خطا برای انتساب به یه ویژگی غیرقابل نوشتن، یه ویژگی فقط گیرنده، یه ویژگی غیرموجود، یه متغیر غیرموجود یا یه ویژگی غیر قابل نوشتن ایجاد میکنه.
 
     **[فهرست](#فهرست)**
 
 68. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
 
-     حالت سخت با اضافه کردن رشته `use strict` به ابتدای scope اعلام می‌شه. پس می‌تونیم اونو به ابتدای یه اسکریپت یا یه تابع اضافه کنیم.
-     اگه در ابتدای یه اسکریپت اعلام شه، دامنه عمومی داره:
+    حالت سخت با اضافه کردن رشته `use strict` به ابتدای scope اعلام می‌شه. پس می‌تونیم اونو به ابتدای یه اسکریپت یا یه تابع اضافه کنیم.
+    اگه در ابتدای یه اسکریپت اعلام شه، دامنه عمومی داره:
 
      <span dir="ltr" align="left">
 
     ```js
-    'use strict';
-    
+    "use strict";
+
     x = 3.14; // This will cause an error because x is not declared
     ```
 
      </span>
 
-     و اگه در داخل یه تابع اعلام کنیم محدوده محلی داره:
+    و اگه در داخل یه تابع اعلام کنیم محدوده محلی داره:
 
      <span dir="ltr" align="left">
 
-     ```js
-     x = 3.14; // This will not cause an error.
-     myFunction();
+    ```js
+    x = 3.14; // This will not cause an error.
+    myFunction();
 
-     function myFunction() {
-       'use strict';
-     
-       y = 3.14; // This will cause an error
-     }
-     ```
+    function myFunction() {
+      "use strict";
+
+      y = 3.14; // This will cause an error
+    }
+    ```
 
      </span>
 
@@ -1991,16 +1985,16 @@ puppeteer:
 
 69. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
 
-     علامت نقیض دوتایی یا نفی (!!) اینه که تضمین میکنه که نوع حاصل از عملیات یه مقدار true یا falseـه و تایپش بولین‌ـه. اگه falsy بود (برای مثال  0، null، undifiend و غیره)، false میشه و در غیر این صورت، درسته و نتیجه true خواهد بود.
-     برای مثال، می‌تونیم نسخه IE رو با استفاده از عبارت زیر آزمایش کنیم.
+    علامت نقیض دوتایی یا نفی (!!) اینه که تضمین میکنه که نوع حاصل از عملیات یه مقدار true یا falseـه و تایپش بولین‌ـه. اگه falsy بود (برای مثال 0، null، undifiend و غیره)، false میشه و در غیر این صورت، درسته و نتیجه true خواهد بود.
+    برای مثال، می‌تونیم نسخه IE رو با استفاده از عبارت زیر آزمایش کنیم.
 
      <span dir="ltr" align="left">
 
-     ```js
-     let isIE8 = false;
-     isIE8 = !!navigator.userAgent.match(/MSIE 8.0/);
-     console.log(isIE8); // returns true or false
-     ```
+    ```js
+    let isIE8 = false;
+    isIE8 = !!navigator.userAgent.match(/MSIE 8.0/);
+    console.log(isIE8); // returns true or false
+    ```
 
      </span>
 
@@ -2014,10 +2008,10 @@ puppeteer:
 
      </span>
 
-     **نکته:** `!!` یه اپراتور جدید نیست و فقط دوتا اپراتور `!` هست.
-     **نکته:** استفاده از `!!` معادل استفاده از `Boolean(var)` هست ولی `!!` سریعتره.
+    **نکته:** `!!` یه اپراتور جدید نیست و فقط دوتا اپراتور `!` هست.
+    **نکته:** استفاده از `!!` معادل استفاده از `Boolean(var)` هست ولی `!!` سریعتره.
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 70. ### هدف از عملگر delete چیه؟
 
@@ -2026,7 +2020,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
     ```js
-    const user = { name: 'John', age: 20 };
+    const user = { name: "John", age: 20 };
     delete user.age;
 
     console.log(user); // {name: "John"}
@@ -2034,33 +2028,33 @@ puppeteer:
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 71. ### عملگر typeof چیکار میکنه؟
 
-     برای بدست آوردن نوع متغیر جاواسکریپت می‌تونیم از عملگر typeof استفاده کنیم و نوع یه متغیر یا یه عبارت رو به صورت یه رشته برمی‌گردونه.
+    برای بدست آوردن نوع متغیر جاواسکریپت می‌تونیم از عملگر typeof استفاده کنیم و نوع یه متغیر یا یه عبارت رو به صورت یه رشته برمی‌گردونه.
 
      <span dir="ltr" align="left">
 
-     ```js
-     typeof 'John Abraham'; // Returns "string"
-     typeof (1 + 2); // Returns "number"
-     ```
+    ```js
+    typeof "John Abraham"; // Returns "string"
+    typeof (1 + 2); // Returns "number"
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 72. ### undefined چیه و چه زمانی undefined می‌گیریم؟
 
-     ویژگی undefined می‌گیریم که به یه متغیر مقداری اختصاص داده نشده یا اصلاً تعریف نشده‌ـست. هم نوع مقدار تعریف نشده هم تعریف نشده.
+    ویژگی undefined می‌گیریم که به یه متغیر مقداری اختصاص داده نشده یا اصلاً تعریف نشده‌ـست. هم نوع مقدار تعریف نشده هم تعریف نشده.
 
      <span dir="ltr" align="left">
 
-     ```js
-     let user; // Value is undefined, type is undefined
-     console.log(typeof user); // undefined
-     ```
+    ```js
+    let user; // Value is undefined, type is undefined
+    console.log(typeof user); // undefined
+    ```
 
      </span>
 
@@ -2068,9 +2062,9 @@ puppeteer:
 
      <span dir="ltr" align="left">
 
-     ```js
-     user = undefined;
-     ```
+    ```js
+    user = undefined;
+    ```
 
      </span>
 
@@ -2078,102 +2072,102 @@ puppeteer:
 
 73. ### null چیه؟
 
-     مقدار null عدم وجود عمدی هر مقدار شی رو نشون میده. null یکی از مقادیر اولیه جاواسکریپت‌ـه و حواسمون باید باشه که نوع مقدار null آبجکته.
-      با قرار دادن مقدار null هم می‌تونیم متغیر رو خالی کنیم.
+    مقدار null عدم وجود عمدی هر مقدار شی رو نشون میده. null یکی از مقادیر اولیه جاواسکریپت‌ـه و حواسمون باید باشه که نوع مقدار null آبجکته.
+    با قرار دادن مقدار null هم می‌تونیم متغیر رو خالی کنیم.
 
      <span dir="ltr" align="left">
 
-     ```js
-     const user = null;
-     console.log(typeof user); // object
-     ```
+    ```js
+    const user = null;
+    console.log(typeof user); // object
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 74. ### تفاوت‌های بین null و undefined چیا هستن؟
 
-     تفاوت‌های اصلی بین null و undefined:
+    تفاوت‌های اصلی بین null و undefined:
 
-     | Null                                                                     | Undefined                                                                                           |
-     |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-     | یه مقدار انتسابه که نشون میده متغیر به هیچ شیئی اشاره نمیکنه.            | یه مقدار انتساب نیست که تو اون متغیری اعلام شده باشه اما هنوز مقداری به اون اختصاص داده نشده.       |
-     | تایپ null آبجکته                                                         | تایپ undefined همون تعریف نشده و undefined هستش                                                     |
-     | مقدار null یه مقدار اولیه اس که نشون دهنده مرجع تهی، خالی یا غیر موجوده. | مقدار undefined یه مقدار اولیه اس و زمانی استفاده میشه که به یه متغیر مقداری اختصاص داده نشده باشه. |
-     | عدم وجود مقدار برای یه متغیر رو نشون میده                                | عدم وجود خود متغیر رو نشون میده                                                                     |
-     | در حین انجام عملیات اولیه به صفر (0) تبدیل میشه                          | در حین انجام عملیات اولیه به NaN تبدیل می‌شه                                                        |
+    | Null                                                                     | Undefined                                                                                           |
+    | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+    | یه مقدار انتسابه که نشون میده متغیر به هیچ شیئی اشاره نمیکنه.            | یه مقدار انتساب نیست که تو اون متغیری اعلام شده باشه اما هنوز مقداری به اون اختصاص داده نشده.       |
+    | تایپ null آبجکته                                                         | تایپ undefined همون تعریف نشده و undefined هستش                                                     |
+    | مقدار null یه مقدار اولیه اس که نشون دهنده مرجع تهی، خالی یا غیر موجوده. | مقدار undefined یه مقدار اولیه اس و زمانی استفاده میشه که به یه متغیر مقداری اختصاص داده نشده باشه. |
+    | عدم وجود مقدار برای یه متغیر رو نشون میده                                | عدم وجود خود متغیر رو نشون میده                                                                     |
+    | در حین انجام عملیات اولیه به صفر (0) تبدیل میشه                          | در حین انجام عملیات اولیه به NaN تبدیل می‌شه                                                        |
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 75. ### متد eval چیه؟
 
-     تابع eval کد جاواسکریپت‌ای رو که به صورت رشته بهش پاس داده شده رو اجرا میکنه. رشته میتونه یه عبارت جاواسکریپت، متغیر، دستور یا دنباله ای از عبارات باشه.
+    تابع eval کد جاواسکریپت‌ای رو که به صورت رشته بهش پاس داده شده رو اجرا میکنه. رشته میتونه یه عبارت جاواسکریپت، متغیر، دستور یا دنباله ای از عبارات باشه.
 
      <span dir="ltr" align="left">
 
-     ```js
-     console.log(eval('1 + 2')); //  3
-     ```
+    ```js
+    console.log(eval("1 + 2")); //  3
+    ```
 
      </span>
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 76. ### تفاوت‌های بین window و document چیا هستن؟
 
-     | Window                                                                   | Document                                                                               |
-     |--------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-     | عنصر ریشه در هر صفحه وبه                                                 | فرزند مستقیم شی window هستش و همچنین به عنوان مدل شیء document (DOM)                   | شناخته می‌شه
-     | به طور پیش فرض شی window به طور ضمنی در هر صفحه قرار داره                | می‌تونیم از طریق window.document یا document به اون دسترسی داشته باشیم.                |
-     | دارای متدهایی مانند alert، confirm و ویژگی‌هایی مانند document، location | متدهایی مانند getElementById، getElementByTagName، createElement و غیره رو فراهم میکنه |
+    | Window                                                                   | Document                                                                               |
+    | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ------------ |
+    | عنصر ریشه در هر صفحه وبه                                                 | فرزند مستقیم شی window هستش و همچنین به عنوان مدل شیء document (DOM)                   | شناخته می‌شه |
+    | به طور پیش فرض شی window به طور ضمنی در هر صفحه قرار داره                | می‌تونیم از طریق window.document یا document به اون دسترسی داشته باشیم.                |
+    | دارای متدهایی مانند alert، confirm و ویژگی‌هایی مانند document، location | متدهایی مانند getElementById، getElementByTagName، createElement و غیره رو فراهم میکنه |
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 77. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
 
-     شی window.history حاوی تاریخچه مرورگره. با استفاده از متدهای `back` و `next` می‌تونیم URL‌های قبلی و بعدی رو در تاریخچه بارگذاری کنیم. مثلا:
+    شی window.history حاوی تاریخچه مرورگره. با استفاده از متدهای `back` و `next` می‌تونیم URL‌های قبلی و بعدی رو در تاریخچه بارگذاری کنیم. مثلا:
 
      <br />
      <span dir="ltr" align="left">
 
-     ```js
-     function goBack() {
-       window.history.back();
-     }
-     function goForward() {
-       window.history.forward();
-     }
-     ```
+    ```js
+    function goBack() {
+      window.history.back();
+    }
+    function goForward() {
+      window.history.forward();
+    }
+    ```
 
      </span>
      <br />
 
-     **نکته:** همچنین می‌تونیم بدون پیشوند window به آبجکت history دسترسی داشته باشیم.
+    **نکته:** همچنین می‌تونیم بدون پیشوند window به آبجکت history دسترسی داشته باشیم.
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 78. ### انواع داده‌های جاواسکریپت کدوما هستن؟
 
-     1. Number
-     2. String
-     3. Boolean
-     4. Object
-     5. Undefined
+    1. Number
+    2. String
+    3. Boolean
+    4. Object
+    5. Undefined
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 79. ### isNaN چیه و چیکار میکنه؟
 
-     تابع `isNaN`(Not-a-Number) برای تعیین اینه که آیا یه مقدار یه عدد واقعیه یا نه هست یا نه استفاده می‌شه. یعنی اگه مقدار برابر با NaN باشه، این تابع true برمی‌گردونه. در غیر این صورت false برمیگرده.
+    تابع `isNaN`(Not-a-Number) برای تعیین اینه که آیا یه مقدار یه عدد واقعیه یا نه هست یا نه استفاده می‌شه. یعنی اگه مقدار برابر با NaN باشه، این تابع true برمی‌گردونه. در غیر این صورت false برمیگرده.
 
      <span dir="ltr" align="left">
 
-     ```js
-     isNaN('Hello'); // true
+    ```js
+    isNaN("Hello"); // true
 
-     isNaN('100'); // false
-     ```
+    isNaN("100"); // false
+    ```
 
      </span>
      <br />
@@ -2182,21 +2176,21 @@ puppeteer:
 
 80. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
 
-     | undeclared                                                                       | undefined                                                                              |
-     |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-     | این متغیرها تو یه برنامه وجود ندارن و تعریف نشدن                                 | این متغیرها در برنامه هست، اما هیچ مقداری نداره                                        | اختصاص نداده اند
-     | اگه سعی کنیم مقدار یه متغیر undeclared رو بخونیم، با خطای زمان اجرا مواجه می‌شیم | اگه سعی کنیم مقدار یه متغیر تعریف نشده رو بخونیم، یه مقدار تعریف نشده برگردونده می‌شه. |
+    | undeclared                                                                       | undefined                                                                              |
+    | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------------- |
+    | این متغیرها تو یه برنامه وجود ندارن و تعریف نشدن                                 | این متغیرها در برنامه هست، اما هیچ مقداری نداره                                        | اختصاص نداده اند |
+    | اگه سعی کنیم مقدار یه متغیر undeclared رو بخونیم، با خطای زمان اجرا مواجه می‌شیم | اگه سعی کنیم مقدار یه متغیر تعریف نشده رو بخونیم، یه مقدار تعریف نشده برگردونده می‌شه. |
 
-     **[فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 81. ### کدوم متغیرها عمومی هستن؟
 
-     متغیرهای عمومی اونایی ان که در طول کد بدون هیچ محدوده ای در دسترسن. کلمه کلیدی var برای اعلام یه متغیر محلی استفاده می‌شه اما اگه اونو حذف کنیم تبدیل به متغیر عمومی می‌شه.
+    متغیرهای عمومی اونایی ان که در طول کد بدون هیچ محدوده ای در دسترسن. کلمه کلیدی var برای اعلام یه متغیر محلی استفاده می‌شه اما اگه اونو حذف کنیم تبدیل به متغیر عمومی می‌شه.
 
      <span dir="ltr" align="left">
 
     ```js
-    msg = 'Hello'; // var is missing, it becomes global variable
+    msg = "Hello"; // var is missing, it becomes global variable
     ```
 
      </span>
@@ -2211,13 +2205,13 @@ puppeteer:
 
 83. ### مقدار NaN چیه؟
 
-     ویژگی NaN یه ویژگی گلوباله که مقدار "Not-a-Number" رو نشون میده. یعنی نشون میده که یه مقدار یه متغیر واقعا عددی نیست. استفاده از NaN تو برنامه‌ها خیلی نداره، اما می‌شه از اون به عنوان مقدار بازگشتی یه سری توابع و برای یه سری موارد کم استفاده کرد:
+    ویژگی NaN یه ویژگی گلوباله که مقدار "Not-a-Number" رو نشون میده. یعنی نشون میده که یه مقدار یه متغیر واقعا عددی نیست. استفاده از NaN تو برنامه‌ها خیلی نداره، اما می‌شه از اون به عنوان مقدار بازگشتی یه سری توابع و برای یه سری موارد کم استفاده کرد:
 
      <span dir="ltr" align="left">
 
     ```js
     Math.sqrt(-1);
-    parseInt('Hello');
+    parseInt("Hello");
     ```
 
      </span>
@@ -2244,32 +2238,33 @@ puppeteer:
 
 85. ### یه event-flow چیه؟
 
-     `event-flow` ترتیبیه که `event` در صفحه وب دریافت می‌شه. وقتی روی یه المنت در صفحه وب کلیک می‌کنیم و این المنت به شکل تودرتو داخل المنت‌های مختلف استفاده شده، قبل از اینکه کلیک‌مون واقعاً به مقصد یا المنت هدف برسه، باید `event` کلیک رو برای هر کدوم از عنصرهای والد خودش بفرسته و از بالا با شی پنجره گلوبال شروع شه.
+    `event-flow` ترتیبیه که `event` در صفحه وب دریافت می‌شه. وقتی روی یه المنت در صفحه وب کلیک می‌کنیم و این المنت به شکل تودرتو داخل المنت‌های مختلف استفاده شده، قبل از اینکه کلیک‌مون واقعاً به مقصد یا المنت هدف برسه، باید `event` کلیک رو برای هر کدوم از عنصرهای والد خودش بفرسته و از بالا با شی پنجره گلوبال شروع شه.
 
-     به شکل کلی **دو** راه برای جریان event وجود داره:
-     1. **از بالا به پایین(Event Capturing)**
-     2. **از پایین به بالا (Event Capturing)**
+    به شکل کلی **دو** راه برای جریان event وجود داره:
 
-    1. از بالا به پایین(Event Capturing)
-    2. از پایین به بالا (Event Capturing)
+    1. **از بالا به پایین(Event Capturing)**
+    2. **از پایین به بالا (Event Capturing)**
+
+    3. از بالا به پایین(Event Capturing)
+    4. از پایین به بالا (Event Capturing)
 
     **[فهرست](#فهرست)**
 
 86. ### Event-bubbling چیه؟
 
-     `Event-bubbling` نوعی انتشار event‌ـه که تو اون event ابتدا روی درونی‌ترین عنصر هدف فراخوانی می‌شه و سپس به‌طور متوالی روی اجداد (والد) عنصر هدف تو همون سلسله مراتب تودرتو راه‌اندازی می‌شه تا زمانی که به بیرونی‌ترین عنصر DOM برسه.
+    `Event-bubbling` نوعی انتشار event‌ـه که تو اون event ابتدا روی درونی‌ترین عنصر هدف فراخوانی می‌شه و سپس به‌طور متوالی روی اجداد (والد) عنصر هدف تو همون سلسله مراتب تودرتو راه‌اندازی می‌شه تا زمانی که به بیرونی‌ترین عنصر DOM برسه.
 
     **[فهرست](#فهرست)**
 
 87. ### Event-capturing چیه؟
 
-     Event-capturing نوعی انتشار event‌ـه که تو اونevent اول با بیرونی ترین عنصر ثبت می‌شه و سپس به طور متوالی بر روی children (children) عنصر هدف تو همون سلسله مراتب تودرتو راه اندازی می‌شه تا زمانی که به درونی ترین عنصر DOM برسه.
+    Event-capturing نوعی انتشار event‌ـه که تو اونevent اول با بیرونی ترین عنصر ثبت می‌شه و سپس به طور متوالی بر روی children (children) عنصر هدف تو همون سلسله مراتب تودرتو راه اندازی می‌شه تا زمانی که به درونی ترین عنصر DOM برسه.
 
     **[فهرست](#فهرست)**
 
 88. ### چطوری می‌شه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
 
-     می‌تونیم با استفاده از جاواسکریپت فرم مورد نظرمون رو با استفاده از کد document.form[0].submit ارسال کنیم. تمام اطلاعات ورودی فرم با استفاده از onsubmit event handler ارسال می‌شه
+    می‌تونیم با استفاده از جاواسکریپت فرم مورد نظرمون رو با استفاده از کد document.form[0].submit ارسال کنیم. تمام اطلاعات ورودی فرم با استفاده از onsubmit event handler ارسال می‌شه
 
      <span dir="ltr" align="left">
 
@@ -2285,7 +2280,7 @@ puppeteer:
 
 89. ### چطوری می‌شه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
 
-     شی window.navigator حاوی اطلاعاتی درباره جزئیات سیستم عامل مرورگر بازدیدکننده‌ـست. بعضی از ویژگی‌های سیستم عامل روی ویژگی پلتفرم در دسترس هستن:
+    شی window.navigator حاوی اطلاعاتی درباره جزئیات سیستم عامل مرورگر بازدیدکننده‌ـست. بعضی از ویژگی‌های سیستم عامل روی ویژگی پلتفرم در دسترس هستن:
 
      <span dir="ltr" align="left">
 
@@ -2299,23 +2294,23 @@ puppeteer:
 
 90. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
 
-     رویداد `DOMContentLoaded` زمانی فراخوانی می‌شه که سند اولیه HTML به‌طور کامل بارگیری و تجزیه شده باشه، بدون اینکه منتظر بمونیم  تا بارگیری asset‌ها(استایل‌ها، تصاویر و فریم‌های فرعی) تموم شه. در حالی که رویداد load روی داکیومنت زمانی فراخوانی می‌شه که کل صفحه بارگیری شه، شامل همه استایل‌ها، تصاویر و ... .
+    رویداد `DOMContentLoaded` زمانی فراخوانی می‌شه که سند اولیه HTML به‌طور کامل بارگیری و تجزیه شده باشه، بدون اینکه منتظر بمونیم تا بارگیری asset‌ها(استایل‌ها، تصاویر و فریم‌های فرعی) تموم شه. در حالی که رویداد load روی داکیومنت زمانی فراخوانی می‌شه که کل صفحه بارگیری شه، شامل همه استایل‌ها، تصاویر و ... .
 
     **[فهرست](#فهرست)**
 
 91. ### تفاوت‌های بین objectهای native ، host و user چیا هستن؟
 
-     `Native object`ها آبجکت‌هایی هستن که به عنوان بخشی از زبان جاواسکریپت تعریف شدن و به عنوان بخشی از مشخصات ECMAScript هستن. برای مثال، اشیاء اصلی رشته، ریاضی، RegExp، Object، Function و غیره که در مشخصات `ECMAScript` تعریف شدن.
-     `Host objects` آبجکت‌هایی هستن که توسط مرورگر یا محیط زمان اجرا (Node) ارائه می‌شن. برای مثال، پنجره، `XmlHttpRequest` نودهای DOM و غیره به عنوان اشیاء میزبان در نظر گرفته میشن.
-     `User objects` آبجکت‌هایی هستن که تو کد جاواسکریپت تعریف شدن. برای مثال، آبجکت‌های ایجاد شده توسط برای اطلاعات پروفایل.
+    `Native object`ها آبجکت‌هایی هستن که به عنوان بخشی از زبان جاواسکریپت تعریف شدن و به عنوان بخشی از مشخصات ECMAScript هستن. برای مثال، اشیاء اصلی رشته، ریاضی، RegExp، Object، Function و غیره که در مشخصات `ECMAScript` تعریف شدن.
+    `Host objects` آبجکت‌هایی هستن که توسط مرورگر یا محیط زمان اجرا (Node) ارائه می‌شن. برای مثال، پنجره، `XmlHttpRequest` نودهای DOM و غیره به عنوان اشیاء میزبان در نظر گرفته میشن.
+    `User objects` آبجکت‌هایی هستن که تو کد جاواسکریپت تعریف شدن. برای مثال، آبجکت‌های ایجاد شده توسط برای اطلاعات پروفایل.
 
     **[فهرست](#فهرست)**
 
 92. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
-     1. Chrome Devtools
-     2. عبارت debugger
-     3. متد console.log
+    1. Chrome Devtools
+    2. عبارت debugger
+    3. متد console.log
 
     **[فهرست](#فهرست)**
 
@@ -2323,24 +2318,26 @@ puppeteer:
 
     **مزایا:**
 
-     **مزایا:**
-     1. از جهنم callback که قابل خواندن نیست جلوگیری میکنه.
-     2. نوشتن کدهای ناهمزمان متوالی با then آسون‌تره.
-     3. نوشتن کد ناهمزمان موازی با Promise.all آسون‌تره.
-     4. بعضی از مشکلات رایج callbackهای بازگشتی رو حل میکنه (مشکل فراخوانی بسیار دیر، خیلی زود، یا چندبار فراخوانی callback و استثناها رو مدیریتیش رو راحت‌تر میکنه).
+    **مزایا:**
 
-     **معایب:**
-     1. کد یه کمی پیچیده میشه.
-     2. اگه ES6 پشتیبانی نشد باید یه polyfill بارگذاری بشه.
+    1. از جهنم callback که قابل خواندن نیست جلوگیری میکنه.
+    2. نوشتن کدهای ناهمزمان متوالی با then آسون‌تره.
+    3. نوشتن کد ناهمزمان موازی با Promise.all آسون‌تره.
+    4. بعضی از مشکلات رایج callbackهای بازگشتی رو حل میکنه (مشکل فراخوانی بسیار دیر، خیلی زود، یا چندبار فراخوانی callback و استثناها رو مدیریتیش رو راحت‌تر میکنه).
 
-    1. کد کمی پیچیده می سازد
-    2. اگه ES6 پشتیبانی نمی‌شه، باید یه polyfill بارگذاری کنیم
+    **معایب:**
+
+    1. کد یه کمی پیچیده میشه.
+    2. اگه ES6 پشتیبانی نشد باید یه polyfill بارگذاری بشه.
+
+    3. کد کمی پیچیده می سازد
+    4. اگه ES6 پشتیبانی نمی‌شه، باید یه polyfill بارگذاری کنیم
 
     **[فهرست](#فهرست)**
 
 94. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
 
-     Attributeها برای نشونه گذاری HTML تعریف می‌شن در حالی که propertyها روی DOM تعریف میشن برای مثال، عنصر HTML زیر دارای 2 ویژگی نوع و مقدار هستش
+    Attributeها برای نشونه گذاری HTML تعریف می‌شن در حالی که propertyها روی DOM تعریف میشن برای مثال، عنصر HTML زیر دارای 2 ویژگی نوع و مقدار هستش
 
      <span dir="ltr" align="left">
 
@@ -2350,24 +2347,24 @@ puppeteer:
 
      </span>
 
-     می‌تونیم مقدار یه ویژگی رو به صورت زیر بدست بیاریم:
+    می‌تونیم مقدار یه ویژگی رو به صورت زیر بدست بیاریم:
 
      <span dir="ltr" align="left">
 
     ```js
-    const input = document.querySelector('input');
-    console.log(input.getAttribute('value')); // Good morning
+    const input = document.querySelector("input");
+    console.log(input.getAttribute("value")); // Good morning
     console.log(input.value); // Good morning
     ```
 
      </span>
 
-     و بعد از اینکه مقدار فیلد متن به "Good evening" تغییر داده شد، نتیجه مثل زیر می‌شه:
+    و بعد از اینکه مقدار فیلد متن به "Good evening" تغییر داده شد، نتیجه مثل زیر می‌شه:
 
      <span dir="ltr" align="left">
 
     ```js
-    console.log(input.getAttribute('value')); // Good morning
+    console.log(input.getAttribute("value")); // Good morning
     console.log(input.value); // Good evening
     ```
 
@@ -2377,14 +2374,14 @@ puppeteer:
 
 95. ### سیاست same-origin چیه؟
 
-     سیاست یا خط مشی `same-origin` خط مشیه که از درخواست جاواسکریپت در روی کل domain جلوگیری میکنه. مبدا به عنوان ترکیبی از شمای URI، نام میزبان(hostname) و شماره پورت(port) تعریف می‌شه. اگه این خط‌مشی رو فعال کنیم، مرورگر از دسترسی یه اسکریپت مخرب تو یه صفحه به داده‌های حساس توی صفحه وب دیگه با استفاده از DOM(Document Object Model) جلوگیری میکنه.
+    سیاست یا خط مشی `same-origin` خط مشیه که از درخواست جاواسکریپت در روی کل domain جلوگیری میکنه. مبدا به عنوان ترکیبی از شمای URI، نام میزبان(hostname) و شماره پورت(port) تعریف می‌شه. اگه این خط‌مشی رو فعال کنیم، مرورگر از دسترسی یه اسکریپت مخرب تو یه صفحه به داده‌های حساس توی صفحه وب دیگه با استفاده از DOM(Document Object Model) جلوگیری میکنه.
 
     **[فهرست](#فهرست)**
 
 96. ### هدف استفاده از void 0 چیه؟
 
-     Void(0) برای جلوگیری از به ‌روز‌رسانی صفحه استفاده می‌شه. این متد برای از بین بردن ساید افکت‌های ناخواسته مفیده، چون مقدار اولیه تعریف نشده رو برمی‌گردونه. معمولاً برای اسناد HTML استفاده می‌شه که از href="JavaScript:Void(0)" روی  تو یه عنصر `<a>` استفاده می‌کنن. یعنی وقتی روی یه لینک کلیک می‌کنیم مرورگر یه صفحه جدید رو بارگیری میکنه یا همون صفحه رو تازه‌سازی(reload) میکنه. ولی با استفاده از این عبارت می‌تونیم از این رفتار جلوگیری کنیم.
-     :برای مثال، لینک زیر پیام رو بدون بارگیری مجدد صفحه مطلع میکنه
+    Void(0) برای جلوگیری از به ‌روز‌رسانی صفحه استفاده می‌شه. این متد برای از بین بردن ساید افکت‌های ناخواسته مفیده، چون مقدار اولیه تعریف نشده رو برمی‌گردونه. معمولاً برای اسناد HTML استفاده می‌شه که از href="JavaScript:Void(0)" روی تو یه عنصر `<a>` استفاده می‌کنن. یعنی وقتی روی یه لینک کلیک می‌کنیم مرورگر یه صفحه جدید رو بارگیری میکنه یا همون صفحه رو تازه‌سازی(reload) میکنه. ولی با استفاده از این عبارت می‌تونیم از این رفتار جلوگیری کنیم.
+    :برای مثال، لینک زیر پیام رو بدون بارگیری مجدد صفحه مطلع میکنه
 
      <span dir="ltr" align="left">
 
@@ -2398,19 +2395,19 @@ puppeteer:
 
 97. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
 
-     جاواسکریپت یه زبان تفسیری‌ـه و نه یه زبان کامپایلری. یه مفسر توی مرورگر کد جاواسکریپت رو می خونه، هر خط رو تفسیر میکنه و اونو اجرا میکنه. امروزه مرورگرهای مدرن از فناوری موسوم به کامپایل Just-In-Time(JIT) استفاده می‌کنن که جاواسکریپت رو موقعی که در شرف اجراست به بایت کد اجرایی کامپایل میکنه.
+    جاواسکریپت یه زبان تفسیری‌ـه و نه یه زبان کامپایلری. یه مفسر توی مرورگر کد جاواسکریپت رو می خونه، هر خط رو تفسیر میکنه و اونو اجرا میکنه. امروزه مرورگرهای مدرن از فناوری موسوم به کامپایل Just-In-Time(JIT) استفاده می‌کنن که جاواسکریپت رو موقعی که در شرف اجراست به بایت کد اجرایی کامپایل میکنه.
 
     **[فهرست](#فهرست)**
 
 98. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
 
-     بله، جاواسکریپت یه زبان حساس به حروف کوچک و بزرگه. کلمات کلیدی استفاده شده توی زبان، متغیرها، توابع و اشیا، و هر شناسه دیگر باید همیشه با حروف بزرگ تایپ شن.
+    بله، جاواسکریپت یه زبان حساس به حروف کوچک و بزرگه. کلمات کلیدی استفاده شده توی زبان، متغیرها، توابع و اشیا، و هر شناسه دیگر باید همیشه با حروف بزرگ تایپ شن.
 
     **[فهرست](#فهرست)**
 
 99. ### ارتباطی بین Java و JavaScript وجود داره؟
 
-     نه، این دو زبان برنامه نویسی کاملاً متفاوت هستن و هیچ ارتباطی با همدیگه ندارن. اما هر دوی اونا زبان‌های برنامه نویسی شی گرا هستن و مثل خیلی از زبان‌های دیگه، از syntax مشابهی برای ویژگی‌های اساسی (if، else، for، switch، break، continue و غیره) پیروی می‌کنن.
+    نه، این دو زبان برنامه نویسی کاملاً متفاوت هستن و هیچ ارتباطی با همدیگه ندارن. اما هر دوی اونا زبان‌های برنامه نویسی شی گرا هستن و مثل خیلی از زبان‌های دیگه، از syntax مشابهی برای ویژگی‌های اساسی (if، else، for، switch، break، continue و غیره) پیروی می‌کنن.
 
     **[فهرست](#فهرست)**
 
@@ -2418,9 +2415,9 @@ puppeteer:
 
      رویدادها «چیزهایی» هستن که روی عناصر HTML و برای اونا اتفاق می‌افتن. موقعی که جاواسکریپت توی صفحات HTML استفاده می‌شه، میتونه به این رویدادها واکنش نشون بده و ما با استفاده از این رخدادها می‌تونیم رفتار خاصی رو موقع رخداد خاص تعریف کنیم. بعضی از نمونه‌های رویدادهای HTML عبارتند از:
 
-     1.  بارگذاری صفحه وب تموم شه
-     2.  فیلد ورودی تغییر کنه
-     3.  روی یه دکمه کلیک شه
+     1. بارگذاری صفحه وب تموم شه
+     2. فیلد ورودی تغییر کنه
+     3. روی یه دکمه کلیک شه
 
      بیاین رفتار رویداد کلیک رو برای یه button ببینیم:
 
@@ -2459,11 +2456,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     document
-       .getElementById('link')
-       .addEventListener('click', (event) => {
-         event.preventDefault();
-       });
+     document.getElementById("link").addEventListener("click", (event) => {
+       event.preventDefault();
+     });
      ```
 
      </span>
@@ -2513,7 +2508,7 @@ puppeteer:
 
 105. ### BOM چیه؟
 
-     مدل آبجکتی مرورگر (BOM) به جاواسکریپت اجازه میده تا با مرورگر صحبت کنه. این مدل شامل navigation، history، page، location و document  که فرزندان window هستن. BOM مدل استاندارد همه مرورگرها نیست و می‌تونه بر اساس مرورگرهای مختلف تغییر کنه.
+     مدل آبجکتی مرورگر (BOM) به جاواسکریپت اجازه میده تا با مرورگر صحبت کنه. این مدل شامل navigation، history، page، location و document که فرزندان window هستن. BOM مدل استاندارد همه مرورگرها نیست و می‌تونه بر اساس مرورگرهای مختلف تغییر کنه.
 
      ![Screenshot](images/bom.png)
 
@@ -2529,7 +2524,7 @@ puppeteer:
 
      ```js
      setTimeout(() => {
-       console.log('Good morning');
+       console.log("Good morning");
      }, 2000);
      ```
 
@@ -2545,7 +2540,7 @@ puppeteer:
 
      ```js
      setInterval(() => {
-       console.log('Good morning');
+       console.log("Good morning");
      }, 2000);
      ```
 
@@ -2568,18 +2563,16 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const form = document.querySelector('#registration-form');
+     const form = document.querySelector("#registration-form");
 
      // Listen for changes to fields inside the form
      form.addEventListener(
-       'input',
+       "input",
        (event) => {
-
          // Log the field that was changed
          console.log(event.target);
-
        },
-       false,
+       false
      );
      ```
 
@@ -2615,7 +2608,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const userJSON = { name: 'John', age: 31 };
+     const userJSON = { name: "John", age: 31 };
      const userString = JSON.stringify(user);
      console.log(userString); // "{"name":"John","age":31}"
      ```
@@ -2662,19 +2655,19 @@ puppeteer:
 
      ```html
      <script>
-     var msg;
+       var msg;
 
-     function greeting() {
-          alert("Good morning");
-     }
+       function greeting() {
+         alert("Good morning");
+       }
 
-     function start() {
-          msg = setTimeout(greeting, 3000);
-     }
+       function start() {
+         msg = setTimeout(greeting, 3000);
+       }
 
-     function stop() {
-          clearTimeout(msg);
-     }
+       function stop() {
+         clearTimeout(msg);
+       }
      </script>
      ```
 
@@ -2692,19 +2685,19 @@ puppeteer:
 
      ```html
      <script>
-     var msg;
+       var msg;
 
-     function greeting() {
-          alert("Good morning");
-     }
+       function greeting() {
+         alert("Good morning");
+       }
 
-     function start() {
-          msg = setInterval(greeting, 3000);
-     }
+       function start() {
+         msg = setInterval(greeting, 3000);
+       }
 
-     function stop() {
-          clearInterval(msg);
-     }
+       function stop() {
+         clearInterval(msg);
+       }
      </script>
      ```
 
@@ -2720,7 +2713,7 @@ puppeteer:
 
      ```js
      function redirect() {
-       window.location.href = 'newPage.html';
+       window.location.href = "newPage.html";
      }
      ```
 
@@ -2737,8 +2730,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const mainString = 'hello';
-     const subString = 'hell';
+     const mainString = "hello";
+     const subString = "hell";
      mainString.includes(subString);
      ```
 
@@ -2749,8 +2742,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const mainString = 'hello';
-     const subString = 'hell';
+     const mainString = "hello";
+     const subString = "hell";
      mainString.indexOf(subString) !== -1;
      ```
 
@@ -2761,7 +2754,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const mainString = 'hello';
+     const mainString = "hello";
      const regex = /hell/;
      regex.test(mainString);
      ```
@@ -2778,7 +2771,8 @@ puppeteer:
 
      ```js
      function validateEmail(email) {
-       const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+       const re =
+         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
        return re.test(String(email).toLowerCase());
      }
      ```
@@ -2796,7 +2790,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log('location.href', window.location.href); // Returns full URL
+     console.log("location.href", window.location.href); // Returns full URL
      ```
 
      </span>
@@ -2826,7 +2820,7 @@ puppeteer:
 
      ```js
      const urlParams = new URLSearchParams(window.location.search);
-     const clientCode = urlParams.get('clientCode');
+     const clientCode = urlParams.get("clientCode");
      ```
 
      </span>
@@ -2840,7 +2834,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     'key' in obj;
+     "key" in obj;
      ```
 
      </span>
@@ -2850,7 +2844,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     !('key' in obj);
+     !("key" in obj);
      ```
 
      </span>
@@ -2860,7 +2854,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     obj.hasOwnProperty('key'); // true
+     obj.hasOwnProperty("key"); // true
      ```
 
      </span>
@@ -2871,7 +2865,7 @@ puppeteer:
 
      ```js
      const user = {
-       name: 'John',
+       name: "John",
      };
 
      console.log(user.name !== undefined); // true
@@ -2890,9 +2884,9 @@ puppeteer:
 
      ```js
      const object = {
-       k1: 'value1',
-       k2: 'value2',
-       k3: 'value3',
+       k1: "value1",
+       k2: "value2",
+       k3: "value3",
      };
 
      for (const key in object) {
@@ -3026,7 +3020,7 @@ puppeteer:
 
      ```js
      const today = new Date().toLocaleString();
-     console.log(today.split(',')[0]); // 5/19/2022
+     console.log(today.split(",")[0]); // 5/19/2022
      ```
 
      </span>
@@ -3057,325 +3051,325 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     'Good morning'.startsWith('Good'); // true
-     'Good morning'.startsWith('morning'); // false
+     "Good morning".startsWith("Good"); // true
+     "Good morning".startsWith("morning"); // false
      ```
 
      </span>
 
      **[فهرست](#فهرست)**
 
-134.  ### چطوری یه رشته رو trim می‌کنی؟
+134. ### چطوری یه رشته رو trim می‌کنی؟
 
-      جاواسکریپت یه متد به ما میده به اسم `trim` که روی رشته‌ها قرار داره با استفاده از این متد همه ی فضاهای خالی بین اون رشته برداشته می‌شه
+     جاواسکریپت یه متد به ما میده به اسم `trim` که روی رشته‌ها قرار داره با استفاده از این متد همه ی فضاهای خالی بین اون رشته برداشته می‌شه
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      '  Hello World   '.trim(); // Hello World
-      ```
+     ```js
+     "  Hello World   ".trim(); // Hello World
+     ```
 
-      </span>
+     </span>
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-135.  ### توی جاواسکریپت چطوری می‌تونیم یه زوج مرتب از key یه valueها بسازیم؟
+135. ### توی جاواسکریپت چطوری می‌تونیم یه زوج مرتب از key یه valueها بسازیم؟
 
-      برای اضافه کردن key جدید به آبجکت‌ها دو روش وجود داره
+     برای اضافه کردن key جدید به آبجکت‌ها دو روش وجود داره
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      const object = {
-        key1: value1,
-        key2: value2,
-      };
-      ```
+     ```js
+     const object = {
+       key1: value1,
+       key2: value2,
+     };
+     ```
 
-      </span>
+     </span>
 
-      1. **استفاده از dot:** این روش زمانی موثر هستش که اسم پراپرتی رو میدونیم
+     1. **استفاده از dot:** این روش زمانی موثر هستش که اسم پراپرتی رو میدونیم
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      object.key3 = 'value3';
-      ```
+     ```js
+     object.key3 = "value3";
+     ```
 
-      </span>
+     </span>
 
-      1. **استفاده از کروشه[]:** این روش زمانی موثر هستش که اسم پراپرتی داینامیک باشه
+     1. **استفاده از کروشه[]:** این روش زمانی موثر هستش که اسم پراپرتی داینامیک باشه
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      obj.key3 = 'value3';
-      ```
+     ```js
+     obj.key3 = "value3";
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-136.  ### آیا عبارت '--!' عملگر خاصی هست؟
+136. ### آیا عبارت '--!' عملگر خاصی هست؟
 
-      نه! اپراتور خاص نیست اما ترکیب دو تا اپراتور استاندار هستش یکی بعد اون یکی
+     نه! اپراتور خاص نیست اما ترکیب دو تا اپراتور استاندار هستش یکی بعد اون یکی
 
-      1. اپراتور نقییض (!)
-      2. کاهش کننده(--)
+     1. اپراتور نقییض (!)
+     2. کاهش کننده(--)
 
-      اول یه شماره از مقدار متغیر به مثال کم می‌شه بعد تست می‌شه که مساوی صفر هستش یا نه، که مشخص‌کننده درست یا غلط بودن شرط هست
+     اول یه شماره از مقدار متغیر به مثال کم می‌شه بعد تست می‌شه که مساوی صفر هستش یا نه، که مشخص‌کننده درست یا غلط بودن شرط هست
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-137.  ### چطوری می‌تونیم به متغیرهامون مقادیر اولیه بدیم؟
+137. ### چطوری می‌تونیم به متغیرهامون مقادیر اولیه بدیم؟
 
-      می‌تونیم از عملگر یا اپراتور `||` برای تعریف یه مقدار پیش‌فرض استفاده کرد:
+     می‌تونیم از عملگر یا اپراتور `||` برای تعریف یه مقدار پیش‌فرض استفاده کرد:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      const a = b || c;
-      ```
+     ```js
+     const a = b || c;
+     ```
 
-      </span>
+     </span>
 
-      مثال تعریف شده بالا مقدار متغیر a زمانی برابر مقدار متغیر c خواهد شد که b خالی false یا undifined باشه.
+     مثال تعریف شده بالا مقدار متغیر a زمانی برابر مقدار متغیر c خواهد شد که b خالی false یا undifined باشه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-138.  ### چطوری می‌تونیم متن‌های چند خطی درست کنیم؟
+138. ### چطوری می‌تونیم متن‌های چند خطی درست کنیم؟
 
-      می‌تونیم از `/` برای تعریف کردن رشته‌های چند خطی استفاده کنیم برای مثال:
+     می‌تونیم از `/` برای تعریف کردن رشته‌های چند خطی استفاده کنیم برای مثال:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      const str = 'This is a \
-      very lengthy \
-      sentence!';
-      ```
+     ```js
+     const str =
+       "This is a \
+     very lengthy \
+     sentence!";
+     ```
 
-      </span>
+     </span>
 
-      اما اگه یه فاصله بعد `/` داشته باشیم,کد دقیقا به همون حالتی که هست نشون داده می‌شه اما یه ارور خطای نوشتاری کد قراره داشته باشیم
+     اما اگه یه فاصله بعد `/` داشته باشیم,کد دقیقا به همون حالتی که هست نشون داده می‌شه اما یه ارور خطای نوشتاری کد قراره داشته باشیم
 
-      <br />
+     <br />
 
-      روش بعدی استفاده کردن از `backtick` هست که وقتی موقع تعریف رشته به جای کوتیشن مارک ازش استفاده بشه میتونیم راحت یه رشته چند خطی تعریف کنیم. برای مثال میشه کد زیر رو براش نوشت:
+     روش بعدی استفاده کردن از `backtick` هست که وقتی موقع تعریف رشته به جای کوتیشن مارک ازش استفاده بشه میتونیم راحت یه رشته چند خطی تعریف کنیم. برای مثال میشه کد زیر رو براش نوشت:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      const str = `This is a 
-      very lengthy 
-      sentence!`;
-      ```
+     ```js
+     const str = `This is a 
+     very lengthy 
+     sentence!`;
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-139.  ### مدل app-shell چیه؟
+139. ### مدل app-shell چیه؟
 
-      application shell (shell) یکی از راه‌های ساخت PWA هستش که به طور قابل اعتماد و فوری بر روی صفحه نمایش کاربران شما بارگیری می‌شه، مشابه اونی‌که توی برنامه‌های کاربردی native به کاربر نشون داده میشه. برای رسوندن سریع HTML اولیه به صفحه بدون نیاز به شبکه مفیده.
+     application shell (shell) یکی از راه‌های ساخت PWA هستش که به طور قابل اعتماد و فوری بر روی صفحه نمایش کاربران شما بارگیری می‌شه، مشابه اونی‌که توی برنامه‌های کاربردی native به کاربر نشون داده میشه. برای رسوندن سریع HTML اولیه به صفحه بدون نیاز به شبکه مفیده.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-140.  ### چطوری می‌تونیم روی یه تابع property اضافه کنیم؟
+140. ### چطوری می‌تونیم روی یه تابع property اضافه کنیم؟
 
-      می‌تونیم برای توابع پراپرتی تعیین کنیم چون توابع اصولا آبجکت هستن.
+     می‌تونیم برای توابع پراپرتی تعیین کنیم چون توابع اصولا آبجکت هستن.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      const fn = function (x) {
-        // Function code goes here
-      };
+     ```js
+     const fn = function (x) {
+       // Function code goes here
+     };
 
-      fn.userName = 'John';
+     fn.userName = "John";
 
-      fn.profile = function (y) {
-        // Profile code goes here
-      };
-      ```
+     fn.profile = function (y) {
+       // Profile code goes here
+     };
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-141.  ### چطوری می‌تونیم تعداد پارامترهای ورودی یه تابع رو به دست بیاریم؟
+141. ### چطوری می‌تونیم تعداد پارامترهای ورودی یه تابع رو به دست بیاریم؟
 
-      با استفاده کردن از `function.length` می‌تونیم به تعداد پارامتر‌هایی که یه تابع انتظار داره بگیره دسترسی داشته باشیم.
-      بریم یه مثال درموردش ببینیم:
+     با استفاده کردن از `function.length` می‌تونیم به تعداد پارامتر‌هایی که یه تابع انتظار داره بگیره دسترسی داشته باشیم.
+     بریم یه مثال درموردش ببینیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      function sum(num1, num2, num3, num4) {
-        return num1 + num2 + num3 + num4;
-      }
-      sum.length; // 4 is the number of parameters expected.
-      ```
+     ```js
+     function sum(num1, num2, num3, num4) {
+       return num1 + num2 + num3 + num4;
+     }
+     sum.length; // 4 is the number of parameters expected.
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-142.  ### Polyfill چیه؟
+142. ### Polyfill چیه؟
 
-      `plyfill` یه قسمت از کد جاواسکریپت‌ـه که با استفاده از اون ما می‌تونیم توابع پیشرفته رو روی مروگر‌هایی که به طور طبیعی پشتیبانی نمیکنن,استفاده کنیم. پلاگین `Silverlight` که برای تقلید کردن توابع بر روی `canvas` یا مروگر `IE7` استفاده کرد
+     `plyfill` یه قسمت از کد جاواسکریپت‌ـه که با استفاده از اون ما می‌تونیم توابع پیشرفته رو روی مروگر‌هایی که به طور طبیعی پشتیبانی نمیکنن,استفاده کنیم. پلاگین `Silverlight` که برای تقلید کردن توابع بر روی `canvas` یا مروگر `IE7` استفاده کرد
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-143.  ### عبارات Break و continue چی هستن؟
+143. ### عبارات Break و continue چی هستن؟
 
-      دستور `break` برای "پرش به بیرون" از یه حلقه استفاده می‌شه. یعنی حلقه رو می‌شکنه و اجرای کد رو بعد از حلقه ادامه میده.
+     دستور `break` برای "پرش به بیرون" از یه حلقه استفاده می‌شه. یعنی حلقه رو می‌شکنه و اجرای کد رو بعد از حلقه ادامه میده.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      for (i = 0; i < 10; i++) {
-        if (i === 5) {
-          break;
-        }
-        text += `Number: ${i}<br>`;
-      }
-      ```
+     ```js
+     for (i = 0; i < 10; i++) {
+       if (i === 5) {
+         break;
+       }
+       text += `Number: ${i}<br>`;
+     }
+     ```
 
-      </span>
+     </span>
 
-      دستور `continue` برای "پرش از روی" یه تکرار در حلقه استفاده می‌شه. یعنی یه تکرار (در حلقه) رو می‌شکنه، اگه شرایط مشخصی رخ بده، و با تکرار بعدی در حلقه ادامه میده.
+     دستور `continue` برای "پرش از روی" یه تکرار در حلقه استفاده می‌شه. یعنی یه تکرار (در حلقه) رو می‌شکنه، اگه شرایط مشخصی رخ بده، و با تکرار بعدی در حلقه ادامه میده.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      for (i = 0; i < 10; i++) {
-        if (i === 5) {
-          continue;
-        }
-        text += `Number: ${i}<br>`;
-      }
-      ```
+     ```js
+     for (i = 0; i < 10; i++) {
+       if (i === 5) {
+         continue;
+       }
+       text += `Number: ${i}<br>`;
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-144.  ### توی جاواسکریپت labelها چیکار می‌کنن؟
+144. ### توی جاواسکریپت labelها چیکار می‌کنن؟
 
-      دستور `label` به ما اجازه میده تا حلقه‌ها و بلوک‌ها رو توی جاواسکریپت نام گذاری کنیم. بعد می‌تونیم از این برچسب‌ها برای مراجعه به کد استفاده کنیم. برای مثال، کد زیر با استفاده از برچسب‌ها از چاپ اعداد وقتی که یکسان هستن، جلوگیری میکنه.
+     دستور `label` به ما اجازه میده تا حلقه‌ها و بلوک‌ها رو توی جاواسکریپت نام گذاری کنیم. بعد می‌تونیم از این برچسب‌ها برای مراجعه به کد استفاده کنیم. برای مثال، کد زیر با استفاده از برچسب‌ها از چاپ اعداد وقتی که یکسان هستن، جلوگیری میکنه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      loop1: for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
-          if (i === j) {
-            continue loop1;
-          }
-          console.log(`i = ${i}, j = ${j}`);
-        }
-      }
+     ```js
+     loop1: for (let i = 0; i < 3; i++) {
+       for (let j = 0; j < 3; j++) {
+         if (i === j) {
+           continue loop1;
+         }
+         console.log(`i = ${i}, j = ${j}`);
+       }
+     }
 
-      // Output is:
-      //   "i = 1, j = 0"
-      //   "i = 2, j = 0"
-      //   "i = 2, j = 1"
-      ```
+     // Output is:
+     //   "i = 1, j = 0"
+     //   "i = 2, j = 0"
+     //   "i = 2, j = 1"
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-145.  ### مزایای declare کردن متغیرها در اوایل کد چیه؟
+145. ### مزایای declare کردن متغیرها در اوایل کد چیه؟
 
-      توصیه می‌شه که تمام تعریف متغیر‌ها رو بالای هر اسکریپت یا تابع انجام بدیم. مزیت این کار:
+     توصیه می‌شه که تمام تعریف متغیر‌ها رو بالای هر اسکریپت یا تابع انجام بدیم. مزیت این کار:
 
-      1. کد ما تمیز تر می‌شه
-      2. یه مکان واحد برای جستجوی متغیرهای محلی فراهم میکنه
-      3. می‌شه راحت از استفاده متفیر‌های ناخواسته جلوگیری کرد
-      4. این کار محاسبات ناخواسته رو کمتر میکنه
+     1. کد ما تمیز تر می‌شه
+     2. یه مکان واحد برای جستجوی متغیرهای محلی فراهم میکنه
+     3. می‌شه راحت از استفاده متفیر‌های ناخواسته جلوگیری کرد
+     4. این کار محاسبات ناخواسته رو کمتر میکنه
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-146.  ### مزایای مقداردهی اولیه متغیرها چیه؟
+146. ### مزایای مقداردهی اولیه متغیرها چیه؟
 
-      توضیه می‌شه که حتما یه مقدار اولیه برای متغیرها تعیین بشه که دلایلشو چک می‌کنیم
+     توضیه می‌شه که حتما یه مقدار اولیه برای متغیرها تعیین بشه که دلایلشو چک می‌کنیم
 
-      1. خروجیمون کد تمیز تری می‌شه
-      2. این کار باعث می‌شه یه جا برای این متغییر رزرو بشه
-      3. از برگشتن خطای `undefind`جلوگیری می‌شه
+     1. خروجیمون کد تمیز تری می‌شه
+     2. این کار باعث می‌شه یه جا برای این متغییر رزرو بشه
+     3. از برگشتن خطای `undefind`جلوگیری می‌شه
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-147.  ### روش توصیه شده برای ایجاد object چیه؟
+147. ### روش توصیه شده برای ایجاد object چیه؟
 
-      برای ساخت یه `object` با مقادیر پیش‌فرض میتونیم به صورت زیر عمل کنیم
+     برای ساخت یه `object` با مقادیر پیش‌فرض میتونیم به صورت زیر عمل کنیم
 
-      1. استفاده از {} به جای `new Object`
-      2. استفاده از "" به جای `new String`
-      3. استفاده از 0 به جای `new Number`
-      4. استفاده از false به جای `new Boolean`
-      5. استفاده از [] به جای `new Array`
-      6. استفاده از /()/ به جای `new RegExp`
-      7. استفاده از (){} به جای`new Function`
+     1. استفاده از {} به جای `new Object`
+     2. استفاده از "" به جای `new String`
+     3. استفاده از 0 به جای `new Number`
+     4. استفاده از false به جای `new Boolean`
+     5. استفاده از [] به جای `new Array`
+     6. استفاده از /()/ به جای `new RegExp`
+     7. استفاده از (){} به جای`new Function`
 
-      بریم چند تا مثال ببینیم:
+     بریم چند تا مثال ببینیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      const v1 = {};
-      const v2 = '';
-      const v3 = 0;
-      const v4 = false;
-      const v5 = [];
-      const v6 = /()/;
-      const v7 = function () {};
-      ```
+     ```js
+     const v1 = {};
+     const v2 = "";
+     const v3 = 0;
+     const v4 = false;
+     const v5 = [];
+     const v6 = /()/;
+     const v7 = function () {};
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-148.  ### چطوری می‌تونیم آرایه‌ JSON تعریف کنیم؟
+148. ### چطوری می‌تونیم آرایه‌ JSON تعریف کنیم؟
 
-      برای تعریف آرایه‌های JSON از براکت استفاده میکنیم و هر تعداد که آبجکت خواستیم داخلش تعریف میکنیم.
-      بیاین یه مثال در موردش ببینیم
+     برای تعریف آرایه‌های JSON از براکت استفاده میکنیم و هر تعداد که آبجکت خواستیم داخلش تعریف میکنیم.
+     بیاین یه مثال در موردش ببینیم
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      "users":[
-        {"firstName":"John", "lastName":"Abrahm"},
-        {"firstName":"Anna", "lastName":"Smith"},
-        {"firstName":"Shane", "lastName":"Warn"}
-      ]
-      ```
+     ```js
+     "users":[
+       {"firstName":"John", "lastName":"Abrahm"},
+       {"firstName":"Anna", "lastName":"Smith"},
+       {"firstName":"Shane", "lastName":"Warn"}
+     ]
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-149.  ### چطوری می‌تونیم اعداد تصادفی تولید کنیم؟
+149. ### چطوری می‌تونیم اعداد تصادفی تولید کنیم؟
 
-      می‌تونیم از متد `Math.random` برای ساخت یه عدد رندوم بین 0 تا 1 و از متد `Math.floor` برای رند کردن اون عدد استفاده کنیم حالا اگه حاصل عدد به دست اومده رو ضربدر ده کنیم عددی بین یک تا ده خواهیم داشت
+     می‌تونیم از متد `Math.random` برای ساخت یه عدد رندوم بین 0 تا 1 و از متد `Math.floor` برای رند کردن اون عدد استفاده کنیم حالا اگه حاصل عدد به دست اومده رو ضربدر ده کنیم عددی بین یک تا ده خواهیم داشت
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      Math.floor(Math.random() * 10) + 1; // returns a random integer from 1 to 10
-      Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
-      ```
+     ```js
+     Math.floor(Math.random() * 10) + 1; // returns a random integer from 1 to 10
+     Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
+     ```
 
-      </span>
+     </span>
 
-      **نکته:** `Math.random` یه عدد تصادفی بین 0 تا 1 ایجاد میکنه، یادمون باشه که استفاده از `Math.floor` قبل ضرب کردن عدد رندوم به دست اومده در ده به عنوان کمترین مقدار، باعث میشه که خروجیمون همیشه به صفر رند بشه.
+     **نکته:** `Math.random` یه عدد تصادفی بین 0 تا 1 ایجاد میکنه، یادمون باشه که استفاده از `Math.floor` قبل ضرب کردن عدد رندوم به دست اومده در ده به عنوان کمترین مقدار، باعث میشه که خروجیمون همیشه به صفر رند بشه.
 
-      **[فهرست](#فهرست)**
-
+     **[فهرست](#فهرست)**
 
 150. ### می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟
 
@@ -3397,7 +3391,7 @@ puppeteer:
 
 151. ### Tree-shaking چیه؟
 
-     `Tree Shaking` نوعی حذف کد مرده هستش و به این معنیه که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجونده نمی‌شن و برای اون بر ساختار استاتیک ماژول ES2015 متکیه (یعنی import و export).  توی باندلر ماژول ES2015 'rollup' از این عملکرد استفاده شده. 
+     `Tree Shaking` نوعی حذف کد مرده هستش و به این معنیه که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجونده نمی‌شن و برای اون بر ساختار استاتیک ماژول ES2015 متکیه (یعنی import و export). توی باندلر ماژول ES2015 'rollup' از این عملکرد استفاده شده.
 
      **[فهرست](#فهرست)**
 
@@ -3409,7 +3403,7 @@ puppeteer:
 
 153. ### آیا استفاده از eval توصیه می‌شه؟
 
-     نه،  `eval` اجازه اجرای کد دلخواه رو میده که باعث ایجاد مشکل امنیتی می‌شه. همونطور که میدونیم از تابع `eval` برای اجرای متن به عنوان کد استفاده می‌شه. در بیشتر موارد استفاده از اون ضروری نیست.
+     نه، `eval` اجازه اجرای کد دلخواه رو میده که باعث ایجاد مشکل امنیتی می‌شه. همونطور که میدونیم از تابع `eval` برای اجرای متن به عنوان کد استفاده می‌شه. در بیشتر موارد استفاده از اون ضروری نیست.
 
      **[فهرست](#فهرست)**
 
@@ -3444,7 +3438,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const msg = 'Hello John';
+     const msg = "Hello John";
      const n = msg.search(/John/i); // 6
      ```
 
@@ -3455,8 +3449,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const msg = 'Hello John';
-     const n = msg.replace(/John/i, 'Buttler'); // Hello Buttler
+     const msg = "Hello John";
+     const n = msg.replace(/John/i, "Buttler"); // Hello Buttler
      ```
 
      </span>
@@ -3468,20 +3462,20 @@ puppeteer:
      `Modifiers`‌ها میتونن زمانی استفاده بشن که به جستجو‌های بدون حروف کوچک و بزرگ سراسری نیاز داریم بیاین یه مثال درموردشون ببینیم:
 
      | اصلاح کننده |                توضیح                 |
-     |:-----------:|:------------------------------------:|
+     | :---------: | :----------------------------------: |
      |      i      |          تظبیق حساس به حروف          |
      |      g      | تطبیق کلی به جای توقف در اولین تشابه |
      |      m      |             تطبیق چندخطی             |
 
-     بریم یه مثال از modifier  گلوبال ببینیم:
+     بریم یه مثال از modifier گلوبال ببینیم:
 
      <span dir="ltr" align="left">
 
-      ```js
-      const text = 'Learn JS one by one';
-      const pattern = /one/g;
-      const result = text.match(pattern); // one,one
-      ```
+     ```js
+     const text = "Learn JS one by one";
+     const pattern = /one/g;
+     const result = text.match(pattern); // one,one
+     ```
 
       </span>
 
@@ -3493,28 +3487,28 @@ puppeteer:
 
      <br />
 
-     1. **براکت‌ها:** برای پیدا کردن رنجی از کاراکتر استفاده میشن 
-     برای مثال پایین چن تا مورد استفاده لیست شدن
-        1. [abc]: برای پیدا کردن هر کاراکتری بین   این سه کاراکتر استفاده میشه 
-        2. [0-9]: برای پیدا کردن ارقام بین این دو   عدد استفاده میشه
+     1. **براکت‌ها:** برای پیدا کردن رنجی از کاراکتر استفاده میشن
+        برای مثال پایین چن تا مورد استفاده لیست شدن
+        1. [abc]: برای پیدا کردن هر کاراکتری بین این سه کاراکتر استفاده میشه
+        2. [0-9]: برای پیدا کردن ارقام بین این دو عدد استفاده میشه
         3. (a|b): برای پیدا کردن هر یه از گزینه‌های جدا شده با | استفاده می‌شه
 
      <br />
 
      2. **کاراکتر برابر با:** این عبارت‌ها کاراکتر‌هایی با معنی خاص هستن
-     برای مثال پایین سه تا مورد که استفاده می‌شه ازشون رو ببینیم
-        1. \\d:  برای پیدا کردن اعداد استفاده میشه
-        2. \\s:  برای پیدا کردن فاصله‌ها استفاده میشه
-        3. \\b:  برای پیدا کردن کاراکتر‌های همخوانی داشته با شروع شدن یا  پایانشون استفاده میشه
+        برای مثال پایین سه تا مورد که استفاده می‌شه ازشون رو ببینیم
+        1. \\d: برای پیدا کردن اعداد استفاده میشه
+        2. \\s: برای پیدا کردن فاصله‌ها استفاده میشه
+        3. \\b: برای پیدا کردن کاراکتر‌های همخوانی داشته با شروع شدن یا پایانشون استفاده میشه
 
      <br />
 
-     3. **کمیت کننده‌ها:** این‌ها برای  تعریف کمیت‌ها موثر هستن
-     برای مثال پایین دو تا مورد استفاده براشون اوردیم
+     3. **کمیت کننده‌ها:** این‌ها برای تعریف کمیت‌ها موثر هستن
+        برای مثال پایین دو تا مورد استفاده براشون اوردیم
         1. n+: برای پیدا کردن رشته همخوانی داشته با حداقل یه کاراکتر
-        2. n*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
+        2. n\*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
         3. n?: برای پیدا کردن هر رشته که شامل صفر یا یه کاراکنر می‌شه
-     
+
      **[فهرست](#فهرست)**
 
 158. ### آبجکت RegExp چیه؟
@@ -3524,7 +3518,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const regexp = new RegExp('\\w+');
+     const regexp = new RegExp("\\w+");
      console.log(regexp);
      // expected output: /\w+/
      ```
@@ -3541,7 +3535,7 @@ puppeteer:
 
      ```js
      const pattern = /you/;
-     console.log(pattern.test('How are you?')); // true
+     console.log(pattern.test("How are you?")); // true
      ```
 
      </span>
@@ -3556,7 +3550,7 @@ puppeteer:
 
      ```js
      const pattern = /you/;
-     console.log(pattern.exec('How are you?')); // ["you", index: 8, input: "How are you?", groups: undefined]
+     console.log(pattern.exec("How are you?")); // ["you", index: 8, input: "How are you?", groups: undefined]
      ```
 
      </span>
@@ -3574,7 +3568,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     document.getElementById('title').style.fontSize = '30px';
+     document.getElementById("title").style.fontSize = "30px";
      ```
 
      </span>
@@ -3584,7 +3578,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     document.getElementById('title').style.className = 'custom-title';
+     document.getElementById("title").style.className = "custom-title";
      ```
 
      </span>
@@ -3606,9 +3600,9 @@ puppeteer:
 
      ```js
      function getProfile() {
-     // code goes here
+       // code goes here
        debugger;
-     // code goes here
+       // code goes here
      }
      ```
 
@@ -3645,7 +3639,17 @@ puppeteer:
      ```js
      window.mobilecheck = function () {
        let mobileCheck = false;
-       (function (a) { if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) mobileCheck = true; }(navigator.userAgent || navigator.vendor || window.opera));
+       (function (a) {
+         if (
+           /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
+             a
+           ) ||
+           /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(
+             a.substr(0, 4)
+           )
+         )
+           mobileCheck = true;
+       })(navigator.userAgent || navigator.vendor || window.opera);
        return mobileCheck;
      };
      ```
@@ -3662,19 +3666,19 @@ puppeteer:
 
      ```js
      function detectmob() {
-       if (navigator.userAgent.match(/Android/i)
-          || navigator.userAgent.match(/webOS/i)
-          || navigator.userAgent.match(/iPhone/i)
-          || navigator.userAgent.match(/iPad/i)
-          || navigator.userAgent.match(/iPod/i)
-          || navigator.userAgent.match(/BlackBerry/i)
-          || navigator.userAgent.match(/Windows Phone/i)
+       if (
+         navigator.userAgent.match(/Android/i) ||
+         navigator.userAgent.match(/webOS/i) ||
+         navigator.userAgent.match(/iPhone/i) ||
+         navigator.userAgent.match(/iPad/i) ||
+         navigator.userAgent.match(/iPod/i) ||
+         navigator.userAgent.match(/BlackBerry/i) ||
+         navigator.userAgent.match(/Windows Phone/i)
        ) {
          return true;
        }
-     
+
        return false;
-     
      }
      ```
 
@@ -3695,7 +3699,7 @@ puppeteer:
        console.log(`${this.width}x${this.height}`);
      };
 
-     img.src = 'http://www.google.com/intl/en_ALL/images/logo.gif';
+     img.src = "http://www.google.com/intl/en_ALL/images/logo.gif";
      ```
 
      </span>
@@ -3711,7 +3715,7 @@ puppeteer:
      ```js
      function httpGet(theUrl) {
        const xmlHttpReq = new XMLHttpRequest();
-       xmlHttpReq.open('GET', theUrl, false); // false for synchronous request
+       xmlHttpReq.open("GET", theUrl, false); // false for synchronous request
        xmlHttpReq.send(null);
        return xmlHttpReq.responseText;
      }
@@ -3731,9 +3735,10 @@ puppeteer:
      function httpGetAsync(theUrl, callback) {
        const xmlHttpReq = new XMLHttpRequest();
        xmlHttpReq.onreadystatechange = function () {
-         if (xmlHttpReq.readyState == 4 && xmlHttpReq.status == 200) callback(xmlHttpReq.responseText);
+         if (xmlHttpReq.readyState == 4 && xmlHttpReq.status == 200)
+           callback(xmlHttpReq.responseText);
        };
-       xmlHttp.open('GET', theUrl, true); // true for asynchronous
+       xmlHttp.open("GET", theUrl, true); // true for asynchronous
        xmlHttp.send(null);
      }
      ```
@@ -3749,7 +3754,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' })); // 29/06/2019, 09:56:00
+     console.log(event.toLocaleString("en-GB", { timeZone: "UTC" })); // 29/06/2019, 09:56:00
      ```
 
      </span>
@@ -3763,13 +3768,15 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const width = window.innerWidth
-          || document.documentElement.clientWidth
-          || document.body.clientWidth;
+     const width =
+       window.innerWidth ||
+       document.documentElement.clientWidth ||
+       document.body.clientWidth;
 
-     const height = window.innerHeight
-          || document.documentElement.clientHeight
-          || document.body.clientHeight;
+     const height =
+       window.innerHeight ||
+       document.documentElement.clientHeight ||
+       document.body.clientHeight;
      ```
 
      </span>
@@ -3784,7 +3791,9 @@ puppeteer:
 
      ```js
      const isAuthenticated = false;
-     console.log(isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticated'); // Sorry, you are not authenticated
+     console.log(
+       isAuthenticated ? "Hello, welcome" : "Sorry, you are not authenticated"
+     ); // Sorry, you are not authenticated
      ```
 
      </span>
@@ -3799,19 +3808,27 @@ puppeteer:
 
      ```js
      function traceValue(someParam) {
-         return condition1 ? value1
-              : condition2 ? value2
-              : condition3 ? value3
-              : value4;
+       return condition1
+         ? value1
+         : condition2
+         ? value2
+         : condition3
+         ? value3
+         : value4;
      }
 
      // The above conditional operator is equivalent to:
 
      function traceValue(someParam) {
-         if (condition1) { return value1; }
-         else if (condition2) { return value2; }
-         else if (condition3) { return value3; }
-         else { return value4; }
+       if (condition1) {
+         return value1;
+       } else if (condition2) {
+         return value2;
+       } else if (condition3) {
+         return value3;
+       } else {
+         return value4;
+       }
      }
      ```
 
@@ -3860,8 +3877,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     (new Employee()).__proto__ === Employee.prototype;
-     (new Employee()).prototype === undefined;
+     new Employee().__proto__ === Employee.prototype;
+     new Employee().prototype === undefined;
      ```
 
      </span>
@@ -3878,9 +3895,9 @@ puppeteer:
      // define a function
      const fn = (function () {
        // ...
-     }(() => {
+     })(() => {
        // ...
-     }))();
+     })();
      ```
 
      </span>
@@ -3892,9 +3909,9 @@ puppeteer:
      ```js
      const fn = (function () {
        // ...
-     }(() => {
+     })(() => {
        // ...
-     }))();
+     })();
      ```
 
      </span>
@@ -3928,9 +3945,8 @@ puppeteer:
 
 179. ### هدف از متد freeze چیه؟
 
-     1. برای فریز کردن آبجکت‌ها و آرایه‌ها 
+     1. برای فریز کردن آبجکت‌ها و آرایه‌ها
      2. برای `imutable` کردن آبجکت‌ها
-
 
      **[فهرست](#فهرست)**
 
@@ -3947,9 +3963,10 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const language = navigator.languages && navigator.languages[0] // Chrome / Firefox
-                    || navigator.language // All browsers
-                    || navigator.userLanguage; // IE <= 10
+     const language =
+       (navigator.languages && navigator.languages[0]) || // Chrome / Firefox
+       navigator.language || // All browsers
+       navigator.userLanguage; // IE <= 10
 
      console.log(language);
      ```
@@ -3968,10 +3985,10 @@ puppeteer:
      function toTitleCase(str) {
        return str.replace(
          /\w\S*/g,
-         (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(),
+         (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
        );
      }
-     toTitleCase('good morning john'); // Good Morning John
+     toTitleCase("good morning john"); // Good Morning John
      ```
 
      </span>
@@ -3986,10 +4003,12 @@ puppeteer:
 
      ```html
      <script type="javascript">
-         // JS related code goes here
+       // JS related code goes here
      </script>
      <noscript>
-         <a href="next_page.html?noJS=true">JavaScript is disabled in the page. Please click Next Page</a>
+       <a href="next_page.html?noJS=true"
+         >JavaScript is disabled in the page. Please click Next Page</a
+       >
      </noscript>
      ```
 
@@ -4000,11 +4019,12 @@ puppeteer:
 184. ### عملگرهای پشتیبانی شده توسط جاواسکریپت کدوما هستن؟
 
      یه عملگر قادر به دستکاری (محاسبات ریاضی و منطقی) مقدار یا عملوند معینه. اپراتورهای مختلفی توسط جاواسکریپت پشتیبانی میشن این اپراتور‌ها هستن
-     1. **عملگر‌های حسابی:** شامل + (اضافه),– (منها), * (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن)  و – – (کم کردن)
+
+     1. **عملگر‌های حسابی:** شامل + (اضافه),– (منها), \* (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن) و – – (کم کردن)
      2. **عملگر‌های مقایسه ای:** شامل = =(برابر),!= (غیر برابر), ===(برابر و تایپ برابر), > (بزرگتر),> = (بزرگتر مساوی),< (کوچکتر),<= (کوچکتر مساوی)
      3. **عملگر‌های منطقی:** شامل &&("و"منطقی),||("یا"منظقی),!( منطقی"نه")
-     4. **عملگر‌های تعیین مقدار:** شامل = (اپراتور تعیین مقدار), += (اضافه کردن و تعیین مقدار), – = (منها کردن و تعیین مقدار), *= (ضرب و تعیین مقدار), /= (تقسیم و تعیین مقدار), %= (باقی مانده و تعیین مقدار)
-     5. **اپراتور سه تایی:**  شامل اپراتور‌های شرطی سه تایی
+     4. **عملگر‌های تعیین مقدار:** شامل = (اپراتور تعیین مقدار), += (اضافه کردن و تعیین مقدار), – = (منها کردن و تعیین مقدار), \*= (ضرب و تعیین مقدار), /= (تقسیم و تعیین مقدار), %= (باقی مانده و تعیین مقدار)
+     5. **اپراتور سه تایی:** شامل اپراتور‌های شرطی سه تایی
      6. **اپراتور تایپ:** از اون برای پیدا کردن تایپ متغیر‌ها استفاده می‌شه به صورت `typeof variable`
 
      **[فهرست](#فهرست)**
@@ -4028,17 +4048,17 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     function total(...args){
-          let sum = 0;
-          for(let i of args){
-               sum+=i;
-          }
-          return sum;
+     function total(...args) {
+       let sum = 0;
+       for (let i of args) {
+         sum += i;
+       }
+       return sum;
      }
-     console.log(fun(1,2)); //3
-     console.log(fun(1,2,3)); //6
-     console.log(fun(1,2,3,4)); //13
-     console.log(fun(1,2,3,4,5)); //15
+     console.log(fun(1, 2)); //3
+     console.log(fun(1, 2, 3)); //6
+     console.log(fun(1, 2, 3, 4)); //13
+     console.log(fun(1, 2, 3, 4, 5)); //15
      ```
 
      </span>
@@ -4099,6 +4119,7 @@ puppeteer:
 189. ### چطوری تشخیص میدی که یه آبجکت freeze شده یا نه؟
 
      متد `Object.isFrozen` برای تعیین اینکه آیا یه آبجکت منجمد هس یا نه استفاده می‌شه. اگه همه شرایط زیر درست باشه، یه آبجکت منجمد می‌شه.
+
      1. اگه قابل توسعه نباشه.
      2. اگه تمام خصوصیاتش غیر قابل تنظیم باشن.
      3. اگه تمام خصوصیات داده اون غیر قابل نوشتن باشه.
@@ -4107,7 +4128,7 @@ puppeteer:
 
      ```js
      const object = {
-       property: 'Welcome JS world',
+       property: "Welcome JS world",
      };
      Object.freeze(object);
      console.log(Object.isFrozen(object));
@@ -4124,7 +4145,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     Object.is('hello', 'hello'); // true
+     Object.is("hello", "hello"); // true
      Object.is(window, window); // true
      Object.is([], []); // false
      ```
@@ -4132,16 +4153,17 @@ puppeteer:
      </span>
 
      اگه یکی از موارد زیر برقرار باشه، دو مقدار یکسان در نظر گرفته میشه:
+
      1. هردو undefined
      2. هردو null
      3. هردو true یا هر دو false
      4. هر دو رشته با طول یکسان با کاراکترهای مشابه به ترتیب یکسان
      5. هر دو یه آبجکت (یعنی هر دو شی رفرنس یکسان دارن)
      6. هر دو عدد و
-     هر دو +0
-     هر دو -0
-     هر دو NaN
-     هر دو غیر صفر و هر دو NaN نیستن و هر دو دارای یه مقدار هستن.
+        هر دو +0
+        هر دو -0
+        هر دو NaN
+        هر دو غیر صفر و هر دو NaN نیستن و هر دو دارای یه مقدار هستن.
 
      **[فهرست](#فهرست)**
 
@@ -4210,9 +4232,7 @@ puppeteer:
      ```js
      const handler = {
        get(obj, prop) {
-         return prop in obj
-           ? obj[prop]
-           : 100;
+         return prop in obj ? obj[prop] : 100;
        },
      };
 
@@ -4221,7 +4241,7 @@ puppeteer:
      p.b = null;
 
      console.log(p.a, p.b); // 10, null
-     console.log('c' in p, p.c); // false, 100
+     console.log("c" in p, p.c); // false, 100
      ```
 
      </span>
@@ -4238,10 +4258,10 @@ puppeteer:
 
      ```js
      const object = {
-       property: 'Welcome JS world',
+       property: "Welcome JS world",
      };
      Object.seal(object);
-     object.property = 'Welcome to object world';
+     object.property = "Welcome to object world";
      console.log(Object.isSealed(object)); // true
      delete object.property; // You cannot delete when sealed
      console.log(object.property); // Welcome to object world
@@ -4260,23 +4280,24 @@ puppeteer:
 
 197. ### تفاوت‌های بین متدهای freeze و seal چیا هست؟
 
-     اگه یه آبجکت با استفاده از متد `Object.freeze` منجمد شه، ویژگی‌هاش تغییرناپذیر می‌شن و هیچ تغییری در اونا نمیتونیم ایجاد کنیم در حالی که اگه یه آبجکت با استفاده از متد `Object.seal` مهر و موم شده باشه، می‌شه تغییرات روی ویژگی‌های موجود ایجاد کرد. 
+     اگه یه آبجکت با استفاده از متد `Object.freeze` منجمد شه، ویژگی‌هاش تغییرناپذیر می‌شن و هیچ تغییری در اونا نمیتونیم ایجاد کنیم در حالی که اگه یه آبجکت با استفاده از متد `Object.seal` مهر و موم شده باشه، می‌شه تغییرات روی ویژگی‌های موجود ایجاد کرد.
 
      **[فهرست](#فهرست)**
 
 198. ### چطوری تشخیص میدی که یه آبجکت seal شده یا نه؟
 
      متد `Object.isSealed` برای تعیین مهر و موم بودن یا نبودن یه آبجکت استفاده می‌شه. اگه همه شرایط زیر درست باشه یه شی مهر و موم می‌شه
-     1.  اگه قابل توسعه نباشه.
-     2.  اگه تمام خصوصیات اون غیر قابل تنظیم باشن.
-     3.  اگه قابل جابجایی نباشه (اما لزوماً غیرقابل نوشتن نیست).
-     بیاین اونو در عمل ببینیم:
+
+     1. اگه قابل توسعه نباشه.
+     2. اگه تمام خصوصیات اون غیر قابل تنظیم باشن.
+     3. اگه قابل جابجایی نباشه (اما لزوماً غیرقابل نوشتن نیست).
+        بیاین اونو در عمل ببینیم:
 
      <span dir="ltr" align="left">
 
      ```js
      const object = {
-       property: 'Hello, Good morning',
+       property: "Hello, Good morning",
      };
 
      Object.seal(object); // Using seal() method to seal the object
@@ -4296,7 +4317,7 @@ puppeteer:
 
      ```js
      const object = {
-       a: 'Good morning',
+       a: "Good morning",
        b: 100,
      };
 
@@ -4311,7 +4332,6 @@ puppeteer:
 
      **نکته:** ترتیب به عنوان آبجکت تعریف شده تضمین نمی‌شه.
 
-
 200. ### تفاوت‌های بین متدهای Object.values و Object.entries چیا هست؟
 
      رفتار متد `Object.values` مشابه روش `Object.entries` هست اما به جای جفت [key,value] آرایه ای از مقادیر را برمی‌گردونه.
@@ -4320,7 +4340,7 @@ puppeteer:
 
      ```js
      const object = {
-       a: 'Good morning',
+       a: "Good morning",
        b: 100,
      };
 
@@ -4333,7 +4353,6 @@ puppeteer:
 
      **[فهرست](#فهرست)**
 
-
 201. ### چطوری لیست کلیدهای یه object رو بدست میاری؟
 
      می‌تونیم از متد `Object.keys` استفاده کنیم که برای برگردوندن آرایه‌ای از اسم ویژگی‌های یه آبجکت معین استفاده می‌شه، به همون ترتیبی که با یه حلقه معمولی دریافت می‌کنیم. برای مثال:
@@ -4342,8 +4361,8 @@ puppeteer:
 
      ```js
      const user = {
-       name: 'John',
-       gender: 'male',
+       name: "John",
+       gender: "male",
        age: 40,
      };
 
@@ -4356,13 +4375,13 @@ puppeteer:
 
 202. ### چطوری یه object با prototype درست می‌کنی؟
 
-     متد `Object.create`  برای ایجاد یه object جدید با object prototype و ویژگی‌های مشخص شده استفاده می‌شه. برای مثال، از یه object موجود به عنوان prototype object جدید ایجاد شده استفاده میکنه. یه object جدید رو با object prototype و ویژگی‌های مشخص شده برمی‌گردونه.
+     متد `Object.create` برای ایجاد یه object جدید با object prototype و ویژگی‌های مشخص شده استفاده می‌شه. برای مثال، از یه object موجود به عنوان prototype object جدید ایجاد شده استفاده میکنه. یه object جدید رو با object prototype و ویژگی‌های مشخص شده برمی‌گردونه.
 
      <span dir="ltr" align="left">
 
      ```js
      const user = {
-       name: 'John',
+       name: "John",
        printInfo() {
          console.log(`My name is ${this.name}.`);
        },
@@ -4370,7 +4389,7 @@ puppeteer:
 
      const admin = Object.create(user);
 
-     admin.name = 'Nick'; // Remember that "name" is a property set on "admin" but not on "user" object
+     admin.name = "Nick"; // Remember that "name" is a property set on "admin" but not on "user" object
 
      admin.printInfo(); // My name is Nick
      ```
@@ -4410,8 +4429,9 @@ puppeteer:
 
 204. ### تفاوت‌های بین WeakSet و Set کدوما هستن؟
 
-     تفاوت اصلی اینه که ارجاع به اشیاء تو Set قویه در حالی که ارجاع به اشیا تو WeakSet ضعیفه. برای مثال، یه شی تو WeakSet  میتونه زباله جمع آوری شه اگه مرجع دیگری به اون وجود نداشته باشه.
+     تفاوت اصلی اینه که ارجاع به اشیاء تو Set قویه در حالی که ارجاع به اشیا تو WeakSet ضعیفه. برای مثال، یه شی تو WeakSet میتونه زباله جمع آوری شه اگه مرجع دیگری به اون وجود نداشته باشه.
      تفاوت‌های دیگر عبارتند از
+
      1. مجموعه‌ها میتونن هر مقداری رو ذخیره کنن در حالی که WeakSets میتونه تنها مجموعه ای از اشیاء رو ذخیره کنه
      2. WeakSet برخلاف Set دارای ویژگی اندازه نیست
      3. WeakSet متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی‌ها، forEach رو نداره.
@@ -4422,11 +4442,12 @@ puppeteer:
 205. ### لیست متدهایی که رو WeakSet قابل استفاده هستن رو می‌تونی بگی؟
 
      در زیر لیستی از روش‌های موجود در WeakSet آمده است،
+
      1. add(value): یه شی جدید با مقدار داده شده به مجموعه ضعیف اضافه می‌شه
      2. delete(value): مقدار رو از مجموعه WeakSet حذف میکنه.
      3. has(value): اگه مقدار در مجموعه WeakSet وجود داشته باشه true رو برمی‌گردونه در غیر این صورت false رو برمی‌گردونه.
      4. length: طول ضعیف SetObject رو برمی‌گردونه
-     بیاین عملکرد تمام روش‌های بالا رو توی یه مثال ببینیم،
+        بیاین عملکرد تمام روش‌های بالا رو توی یه مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4479,6 +4500,7 @@ puppeteer:
 
      تفاوت اصلی اینه که ارجاعات به آبجکت‌ها کلیدی در نقشه قوی هستن در حالی که ارجاعات به اشیاء کلیدی در WeakMap ضعیف هستن. برای مثال، یه شی کلیدی در WeakMap در صورتی که هیچ مرجع دیگری بهش وجود نداشته باشه، میتونه زباله جمع آوری شه.
      تفاوت‌های دیگر عبارتند از
+
      1. Map‌ها میتونن هر نوع کلیدی رو ذخیره کنن، در حالی که WeakMaps فقط میتونه مجموعه ای از اشیاء کلیدی رو ذخیره کنه
      2. WeakMap برخلاف Map دارای ویژگی size نیست
      3. WeakMap متدهایی مثل clear, keys, values, entries forEach رو نداره.
@@ -4492,7 +4514,7 @@ puppeteer:
      2. delete(key): هر مقدار مربوط به کلید رو حذف میکنه.
      3. has(key): یه Boolean رو برمی‌گردونه که نشون میده آیا مقداری به کلید در آبجکت WeakMap مرتبط شده اس یا نه.
      4. get(key): مقدار مربوط به کلید رو برمی‌گردونه، یا اگه کلیدی وجود نداشته باشه، تعریف نشده.
-     بیاین عملکرد تمام روش‌های بالا رو تو یه مثال ببینیم،
+        بیاین عملکرد تمام روش‌های بالا رو تو یه مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4501,7 +4523,7 @@ puppeteer:
      const firstObject = {};
      const secondObject = {};
      // set(key, value)
-     weakMapObject.set(firstObject, 'John');
+     weakMapObject.set(firstObject, "John");
      weakMapObject.set(secondObject, 100);
      console.log(weakMapObject.has(firstObject)); // true
      console.log(weakMapObject.get(firstObject)); // John
@@ -4535,7 +4557,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const uri = 'https://mozilla.org/?x=шеллы';
+     const uri = "https://mozilla.org/?x=шеллы";
      const encoded = encodeURI(uri);
      console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
      ```
@@ -4551,12 +4573,13 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const uri = 'https://mozilla.org/?x=шеллы';
+     const uri = "https://mozilla.org/?x=шеллы";
      const encoded = encodeURI(uri);
      console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
      try {
        console.log(decodeURI(encoded)); // "https://mozilla.org/?x=шеллы"
-     } catch (e) { // catches a malformed URI
+     } catch (e) {
+       // catches a malformed URI
        console.error(e);
      }
      ```
@@ -4588,7 +4611,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const msg = uneval(() => 'Hello, Good morning');
+     const msg = uneval(() => "Hello, Good morning");
      const greeting = eval(msg);
      greeting(); // returns "Hello, Good morning"
      ```
@@ -4624,7 +4647,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const x = function (a, b) { return a * b; };
+     const x = function (a, b) {
+       return a * b;
+     };
      const z = x(5, 10);
      console.log(z); // 50
      ```
@@ -4640,9 +4665,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const msg = 'Good morning';
+     const msg = "Good morning";
      function greeting() {
-       msg = 'Good Evening';
+       msg = "Good Evening";
        console.log(msg);
      }
      greeting();
@@ -4688,7 +4713,7 @@ puppeteer:
      ```js
      const newObject = {};
 
-     Object.defineProperty(newObject, 'newProperty', {
+     Object.defineProperty(newObject, "newProperty", {
        value: 100,
        writable: false,
      });
@@ -4728,19 +4753,27 @@ puppeteer:
      const obj = { counter: 0 };
 
      // Define getters
-     Object.defineProperty(obj, 'increment', {
-       get () {this.counter++;}
+     Object.defineProperty(obj, "increment", {
+       get() {
+         this.counter++;
+       },
      });
-     Object.defineProperty(obj, 'decrement', {
-       get () {this.counter--;}
+     Object.defineProperty(obj, "decrement", {
+       get() {
+         this.counter--;
+       },
      });
 
      // Define setters
-     Object.defineProperty(obj, 'add', {
-       set (value) {this.counter += value;}
+     Object.defineProperty(obj, "add", {
+       set(value) {
+         this.counter += value;
+       },
      });
-     Object.defineProperty(obj, 'subtract', {
-       set (value) {this.counter -= value;}
+     Object.defineProperty(obj, "subtract", {
+       set(value) {
+         this.counter -= value;
+       },
      });
 
      obj.add = 10;
@@ -4823,13 +4856,13 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     objectName.property
+     objectName.property;
      ```
 
      </span>
 
      1. **دسترسی عبارتی:** از عبارت توی کروشه استفاده میکنه
-     
+
      <span dir="ltr" align="left">
 
      ```js
@@ -4845,7 +4878,7 @@ puppeteer:
      1. تعاریف تابع انواع داده‌ها رو برای پارامترها مشخص نمیکنه.
      2. بررسی نوع آرگومان‌های ارسال شده رو انجام ندین.
      3. تعداد آرگومان‌های دریافتی رو بررسی نکنیم.
-     تابع زیر از قوانین بالا پیروی میکنه،
+        تابع زیر از قوانین بالا پیروی میکنه،
 
      <span dir="ltr" align="left">
 
@@ -4868,9 +4901,9 @@ puppeteer:
 
      ```js
      try {
-       greeting('Welcome');
+       greeting("Welcome");
      } catch (err) {
-       console.log(`${err.name  }<br>${  err.message}`);
+       console.log(`${err.name}<br>${err.message}`);
      }
      ```
 
@@ -4881,7 +4914,7 @@ puppeteer:
 227. ### چه موقعی خطای syntax دریافت می‌کنیم؟
 
      اگه بخواییم کد رو با یه خطای syntax ارزیابی کنیم یه SyntaxError ارسال می‌شه. برای مثال، کد زیر برای پارامتر تابع یه خطای syntax ایجاد میکنه:
-     
+
      <span dir="ltr" align="left">
 
      ```js
@@ -4899,9 +4932,9 @@ puppeteer:
 228. ### عنوان خطاهای مختلف که روی error-object برمیگردن کدوما هستن؟
 
      | نام خطا     | توضیحات                       |
-     |-------------|-------------------------------|
+     | ----------- | ----------------------------- | ------- |
      | EvalError   | خطایی تو تابع eval رخ داده    |
-     | RangeError  | خطایی با عدد "خارج از محدوده" | رخ داده
+     | RangeError  | خطایی با عدد "خارج از محدوده" | رخ داده |
      | خطای مرجع   | خطا به دلیل ارجاع غیرقانونی   |
      | SyntaxError | خطای ناشی از خطای syntax      |
      | TypeError   | خطای ناشی از خطای type        |
@@ -4945,8 +4978,8 @@ puppeteer:
 
      ```js
      var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
-     console.log(new Intl.DateTimeFormat('en-GB').format(date)); // 07/08/2019
-     console.log(new Intl.DateTimeFormat('en-AU').format(date)); // 07/08/2019
+     console.log(new Intl.DateTimeFormat("en-GB").format(date)); // 07/08/2019
+     console.log(new Intl.DateTimeFormat("en-AU").format(date)); // 07/08/2019
      ```
 
      </span>
@@ -4972,7 +5005,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const iterable = ['one', 'two', 'three'];
+     const iterable = ["one", "two", "three"];
      const iterator = iterable[Symbol.iterator]();
      console.log(iterator.next()); // { value: 'one', done: false }
      console.log(iterator.next()); // { value: 'two', done: false }
@@ -4987,7 +5020,7 @@ puppeteer:
 236. ### Event-loop چیه؟
 
      `event loop` یه صف از توابع callback موقعی که یه تابع async اجرا می‌شه، تابع callback در صف قرار می‌گیرد. موتور جاواسکریپت پردازش حلقه رویداد رو شروع نمیکنه تا زمانی که تابع async اجرای کد رو تموم کنه.
-     
+
      **نکته:** این به Node.js اجازه میده تا عملیات I/O غیر مسدود کننده رو انجام بده حتی اگه جاواسکریپت تک رشته‌ای باشه.
 
      **[فهرست](#فهرست)**
@@ -4995,12 +5028,12 @@ puppeteer:
 237. ### Call-stack چیه؟
 
      Call Stack یه ساختار داده برای مفسران جاواسکریپت‌ـه تا فراخونی‌های تابع تو برنامه رو پیگیری کنه و دو عمل عمده داره،
-     
+
      1. هر زمان که یه تابع رو برای اجرای آن فراخوانی می‌کنیم اونو به `stack` هدایت می‌شه.
      2. هر زمان که اجرا کد تموم شه، تابع از `stack` خارج می‌شه.
 
      بیاین یه مثال و توضیح خلاصه اون در قالب نمودار رو باهم ببینیم:
-     
+
      <span dir="ltr" align="left">
 
      ```js
@@ -5030,7 +5063,7 @@ puppeteer:
 
 238. ### Event-queue چیه؟
 
-     `Event-queue` مسئول ارسال توابع جدید به stack برای پردازشه.  ساختارش به صورت صف داده اس تا توالی درستی رو نگه داره و همه عملیات باید برای اجرا ارسال شن.
+     `Event-queue` مسئول ارسال توابع جدید به stack برای پردازشه. ساختارش به صورت صف داده اس تا توالی درستی رو نگه داره و همه عملیات باید برای اجرا ارسال شن.
 
      **[فهرست](#فهرست)**
 
@@ -5066,7 +5099,7 @@ puppeteer:
 
      1. **Collator:** آبجکت‌هایی هستن که مقایسه رشته‌های حساس به زبان رو امکان پذیر می‌کنن.
      2. **DateTimeFormat:** آبجکت‌هایی هستن که قالب بندی تاریخ و زمان حساس به زبان رو فعال می‌کنن.
-     3. **ListFormat:**  آبجکت‌هایی هستن که قالب بندی لیست حساس به زبان رو فعال می‌کنن.
+     3. **ListFormat:** آبجکت‌هایی هستن که قالب بندی لیست حساس به زبان رو فعال می‌کنن.
      4. **NumberFormat:** آبجکت‌هایی که قالب بندی اعداد حساس به زبان رو فعال می‌کنن.
      5. **PluralRules:** آبجکت‌هایی که قالب بندی حساس به جمع و قوانین خاص زبان رو برای جمع فعال می‌کنن.
      6. **RelativeTimeFormat:** آبجکت‌هایی که قالب بندی زمان نسبی حساس به زبان رو فعال می‌کنن.
@@ -5080,11 +5113,11 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const x = '100';
+     const x = "100";
      const y = +x;
      console.log(typeof x, typeof y); // string, number
 
-     const a = 'Hello';
+     const a = "Hello";
      const b = +a;
      console.log(typeof a, typeof b, b); // string, number, NaN
      ```
@@ -5095,12 +5128,12 @@ puppeteer:
 
 242. ### چطوری المنت‌های موجود تو یه آرایه رو مرتب می‌کنی؟
 
-     متد `sort` برای مرتب سازی عناصر یه آرایه در جای خود استفاده می‌شه و آرایه مرتب شده رو برمی‌گردونه. برای مثال 
+     متد `sort` برای مرتب سازی عناصر یه آرایه در جای خود استفاده می‌شه و آرایه مرتب شده رو برمی‌گردونه. برای مثال
 
      <span dir="ltr" align="left">
 
      ```js
-     const months = ['Aug', 'Sep', 'Jan', 'June'];
+     const months = ["Aug", "Sep", "Jan", "June"];
      months.sort();
      console.log(months); //  ["Aug", "Jan", "June", "Sep"]
      ```
@@ -5202,7 +5235,7 @@ puppeteer:
 
 247. ### عبارت خالی چیه و هدف از استفاده ازش چیه؟
 
-      سیمیکالن `;` هس که نشون میده هیچ دستوری اجرا نمیشه، حتی اگه syntax جاواسکریپت به اون نیاز داشته باشه. از اونجایی که هیچ اقدامی با دستور خالی وجود نداره، ممکنه فکر کنیم که استفاده از اون خیلی کمه اما دستور خالی موقعی مفیده که می‌خواین یه حلقه ایجاد کنیم که بدنه‌اش خالیه. برای مثال، می‌تونیم یه آرایه با مقادیر صفر رو مثل کد زیر مقداردهی اولیه کنیم.
+     سیمیکالن `;` هس که نشون میده هیچ دستوری اجرا نمیشه، حتی اگه syntax جاواسکریپت به اون نیاز داشته باشه. از اونجایی که هیچ اقدامی با دستور خالی وجود نداره، ممکنه فکر کنیم که استفاده از اون خیلی کمه اما دستور خالی موقعی مفیده که می‌خواین یه حلقه ایجاد کنیم که بدنه‌اش خالیه. برای مثال، می‌تونیم یه آرایه با مقادیر صفر رو مثل کد زیر مقداردهی اولیه کنیم.
 
      <span dir="ltr" align="left">
 
@@ -5225,8 +5258,8 @@ puppeteer:
      <script type="module" src="welcome-module.js"></script>
 
      <script>
-     console.log(import.meta); 
-     // { url: "file:///home/user/welcome-module.js" }
+       console.log(import.meta);
+       // { url: "file:///home/user/welcome-module.js" }
      </script>
      ```
 
@@ -5258,7 +5291,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     for (var a = 0, b =10; a <= 10; a++, b--) {}
+     for (var a = 0, b = 10; a <= 10; a++, b--) {}
      ```
 
      </span>
@@ -5270,7 +5303,7 @@ puppeteer:
      ```js
      function myFunction() {
        let a = 1;
-       return (a += 10, a); // 11
+       return (a += 10), a; // 11
      }
      ```
 
@@ -5284,9 +5317,9 @@ puppeteer:
 
      <span dir="ltr" align="left">
 
-      ```bash
-      npm install -g typescript
-      ```
+     ```bash
+     npm install -g typescript
+     ```
 
      </span>
 
@@ -5294,15 +5327,15 @@ puppeteer:
 
      <span dir="ltr" align="left">
 
-      ```typescript
-      function greeting(name: string): string {
-         return "Hello, " + name;
-      }
+     ```typescript
+     function greeting(name: string): string {
+       return "Hello, " + name;
+     }
 
-      let user = "Ali Karimi";
+     let user = "Ali Karimi";
 
-      console.log(greeting(user));
-      ```
+     console.log(greeting(user));
+     ```
 
      </span>
 
@@ -5313,7 +5346,7 @@ puppeteer:
 252. ### تفاوت‌های بین javascript و typescript کدوما هستن؟
 
      | ویژگی              | typescript                                  | javascript                                    |
-     |--------------------|---------------------------------------------|-----------------------------------------------|
+     | ------------------ | ------------------------------------------- | --------------------------------------------- |
      | پارادایم زبان      | زبان برنامه نویسی شی گرا                    | زبان اسکریپت                                  |
      | پشتیبانی از تایپ   | پشتیبانی از تایپ استاتیک                    | دارای تایپ پویا                               |
      | ماژول‌ها           | پشتیبانی شده                                | پشتیبانی نمی‌شه                               |
@@ -5323,7 +5356,7 @@ puppeteer:
      **[فهرست](#فهرست)**
 
 253. ### مزایای typescript نسبت به javascript چیاست؟
-     
+
      1. TypeScript میتونه خطاهای زمان کامپایل رو فقط در زمان توسعه پیدا کنه و باعث می‌شه خطاهای زمان اجرا کمتر شه. در حالی که جاواسکریپت یه زبان تفسیر شده است.
      2. TypeScript به شدت تایپ می‌شه یا از تایپ استاتیک پشتیبانی میکنه که امکان بررسی صحت نوع رو در زمان کامپایل فراهم میکنه. این در جاواسکریپت در دسترس نیست.
      3. کامپایلر TypeScript برخلاف ویژگی‌های ES6 جاواسکریپت که ممکنه در بعضی از مرورگرها پشتیبانی نشه، میتونه فایل‌های .ts رو در ES3، ES4 و ES5 کامپایل کنه.
@@ -5337,7 +5370,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const initObject = { a: 'John', b: 50, c: {} };
+     const initObject = { a: "John", b: 50, c: {} };
 
      console.log(initObject.a); // John
      ```
@@ -5355,7 +5388,7 @@ puppeteer:
      ```js
      class Employee {
        constructor() {
-         this.name = 'John';
+         this.name = "John";
        }
      }
 
@@ -5403,7 +5436,7 @@ puppeteer:
      class Square extends Rectangle {
        constructor(length) {
          super(length, length);
-         this.name = 'Square';
+         this.name = "Square";
        }
 
        get area() {
@@ -5423,7 +5456,7 @@ puppeteer:
 258. ### چطوری prototype یه object رو به دست میاری؟
 
      می‌تونیم از روش `Object.getPrototypeOf`(obj) برای برگردوندن `prototype` آبجکت مشخص شده استفاده کنیم. یعنی مقدار ویژگی `prototype` داخلی. اگه هیچ ویژگی ارثی وجود نداشته باشه، مقدار `null` برگردونده می‌شه.
-     
+
      <span dir="ltr" align="left">
 
      ```js
@@ -5445,9 +5478,9 @@ puppeteer:
 
      ```js
      // ES5
-     Object.getPrototypeOf('James'); // TypeError: "James" is not an object
+     Object.getPrototypeOf("James"); // TypeError: "James" is not an object
      // ES2015
-     Object.getPrototypeOf('James'); // String.prototype
+     Object.getPrototypeOf("James"); // String.prototype
      ```
 
      </span>
@@ -5497,7 +5530,8 @@ puppeteer:
      Object.preventExtensions(newObject); // NOT extendable
 
      try {
-       Object.defineProperty(newObject, 'newProperty', { // Adding new property
+       Object.defineProperty(newObject, "newProperty", {
+         // Adding new property
          value: 100,
        });
      } catch (e) {
@@ -5512,6 +5546,7 @@ puppeteer:
 263. ### روش‌های مختلف برای تبدیل یه object به object غیرقابل extend چیه؟
 
      می‌تونیم یه آبجکت غیر قابل گسترش رو به 3 روش علامت گذاری کنیم.
+
      1. Object.preventExtensions
      2. Object.seal
      3. Object.freeze
@@ -5546,7 +5581,7 @@ puppeteer:
 
      Object.defineProperties(newObject, {
        newProperty1: {
-         value: 'John',
+         value: "John",
          writable: true,
        },
        newProperty2: {},
@@ -5572,18 +5607,51 @@ puppeteer:
 
      ```js
      function greeting() {
-       console.log('Hello, welcome to JS world');
+       console.log("Hello, welcome to JS world");
      }
      ```
 
      </span>
 
      و بعد از کد Obfuscation به صورت زیر ظاهر می‌شه
-     
+
      <span dir="ltr" align="left">
 
      ```js
-     eval(function (p, a, c, k, e, d) { e = function (c) { return c }; if (!''.replace(/^/, String)) { while (c--) { d[c] = k[c] || c }k = [function (e) { return d[e] }]; e = function () { return '\\w+' }; c = 1 };while (c--) { if (k[c]) { p = p.replace(new RegExp(`\\b${e(c)}\\b`, 'g'), k[c]) } } return p }('2 1(){0.3(\'4, 7 6 5 8\')}', 9, 9, 'console|greeting|function|log|Hello|JS|to|welcome|world'.split('|'), 0, {}));
+     eval(
+       (function (p, a, c, k, e, d) {
+         e = function (c) {
+           return c;
+         };
+         if (!"".replace(/^/, String)) {
+           while (c--) {
+             d[c] = k[c] || c;
+           }
+           k = [
+             function (e) {
+               return d[e];
+             },
+           ];
+           e = function () {
+             return "\\w+";
+           };
+           c = 1;
+         }
+         while (c--) {
+           if (k[c]) {
+             p = p.replace(new RegExp(`\\b${e(c)}\\b`, "g"), k[c]);
+           }
+         }
+         return p;
+       })(
+         "2 1(){0.3('4, 7 6 5 8')}",
+         9,
+         9,
+         "console|greeting|function|log|Hello|JS|to|welcome|world".split("|"),
+         0,
+         {}
+       )
+     );
      ```
 
      </span>
@@ -5608,6 +5676,7 @@ puppeteer:
 269. ### مزایای minification یا کم حجم‌سازی چیه؟
 
      به طور معمول توصیه می‌شه برای ترافیک سنگین و نیازهای فشرده منابع از Minification استفاده کنیم. اندازه فایل رو با مزایای زیر کاهش میده
+
      1. زمان بارگذاری یه صفحه وب رو کاهش میده
      2. در مصرف پهنای باند صرفه جویی میکنه
 
@@ -5615,11 +5684,11 @@ puppeteer:
 
 270. ### تفاوت‌های بین Obfuscation و Encryption چیه؟
 
-      | ویژگی               | Obfuscation                           | Encryption                                           |
-      |---------------------|---------------------------------------|------------------------------------------------------|
-      | تعریف               | تغییر فرم هر داده به هر شکل دیگر      | تغییر فرم اطلاعات به فرمت ناخوانا با استفاده از کلید |
-      | کلیدی برای رمزگشایی | می‌شه اونو بدون هیچ کلید رمزگشایی کرد | برای رمز گشایی کلید لازمه                            |
-      | فرمت داده‌های هدف   | به فرم پیچیده تبدیل می‌شه             | تبدیل به فرمت ناخوانا                                |
+     | ویژگی               | Obfuscation                           | Encryption                                           |
+     | ------------------- | ------------------------------------- | ---------------------------------------------------- |
+     | تعریف               | تغییر فرم هر داده به هر شکل دیگر      | تغییر فرم اطلاعات به فرمت ناخوانا با استفاده از کلید |
+     | کلیدی برای رمزگشایی | می‌شه اونو بدون هیچ کلید رمزگشایی کرد | برای رمز گشایی کلید لازمه                            |
+     | فرمت داده‌های هدف   | به فرم پیچیده تبدیل می‌شه             | تبدیل به فرمت ناخوانا                                |
 
      **[فهرست](#فهرست)**
 
@@ -5642,8 +5711,8 @@ puppeteer:
 
      ```html
      <form name="myForm" onsubmit="return validateForm()" method="post">
-          User name: <input type="text" name="uname">
-          <input type="submit" value="Submit">
+       User name: <input type="text" name="uname" />
+       <input type="submit" value="Submit" />
      </form>
      ```
 
@@ -5655,8 +5724,8 @@ puppeteer:
 
      ```js
      function validateForm() {
-       const x = document.forms.myForm['uname'].value;
-       if (x == '') {
+       const x = document.forms.myForm["uname"].value;
+       if (x == "") {
          alert("The username shouldn't be empty");
          return false;
        }
@@ -5675,8 +5744,8 @@ puppeteer:
 
      ```html
      <form method="post">
-       <input type="text" name="uname" required>
-       <input type="submit" value="Submit">
+       <input type="text" name="uname" required />
+       <input type="submit" value="Submit" />
      </form>
      ```
 
@@ -5690,17 +5759,19 @@ puppeteer:
 
      1. checkValidity: اگه یه عنصر ورودی حاوی داده‌های معتبر باشه، مقدار true رو برمی‌گردونه.
      2. setCustomValidity: برای تنظیم خاصیت validationMessage یه عنصر ورودی استفاده می‌شه.
-     بیاین یه فرم ورود کاربر با اعتبارسنجی DOM بگیریم
+        بیاین یه فرم ورود کاربر با اعتبارسنجی DOM بگیریم
 
      <span dir="ltr" align="left">
 
      ```js
      function myFunction() {
-       let userName = document.getElementById('uname');
+       let userName = document.getElementById("uname");
        if (!userName.checkValidity()) {
-         document.getElementById('message').innerHTML = userName.validationMessage;
+         document.getElementById("message").innerHTML =
+           userName.validationMessage;
        } else {
-         document.getElementById('message').innerHTML = 'Entered a valid username';
+         document.getElementById("message").innerHTML =
+           "Entered a valid username";
        }
      }
      ```
@@ -5740,7 +5811,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```html
-     <input id="age" type="number" max="100">
+     <input id="age" type="number" max="100" />
      <button onclick="myOverflowFunction()">OK</button>
      ```
 
@@ -5750,8 +5821,8 @@ puppeteer:
 
      ```js
      function myOverflowFunction() {
-       if (document.getElementById('age').validity.rangeOverflow) {
-         alert('The mentioned age is not allowed');
+       if (document.getElementById("age").validity.rangeOverflow) {
+         alert("The mentioned age is not allowed");
        }
      }
      ```
@@ -5777,7 +5848,7 @@ puppeteer:
 279. ### enum چیه؟
 
      `enum` نوعیه که متغیرها رو به یه مقدار از مجموعه ای از ثابت‌های از پیش تعریف شده محدود میکنه. جاواسکریپت هیچ enum نداره اما تایپ‌اسکریپت از enum داخلی پشتیبانی میکنه.
-     
+
      <span dir="ltr" align="left">
 
      ```js
@@ -5803,7 +5874,8 @@ puppeteer:
        c: 3,
      };
 
-     console.log(Object.getOwnPropertyNames(newObject)); ['a', 'b', 'c'];
+     console.log(Object.getOwnPropertyNames(newObject));
+     ["a", "b", "c"];
      ```
 
      </span>
@@ -5821,7 +5893,7 @@ puppeteer:
        a: 1,
        b: 2,
        c: 3,
-      };
+     };
      const descriptorsObject = Object.getOwnPropertyDescriptors(newObject);
      console.log(descriptorsObject.a.writable); // true
      console.log(descriptorsObject.a.configurable); // true
@@ -5864,7 +5936,7 @@ puppeteer:
      class Square extends Rectangle {
        constructor(length) {
          super(length, length);
-         this.name = 'Square';
+         this.name = "Square";
        }
 
        get area() {
@@ -5888,7 +5960,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     window.history.pushState('page2', 'Title', '/page2.html');
+     window.history.pushState("page2", "Title", "/page2.html");
      ```
 
      </span>
@@ -5905,8 +5977,8 @@ puppeteer:
      const numericArray = [1, 2, 3, 4];
      console.log(numericArray.includes(3)); // true
 
-     const stringArray = ['green', 'yellow', 'blue'];
-     console.log(stringArray.includes('blue')); // true
+     const stringArray = ["green", "yellow", "blue"];
+     console.log(stringArray.includes("blue")); // true
      ```
 
      </span>
@@ -5922,7 +5994,10 @@ puppeteer:
      ```js
      const arrayFirst = [1, 2, 3, 4, 5];
      const arraySecond = [1, 2, 3, 4, 5];
-     console.log(arrayFirst.length === arraySecond.length && arrayFirst.every((value, index) => value === arraySecond[index])); // true
+     console.log(
+       arrayFirst.length === arraySecond.length &&
+         arrayFirst.every((value, index) => value === arraySecond[index])
+     ); // true
      ```
 
      </span>
@@ -5934,8 +6009,11 @@ puppeteer:
      ```js
      const arrayFirst = [2, 3, 1, 4, 5];
      const arraySecond = [1, 2, 3, 4, 5];
-     console.log(arrayFirst.length === arraySecond.length && arrayFirst.sort().every((value, index) => value === arraySecond[index])); // true
-     ````
+     console.log(
+       arrayFirst.length === arraySecond.length &&
+         arrayFirst.sort().every((value, index) => value === arraySecond[index])
+     ); // true
+     ```
 
      </span>
 
@@ -5981,13 +6059,13 @@ puppeteer:
      هر دو زبان برنامه نویسی کاملاً نامرتبط هستن و هیچ ارتباطی بین اونا وجود نداره. جاوا بصورت ایستا تایپ می‌شه، کامپایل می‌شه، روی ماشین مجازی خودش اجرا می‌شه. در حالی که جاواسکریپت به صورت پویا تایپ می‌شه، تفسیر می‌شه و در محیط‌های مرورگر و nodejs اجرا می‌شه. بیاین تفاوت‌های عمده رو در قالب جدولی ببینیم:
 
      | ویژگی    | جاوا                                | جاواسکریپت                                                             |
-     |----------|-------------------------------------|------------------------------------------------------------------------|
+     | -------- | ----------------------------------- | ---------------------------------------------------------------------- |
      | تایپ شده | یه زبان حساس به لحاظ تایپ دار بودنه | این یه زبان تایپ شده پویاس                                             |
      | پارادایم | برنامه نویسی شی گرا                 | برنامه نویسی مبتنی بر prototype                                        |
      | محدوده   | محدوده بلوک                         | محدوده عملکردی                                                         |
      | همزمانی  | بر اساس موضوع                       | مبتنی بر رویداد                                                        |
      | حافظه    | از حافظه بیشتر استفاده میکنه        | از حافظه کمتری استفاده میکنه. از این رو برای صفحات وب استفاده خواهد شد |
-     
+
      **[فهرست](#فهرست)**
 
 290. ### آیا جاواسکریپت namespace رو پشتیبانی میکنه؟
@@ -5998,11 +6076,10 @@ puppeteer:
 
      ```js
      function func1() {
-         console.log("This is a first definition");
-
+       console.log("This is a first definition");
      }
      function func1() {
-         console.log("This is a second definition");
+       console.log("This is a second definition");
      }
      func1(); // This is a second definition
      ```
@@ -6016,6 +6093,7 @@ puppeteer:
 291. ### چطوری namespace تعریف می‌کنی؟
 
      حتی اگه جاواسکریپت فاقد namespace باشه، می‌تونیم از Objects، IIFE برای ایجاد namespace استفاده کنیم.
+
      1. **استفاده از Object literal:** بیاین متغیرها و توابع رو درون یه Object literal بپیچیم که به عنوان namespace عمل میکنه. پس از اون می‌تونیم با استفاده از نماد آبجکت به اونا دسترسی داشته باشیم
 
      <span dir="ltr" align="left">
@@ -6037,22 +6115,24 @@ puppeteer:
 
      </span>
 
-     2. **استفاده از IIFE (توابع بیانی بلافاصله صدازده شده  ):** جفت پرانتز بیرونی IIFE یه محدوده محلی برای تمام کدهای داخلش ایجاد میکنه و تابع ناشناس رو به یه عبارت تابع تبدیل میکنه. به همین دلیل، می‌تونیم یه تابع رو در تو دو عبارت تابع مختلف ایجاد کنیم تا به عنوان namespace عمل کنه.
+     2. **استفاده از IIFE (توابع بیانی بلافاصله صدازده شده ):** جفت پرانتز بیرونی IIFE یه محدوده محلی برای تمام کدهای داخلش ایجاد میکنه و تابع ناشناس رو به یه عبارت تابع تبدیل میکنه. به همین دلیل، می‌تونیم یه تابع رو در تو دو عبارت تابع مختلف ایجاد کنیم تا به عنوان namespace عمل کنه.
 
      <span dir="ltr" align="left">
 
      ```js
      (function () {
        function fun1() {
-         console.log('This is a first definition');
-       } fun1();
-     }());
+         console.log("This is a first definition");
+       }
+       fun1();
+     })();
 
      (function () {
        function fun1() {
-         console.log('This is a second definition');
-       } fun1();
-     }());
+         console.log("This is a second definition");
+       }
+       fun1();
+     })();
      ```
 
      </span>
@@ -6063,17 +6143,17 @@ puppeteer:
 
      ```js
      {
-       const myFunction= function fun1(){
-       console.log("This is a first definition");
-       }
+       const myFunction = function fun1() {
+         console.log("This is a first definition");
+       };
        myFunction();
      }
      // myFunction(): ReferenceError: myFunction is not defined.
 
      {
-       const myFunction= function fun1(){
-       console.log("This is a second definition");
-       }
+       const myFunction = function fun1() {
+         console.log("This is a second definition");
+       };
        myFunction();
      }
      // myFunction(): ReferenceError: myFunction is not defined.
@@ -6090,7 +6170,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     document.getElementById('targetFrame').contentWindow.targetFunction();
+     document.getElementById("targetFrame").contentWindow.targetFunction();
      window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
      ```
 
@@ -6121,17 +6201,20 @@ puppeteer:
 
      ```js
      function loadAssets(filename, filetype) {
-       if (filetype == 'css') { // External CSS file
-         const fileReference = document.createElement('link');
-         fileReference.setAttribute('rel', 'stylesheet');
-         fileReference.setAttribute('type', 'text/css');
-         fileReference.setAttribute('href', filename);
-       } else if (filetype == 'js') { // External JavaScript file
-         const fileReference = document.createElement('script');
-         fileReference.setAttribute('type', 'text/javascript');
-         fileReference.setAttribute('src', filename);
+       if (filetype == "css") {
+         // External CSS file
+         const fileReference = document.createElement("link");
+         fileReference.setAttribute("rel", "stylesheet");
+         fileReference.setAttribute("type", "text/css");
+         fileReference.setAttribute("href", filename);
+       } else if (filetype == "js") {
+         // External JavaScript file
+         const fileReference = document.createElement("script");
+         fileReference.setAttribute("type", "text/javascript");
+         fileReference.setAttribute("src", filename);
        }
-       if (typeof fileReference !== 'undefined') document.getElementsByTagName('head')[0].appendChild(fileReference);
+       if (typeof fileReference !== "undefined")
+         document.getElementsByTagName("head")[0].appendChild(fileReference);
      }
      ```
 
@@ -6142,6 +6225,7 @@ puppeteer:
 295. ### روش‌های مختلف برای پیدا کردن elementها توی DOM کدوما هستن؟
 
      اگه بخوایم به هر عنصری در صفحه HTML دسترسی داشته باشیم، باید با دسترسی به آبجکت document شروع کنیم. بعداً می‌تونیم از یکی از روش‌های زیر برای پیداکردن عنصر HTML استفاده کنیم.
+
      1. document.getElementById(id): یه عنصر رو با Id پیدا میکنه
      2. document.getElementsByTagName(name): یه عنصر رو با اسم تگ پیدا میکنه
      3. document.getElementsByClassName(name):یک عنصر رو با اسم کلاس پیدا میکنه
@@ -6155,8 +6239,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     $(document).ready(() => { // It selects the document and apply the function on page load
-       alert('Welcome to jQuery world');
+     $(document).ready(() => {
+       // It selects the document and apply the function on page load
+       alert("Welcome to jQuery world");
      });
      ```
 
@@ -6181,7 +6266,7 @@ puppeteer:
 
      ```js
      let age = 50; // age is a number now
-     age = 'old'; // age is a string now
+     age = "old"; // age is a string now
      age = true; // age is a boolean
      ```
 
@@ -6196,18 +6281,20 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     void (expression);
+     void expression;
      void expression;
      ```
 
      </span>
 
      بیاین پیامی رو بدون هیچ گونه تغییر مسیر یا بارگیری مجدد نمایش بدیم
-     
+
      <span dir="ltr" align="left">
 
      ```js
-     <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>;
+     <a href="javascript:void(alert('Welcome to JS world'))">
+       Click here to see a message
+     </a>
      ```
 
      </span>
@@ -6224,7 +6311,7 @@ puppeteer:
 
      ```js
      function myFunction() {
-       window.document.body.style.cursor = 'wait';
+       window.document.body.style.cursor = "wait";
      }
      ```
 
@@ -6235,7 +6322,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```html
-     <body onload="myFunction()">
+     <body onload="myFunction()"></body>
      ```
 
      </span>
@@ -6251,8 +6338,7 @@ puppeteer:
      ```js
      for (;;) {}
 
-     while (true) {
-     }
+     while (true) {}
      ```
 
      </span>
@@ -6266,7 +6352,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     a.b.c.greeting = 'welcome';
+     a.b.c.greeting = "welcome";
      a.b.c.age = 32;
      ```
 
@@ -6277,9 +6363,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     with(a.b.c) {
-          greeting   = "welcome";
-          age = 32;
+     with (a.b.c) {
+       greeting = "welcome";
+       age = 32;
      }
      ```
 
@@ -6294,11 +6380,13 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     for (var i = 0; i < 4; i++) { // global scope
+     for (var i = 0; i < 4; i++) {
+       // global scope
        setTimeout(() => console.log(i));
      }
 
-     for (let i = 0; i < 4; i++) { // block scope
+     for (let i = 0; i < 4; i++) {
+       // block scope
        setTimeout(() => console.log(i));
      }
      ```
@@ -6316,7 +6404,7 @@ puppeteer:
      2. پشتیبانی Block-scope برای متغیرها، ثابت‌ها و توابع
      3. Arrow functions
      4. پارامترهای پیش فرض
-     5. پارامتر‌های Rest and Spread 
+     5. پارامتر‌های Rest and Spread
      6. Template Literals
      7. Multi-line Strings
      8. Destructuring Assignment
@@ -6350,10 +6438,10 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const name = 'John';
+     const name = "John";
      function myFunc() {
-       var name = 'Nick';
-       var name = 'Abraham'; // Re-assigned in the same function block
+       var name = "Nick";
+       var name = "Abraham"; // Re-assigned in the same function block
        alert(name); // Abraham
      }
      myFunc();
@@ -6367,11 +6455,11 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     let name = 'John';
+     let name = "John";
      function myFunc() {
-         let name = 'Nick';
-         let name = 'Abraham'; // Uncaught SyntaxError: Identifier 'name' has already been declared
-         alert(name);
+       let name = "Nick";
+       let name = "Abraham"; // Uncaught SyntaxError: Identifier 'name' has already been declared
+       alert(name);
      }
 
      myFunc();
@@ -6390,7 +6478,7 @@ puppeteer:
 
      ```js
      const userList = [];
-     userList.push('John'); // Can mutate even though it can't re-assign
+     userList.push("John"); // Can mutate even though it can't re-assign
      console.log(userList); // ['John']
      uerList = 123; // throws an error
      ```
@@ -6410,7 +6498,7 @@ puppeteer:
      const calculateArea = function (height, width) {
        height = height || 50;
        width = width || 60;
-     
+
        return width * height;
      };
      console.log(calculateArea()); // 300
@@ -6468,8 +6556,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log('This is string sentence 1\n'
-     + 'This is string sentence 2');
+     console.log("This is string sentence 1\n" + "This is string sentence 2");
      ```
 
      </span>
@@ -6494,8 +6581,11 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const iconStyles = `icon ${isMobilePlatform() ? ''
-       : `icon-${user.isAuthorized ? 'submit' : 'disabled'}`}`;
+     const iconStyles = `icon ${
+       isMobilePlatform()
+         ? ""
+         : `icon-${user.isAuthorized ? "submit" : "disabled"}`
+     }`;
      ```
 
      </span>
@@ -6517,7 +6607,7 @@ puppeteer:
 312. ### tagged-templateها چی هستن؟
 
      الگوهای برچسب‌گذاری شده شکل پیشرفته‌ای از قالب‌ها هستن که تو اون برچسب‌ها بهمون اجازه میدن تا کلمات قالب رو با یه تابع تجزیه کنیم. تابع تگ اولین پارامتر رو به عنوان آرایه ای از رشته‌ها و پارامترهای باقی مانده رو به عنوان strings می‌گیره. این تابع همچنین میتونه رشته‌های دستکاری شده رو بر اساس پارامترها برگردونه.
-     
+
      بیاین نحوه استفاده از رفتار الگوی برچسب گذاری شده مجموعه مهارت‌های حرفه ای فناوری اطلاعات تو یه سازمان رو ببینیم.
 
      <span dir="ltr" align="left">
@@ -6565,10 +6655,12 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      const calculationString = String.raw`The sum of numbers is \n${1 + 2 + 3 + 4}!`;
-      console.log(calculationString); // The sum of numbers is 10
-      ```
+     ```js
+     const calculationString = String.raw`The sum of numbers is \n${
+       1 + 2 + 3 + 4
+     }!`;
+     console.log(calculationString); // The sum of numbers is 10
+     ```
 
       </span>
 
@@ -6576,12 +6668,12 @@ puppeteer:
 
      <span dir="ltr" align="left">
 
-      ```js
-      const calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
-      console.log(calculationString);
-      // The sum of numbers is
-      // 10
-      ```
+     ```js
+     const calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
+     console.log(calculationString);
+     // The sum of numbers is
+     // 10
+     ```
 
       </span>
 
@@ -6589,11 +6681,11 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      function tag(strings) {
-        console.log(strings.raw[0]);
-      }
-      ```
+     ```js
+     function tag(strings) {
+       console.log(strings.raw[0]);
+     }
+     ```
 
       </span>
 
@@ -6602,12 +6694,12 @@ puppeteer:
 314. ### assign کردن با destructuring چیه و چطوری انجام می‌شه؟
 
      تخصیص `destructuring` یه عبارت جاواسکریپت‌ـه که امکان باز کردن مقادیر آرایه‌ها یا خصوصیات از اشیاء به متغیرهای مجزا رو فراهم میکنه.
-      بیاین مقادیر ماه رو از یه آرایه با استفاده از تخصیص ساختارشکن به دست آوریم
+     بیاین مقادیر ماه رو از یه آرایه با استفاده از تخصیص ساختارشکن به دست آوریم
 
      <span dir="ltr" align="left">
 
      ```js
-     const [one, two, three] = ['JAN', 'FEB', 'MARCH'];
+     const [one, two, three] = ["JAN", "FEB", "MARCH"];
 
      console.log(one); // "JAN"
      console.log(two); // "FEB"
@@ -6621,7 +6713,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const { name, age } = { name: 'John', age: 32 };
+     const { name, age } = { name: "John", age: 32 };
 
      console.log(name); // John
      console.log(age); // 32
@@ -6640,8 +6732,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     let x; let y; let
-       z;
+     let x;
+     let y;
+     let z;
 
      [x = 2, y = 4, z = 6] = [10];
      console.log(x); // 10
@@ -6674,8 +6767,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     let x = 10; let
-       y = 20;
+     let x = 10;
+     let y = 20;
 
      [x, y] = [y, x];
      console.log(x); // 20
@@ -6694,13 +6787,13 @@ puppeteer:
 
      ```js
      // ES6
-     var x = 10; var
-       y = 20;
+     var x = 10;
+     var y = 20;
      obj = { x, y };
      console.log(obj); // {x: 10, y:20}
      // ES5
-     var x = 10; var
-       y = 20;
+     var x = 10;
+     var y = 20;
      obj = { x, y };
      console.log(obj); // {x: 10, y:20}
      ```
@@ -6716,7 +6809,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     import('./Module').then((Module) => Module.method());
+     import("./Module").then((Module) => Module.method());
      ```
 
      </span>
@@ -6726,6 +6819,7 @@ puppeteer:
 319. ### کاربرد importهای داینامیک چیه؟
 
      در زیر بعضی از موارد استفاده از واردات پویا نسبت به واردات استاتیک آورده شده است.
+
      1. یه ماژول رو به صورت درخواستی یا مشروط وارد کنیم. برای مثال، اگه می‌خواین یه polyfill رو در مرورگر قدیمی بارگذاری کنیم
 
      <span dir="ltr" align="left">
@@ -6762,7 +6856,7 @@ puppeteer:
      3. Int32Array: آرایه ای از اعداد صحیح امضا شده 32 بیتی
      4. Uint8Array: آرایه ای از اعداد صحیح بدون علامت 8 بیتی
      5. Uint16Array: آرایه ای از اعداد صحیح بدون علامت 16 بیتی
-     6. Uint32Array:  آرایه ای از اعداد صحیح بدون علامت 32 بیتی
+     6. Uint32Array: آرایه ای از اعداد صحیح بدون علامت 32 بیتی
      7. Float32Array:آرایه ای از اعداد ممیز شناور 32 بیتی
      8. Float64Array: آرایه ای از اعداد ممیز شناور 64 بیتی
 
@@ -6773,8 +6867,8 @@ puppeteer:
      ```js
      const a = new Int8Array();
      // You can pre-allocate n bytes
-     const bytes = 1024
-     const a = new Int8Array(bytes)
+     const bytes = 1024;
+     const a = new Int8Array(bytes);
      ```
 
      </span>
@@ -6784,6 +6878,7 @@ puppeteer:
 321. ### مزایای لودر ماژول‌ها چیه؟
 
      ماژول لودر ویژگی‌های زیر رو ارائه میده
+
      1. Dynamic loading
      2. State isolation
      3. Global namespace isolation
@@ -6795,16 +6890,17 @@ puppeteer:
 322. ### collation چیه؟
 
      Collation برای مرتب سازی مجموعه ی رشته‌ها و جستجو در مجموعه ای از رشته‌ها استفاده می‌شه. این پارامتر توسط محلی و از Unicode آگاهه. بیاین ویژگی‌های مقایسه و مرتب سازی رو در نظر بگیریم،
+
      1. **Comparison:**
 
      <span dir="ltr" align="left">
 
      ```js
-     const list = ['ä', 'a', 'z']; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
-     const l10nDE = new Intl.Collator('de');
-     const l10nSV = new Intl.Collator('sv');
-     console.log(l10nDE.compare('ä', 'z') === -1); // true
-     console.log(l10nSV.compare('ä', 'z') === +1); // true
+     const list = ["ä", "a", "z"]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+     const l10nDE = new Intl.Collator("de");
+     const l10nSV = new Intl.Collator("sv");
+     console.log(l10nDE.compare("ä", "z") === -1); // true
+     console.log(l10nSV.compare("ä", "z") === +1); // true
      ```
 
      </span>
@@ -6814,9 +6910,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const list = ['ä', 'a', 'z']; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
-     const l10nDE = new Intl.Collator('de');
-     const l10nSV = new Intl.Collator('sv');
+     const list = ["ä", "a", "z"]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+     const l10nDE = new Intl.Collator("de");
+     const l10nSV = new Intl.Collator("sv");
      console.log(list.sort(l10nDE.compare)); // [ "a", "ä", "z" ]
      console.log(list.sort(l10nSV.compare)); // [ "a", "z", "ä" ]
      ```
@@ -6827,7 +6923,7 @@ puppeteer:
 
 323. ### عبارت for...of چیه؟
 
-     دستور for...of یه حلقه تکرار بر روی اشیاء یا عناصر قابل تکرار مثل رشته داخلی، آرایه، اشیاء آرایه مانند (مثل آرگومان‌ها یا NodeList)، TypedArray، Map، Set و تکرارهای تعریف شده توسط کاربر ایجاد میکنه. 
+     دستور for...of یه حلقه تکرار بر روی اشیاء یا عناصر قابل تکرار مثل رشته داخلی، آرایه، اشیاء آرایه مانند (مثل آرگومان‌ها یا NodeList)، TypedArray، Map، Set و تکرارهای تعریف شده توسط کاربر ایجاد میکنه.
 
      <span dir="ltr" align="left">
 
@@ -6849,13 +6945,13 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     [...'John Resig'];
+     [..."John Resig"];
      ```
 
      </span>
 
      خروجی آرایه ['J', 'o', 'h', 'n', ', 'R', 'e', 's', 'i', 'g'] است.
-      **توضیح:** رشته یه نوع تکرارپذیره و عملگر spread تو یه آرایه هر کاراکتر یه تکرارپذیر رو به یه عنصر نگاشت میکنه. از این رو، هر کاراکتر یه رشته به عنصری تو یه آرایه تبدیل می‌شه.
+     **توضیح:** رشته یه نوع تکرارپذیره و عملگر spread تو یه آرایه هر کاراکتر یه تکرارپذیر رو به یه عنصر نگاشت میکنه. از این رو، هر کاراکتر یه رشته به عنصری تو یه آرایه تبدیل می‌شه.
 
      **[فهرست](#فهرست)**
 
@@ -6867,12 +6963,12 @@ puppeteer:
 
 326. ### مشکلات استفاده از postmessage با origin روی wildcard چیه؟
 
-     آرگومان دوم متد postMessage مشخص میکنه که کدوم مبدا مجاز به دریافت پیامه. اگه از علامت "*" به عنوان آرگومان استفاده کنیم هر منبعی مجاز به دریافت پیامه. در این حالت، هیچ راهی برای پنجره فرستنده وجود نداره که بفهمه پنجره هدف در موقع ارسال پیام در مبدأ هدف قرار داره یا نه. اگه پنجره هدف به مبدأ دیگری هدایت شه، مبدا دیگر داده‌ها رو دریافت میکنه. از این رو، این ممکنه منجر به آسیب پذیری‌های XSS شه.
+     آرگومان دوم متد postMessage مشخص میکنه که کدوم مبدا مجاز به دریافت پیامه. اگه از علامت "\*" به عنوان آرگومان استفاده کنیم هر منبعی مجاز به دریافت پیامه. در این حالت، هیچ راهی برای پنجره فرستنده وجود نداره که بفهمه پنجره هدف در موقع ارسال پیام در مبدأ هدف قرار داره یا نه. اگه پنجره هدف به مبدأ دیگری هدایت شه، مبدا دیگر داده‌ها رو دریافت میکنه. از این رو، این ممکنه منجر به آسیب پذیری‌های XSS شه.
 
      <span dir="ltr" align="left">
 
      ```js
-     targetWindow.postMessage(message, '*');
+     targetWindow.postMessage(message, "*");
      ```
 
      </span>
@@ -6919,7 +7015,7 @@ puppeteer:
 331. ### تفاوت‌های بین جاواسکریپت داخلی و خارجی چیه؟
 
      **جاواسکریپت داخلی:** کد منبع درون تگ اسکریپته.
-      **جاواسکریپت خارجی:** کد منبع تو یه فایل خارجی (ذخیره شده با پسوند js.) ذخیره می‌شه و در تگ ارجاع می‌شه.
+     **جاواسکریپت خارجی:** کد منبع تو یه فایل خارجی (ذخیره شده با پسوند js.) ذخیره می‌شه و در تگ ارجاع می‌شه.
 
      **[فهرست](#فهرست)**
 
@@ -6936,7 +7032,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```html
-       <input type="checkbox" name="checkboxname" value="Agree"> Agree the conditions<br>
+     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the
+     conditions<br />
      ```
 
      </span>
@@ -6944,7 +7041,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log(document.getElementById('checkboxname').checked); // true or false
+     console.log(document.getElementById("checkboxname").checked); // true or false
      ```
 
      </span>
@@ -6964,7 +7061,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     'ABC'.charCodeAt(0); // returns 65
+     "ABC".charCodeAt(0); // returns 65
      ```
 
      </span>
@@ -7012,13 +7109,13 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log('Welcome to JS world'[0]);
+     console.log("Welcome to JS world"[0]);
      ```
 
      </span>
 
      خروجی عبارت بالا "W" عه.
-      **توضیح:** نماد براکت با شاخص خاص روی یه رشته کاراکتر رو تو یه مکان خاص برمی‌گردونه. از این رو، کاراکتر "W" رشته رو برمی‌گردونه. از اونجایی که این مورد در نسخه‌های IE7 و پایین‌تر پشتیبانی نمی‌شه، ممکنه لازم باشه از متد charAt برای به دست آوردن نتیجه دلخواه استفاده کنیم.
+     **توضیح:** نماد براکت با شاخص خاص روی یه رشته کاراکتر رو تو یه مکان خاص برمی‌گردونه. از این رو، کاراکتر "W" رشته رو برمی‌گردونه. از اونجایی که این مورد در نسخه‌های IE7 و پایین‌تر پشتیبانی نمی‌شه، ممکنه لازم باشه از متد charAt برای به دست آوردن نتیجه دلخواه استفاده کنیم.
 
      **[فهرست](#فهرست)**
 
@@ -7040,7 +7137,8 @@ puppeteer:
 
      ```js
      try {
-       if (withdraw > balance) throw new Error("Oops! You don't have enough balance");
+       if (withdraw > balance)
+         throw new Error("Oops! You don't have enough balance");
      } catch (e) {
        console.log(`${e.name}: ${e.message}`);
      }
@@ -7068,7 +7166,7 @@ puppeteer:
 
      ```js
      try {
-       throw new EvalError('Eval function error', 'someFile.js', 100);
+       throw new EvalError("Eval function error", "someFile.js", 100);
      } catch (e) {
        console.log(e.message, e.name, e.fileName); // "Eval function error", "EvalError", "someFile.js"
      }
@@ -7081,6 +7179,7 @@ puppeteer:
 340. ### خطاهایی که در حالت strict-mode رخ میدن ولی در غیر اون وجود ندارن کدوما هستن؟
 
      وقتی `use strict` رو اعمال می‌کنیم. syntax، بعضی از موارد زیر قبل از اجرای اسکریپت یه SyntaxError ایجاد می‌کنن
+
      1. وقتی از دستور `Octal` استفاده می‌کنیم
 
      <span dir="ltr" align="left">
@@ -7090,7 +7189,7 @@ puppeteer:
      ```
 
      </span>
-     
+
      2. استفاده از عبارت `with`.
      3. وقتی از عملگر حذف روی نام متغیر استفاده می‌کنیم
      4. استفاده از eval یا آرگومان‌ها به عنوان متغیر یا نام آرگومان تابع
@@ -7100,7 +7199,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     if (someCondition) { function f() {} }
+     if (someCondition) {
+       function f() {}
+     }
      ```
 
      </span>
@@ -7127,7 +7228,7 @@ puppeteer:
        console.log(arguments[1]); // "argument2"
        console.log(arguments[2]); // "argument3"
      }
-     myFunction('argument1', 'argument2', 'argument3');
+     myFunction("argument1", "argument2", "argument3");
      ```
 
      </span>
@@ -7169,8 +7270,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const veggies = ['Tomato', 'Carrot', 'Cabbage'];
-     const fruits = ['Apple', 'Orange', 'Pears'];
+     const veggies = ["Tomato", "Carrot", "Cabbage"];
+     const fruits = ["Apple", "Orange", "Pears"];
      const veggiesAndFruits = veggies.concat(fruits);
      console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
      ```
@@ -7182,17 +7283,19 @@ puppeteer:
 345. ### تفاوت‌های بین Shallow و Deep کپی چیه؟
 
      **کپی سطحی:**
-      کپی کم عمق یه کپی بیتی از یه آبجکته. یه آبجکت جدید ایجاد می‌شه که یه کپی دقیق از مقادیر موجود در آبجکت اصلی رو داره. اگه هر یه از فیلدهای آبجکت ارجاع به آبجکت‌های دیگه باشه، فقط آدرس‌های مرجع کپی میشن یعنی فقط آدرس توی حافظه کپی می‌شه.
+     کپی کم عمق یه کپی بیتی از یه آبجکته. یه آبجکت جدید ایجاد می‌شه که یه کپی دقیق از مقادیر موجود در آبجکت اصلی رو داره. اگه هر یه از فیلدهای آبجکت ارجاع به آبجکت‌های دیگه باشه، فقط آدرس‌های مرجع کپی میشن یعنی فقط آدرس توی حافظه کپی می‌شه.
 
      **مثال**
 
       <span dir="ltr" align="left">
 
-      ```js
-      const empDetails = {
-        name: 'John', age: 25, expertise: 'Software Developer',
-      };
-      ```
+     ```js
+     const empDetails = {
+       name: "John",
+       age: 25,
+       expertise: "Software Developer",
+     };
+     ```
 
       </span>
 
@@ -7200,9 +7303,9 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      const empDetailsShallowCopy = empDetails; // Shallow copying!
-      ```
+     ```js
+     const empDetailsShallowCopy = empDetails; // Shallow copying!
+     ```
 
       </span>
 
@@ -7210,9 +7313,9 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      empDetailsShallowCopy.name = 'Johnson';
-      ```
+     ```js
+     empDetailsShallowCopy.name = "Johnson";
+     ```
 
       </span>
 
@@ -7225,11 +7328,13 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      const empDetails = {
-        name: 'John', age: 25, expertise: 'Software Developer',
-      };
-      ```
+     ```js
+     const empDetails = {
+       name: "John",
+       age: 25,
+       expertise: "Software Developer",
+     };
+     ```
 
       </span>
 
@@ -7237,17 +7342,17 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      const empDetailsDeepCopy = {
-        name: empDetails.name,
-        age: empDetails.age,
-        expertise: empDetails.expertise,
-      };
-      ```
+     ```js
+     const empDetailsDeepCopy = {
+       name: empDetails.name,
+       age: empDetails.age,
+       expertise: empDetails.expertise,
+     };
+     ```
 
       </span>
 
-      اگه `empDetailsDeepCopy.name` رو تغییر بدین، فقط `empDetailsDeepCopy` و نه `empDetails` رو تحت تأثیر قرار میده.
+     اگه `empDetailsDeepCopy.name` رو تغییر بدین، فقط `empDetailsDeepCopy` و نه `empDetails` رو تحت تأثیر قرار میده.
 
      **[فهرست](#فهرست)**
 
@@ -7259,7 +7364,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     'Hello'.repeat(4); // 'HelloHelloHelloHello'
+     "Hello".repeat(4); // 'HelloHelloHelloHello'
      ```
 
      </span>
@@ -7272,7 +7377,7 @@ puppeteer:
 
      ```js
      let regexp = /Hello(\d?))/g;
-     let greeting = 'Hello1Hello2Hello3';
+     let greeting = "Hello1Hello2Hello3";
 
      let greetingList = [...greeting.matchAll(regexp)];
 
@@ -7292,7 +7397,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const greeting = '   Hello, Goodmorning!   ';
+     const greeting = "   Hello, Goodmorning!   ";
 
      console.log(greeting); // "   Hello, Goodmorning!   "
      console.log(greeting.trimStart()); // "Hello, Goodmorning!   "
@@ -7311,7 +7416,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log(+'Hello');
+     console.log(+"Hello");
      ```
 
      </span>
@@ -7352,7 +7457,7 @@ puppeteer:
 
      ```js
      function fetchData(fn) {
-       fetch('https://jsonplaceholder.typicode.com/todos/1')
+       fetch("https://jsonplaceholder.typicode.com/todos/1")
          .then((response) => response.json())
          .then((json) => fn(json));
      }
@@ -7401,7 +7506,7 @@ puppeteer:
 
 354. ### چطوری همه خطوط جدید رو از یه رشته حذف کرد؟
 
-     ساده ترین روش  ٍ استفاده از regex برای شناسایی و جایگزینی خطوط جدید توی رشته اس. در این حالت از تابع replace به همراه رشته برای جایگزینی استفاده می‌کنیم که در این مثال یه رشته خالیه:
+     ساده ترین روش ٍ استفاده از regex برای شناسایی و جایگزینی خطوط جدید توی رشته اس. در این حالت از تابع replace به همراه رشته برای جایگزینی استفاده می‌کنیم که در این مثال یه رشته خالیه:
 
      <span dir="ltr" align="left">
 
@@ -7419,7 +7524,7 @@ puppeteer:
 
 355. ### تفاوت‌ بین reflow و repaint چیه؟
 
-      repaintزمانی اتفاق می‌افته که تغییراتی ایجاد می‌شه که روی دید یه عنصر تأثیر میذاره، اما روی طرح اون تأثیر نمیذاره،. نمونه‌هایی از این موارد شامل طرح کلی، نمایان بودن یا رنگ پس زمینه اس. یه *reflow* شامل تغییراتیه که بر طرح بندی بخشی از صفحه (یا کل صفحه) تأثیر میزاره. تغییر اندازه پنجره مرورگر، تغییر فونت، تغییر محتوا (مانند تایپ متن توسط کاربر)، استفاده از روش‌های جاواسکریپت شامل سبک‌های محاسبه‌شده، اضافه کردن یا حذف عناصر از DOM، و تغییر کلاس‌های یه عنصر چند مورد از مواردی هستن که می‌تونن جریان مجدد رو آغاز کنن. جریان مجدد یه عنصر باعث جریان مجدد بعدی همه عناصر فرزند و اجداد و همچنین هر عنصری که به دنبال اون توی DOM هس می‌شه.
+     repaintزمانی اتفاق می‌افته که تغییراتی ایجاد می‌شه که روی دید یه عنصر تأثیر میذاره، اما روی طرح اون تأثیر نمیذاره،. نمونه‌هایی از این موارد شامل طرح کلی، نمایان بودن یا رنگ پس زمینه اس. یه _reflow_ شامل تغییراتیه که بر طرح بندی بخشی از صفحه (یا کل صفحه) تأثیر میزاره. تغییر اندازه پنجره مرورگر، تغییر فونت، تغییر محتوا (مانند تایپ متن توسط کاربر)، استفاده از روش‌های جاواسکریپت شامل سبک‌های محاسبه‌شده، اضافه کردن یا حذف عناصر از DOM، و تغییر کلاس‌های یه عنصر چند مورد از مواردی هستن که می‌تونن جریان مجدد رو آغاز کنن. جریان مجدد یه عنصر باعث جریان مجدد بعدی همه عناصر فرزند و اجداد و همچنین هر عنصری که به دنبال اون توی DOM هس می‌شه.
 
      **[فهرست](#فهرست)**
 
@@ -7444,7 +7549,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log(['a'] + ['b']); // "ab"
+     console.log(["a"] + ["b"]); // "ab"
      console.log([] + []); // ""
      console.log(![] + []); // "false", because ![] returns false.
      ```
@@ -7456,15 +7561,15 @@ puppeteer:
 358. ### اگه عملگر جمع «+» روی قبل از مقادیر falsy قرار بدیم چی می‌شه؟
 
      اگه عملگر additive(+) رو روی مقادیر نادرست (null، undefined، NaN، false، "") قرار بدیم، مقدار falsy به مقدار عددی صفر تبدیل می‌شه. بیاین اونا رو توی کنسول مرورگر به صورت زیر نمایش بدیم:
-     
+
      <span dir="ltr" align="left">
 
      ```js
      console.log(+null); // 0
-     console.log(+undefined);// NaN
+     console.log(+undefined); // NaN
      console.log(+false); // 0
      console.log(+NaN); // NaN
-     console.log(+''); // 0
+     console.log(+""); // 0
      ```
 
      </span>
@@ -7474,6 +7579,7 @@ puppeteer:
 359. ### چطوری با استفاده از آرایه‌ها و عملگرهای منطقی می‌تونیم رشته self رو تولید کنیم؟
 
      رشته self رو می‌شه با ترکیب کاراکترهای `[]()!+` تشکیل داد. برای رسیدن به این الگو باید موارد زیر رو بدونیم:
+
      1. از اونجایی که آرایه‌ها مقادیر true هستن، با نفی آرایه‌ها false تولید می‌شه: ![] === false
      2. طبق قوانین اجباری جاواسکریپت، اضافه کردن آرایه‌ها به هم اونا رو به رشته‌بندی تبدیل میکنه: [] + [] === ""
      3. Prepend یه آرایه با عملگر + یه آرایه رو به نادرست تبدیل میکنه، انکار اونو درست میکنه و در نهایت تبدیل نتیجه مقدار '1' رو تولید میکنه: +(!(+[])) === 1
@@ -7483,8 +7589,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     ![] + [] === `false${
-       !+[]}` === 1;
+     (![] + [] === `false${!+[]}`) === 1;
      ```
 
      </span>
@@ -7564,12 +7669,12 @@ puppeteer:
 
      ```js
      const countries = [
-       { name: 'India', capital: 'Delhi' },
-       { name: 'US', capital: 'Washington' },
-       { name: 'Russia', capital: 'Moscow' },
-       { name: 'Singapore', capital: 'Singapore' },
-       { name: 'China', capital: 'Beijing' },
-       { name: 'France', capital: 'Paris' },
+       { name: "India", capital: "Delhi" },
+       { name: "US", capital: "Washington" },
+       { name: "Russia", capital: "Moscow" },
+       { name: "Singapore", capital: "Singapore" },
+       { name: "China", capital: "Beijing" },
+       { name: "France", capital: "Paris" },
      ];
 
      const cityNames = Array.from(countries, ({ capital }) => capital);
@@ -7587,7 +7692,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const cities = ['Singapore', 'Delhi', 'London'];
+     const cities = ["Singapore", "Delhi", "London"];
      cities.length = 0; // cities becomes []
      ```
 
@@ -7617,7 +7722,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const fruits = ['banana', 'apple', 'orange', 'watermelon'];
+     const fruits = ["banana", "apple", "orange", "watermelon"];
      const fruitsObject = { ...fruits };
      console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
      ```
@@ -7633,7 +7738,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const newArray = new Array(5).fill('0');
+     const newArray = new Array(5).fill("0");
      console.log(newArray); // ["0", "0", "0", "0", "0"]
      ```
 
@@ -7646,13 +7751,17 @@ puppeteer:
      1. %o - یه آبجکت رو می‌گیرد،
      2. %s - یه رشته می‌گیره،
      3. %d - برای اعشار یا عدد صحیح استفاده می‌شه
-      این متغیرها رو می‌شه توی console.log به صورت زیر نشون داد
+        این متغیرها رو می‌شه توی console.log به صورت زیر نشون داد
 
      <span dir="ltr" align="left">
 
      ```js
-     const user = { name: 'John', id: 1, city: 'Delhi' };
-     console.log('Hello %s, your details %o are available in the object form', 'John', user); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
+     const user = { name: "John", id: 1, city: "Delhi" };
+     console.log(
+       "Hello %s, your details %o are available in the object form",
+       "John",
+       user
+     ); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
      ```
 
      </span>
@@ -7666,7 +7775,10 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     console.log('%c The text has blue color, with large font and red background', 'color: blue; font-size: x-large; background: red');
+     console.log(
+       "%c The text has blue color, with large font and red background",
+       "color: blue; font-size: x-large; background: red"
+     );
      ```
 
      </span>
@@ -7685,7 +7797,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const user = { name: 'John', id: 1, city: 'Delhi' };
+     const user = { name: "John", id: 1, city: "Delhi" };
      console.dir(user);
      ```
 
@@ -7703,7 +7815,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const element = document.getElementsByTagName('body')[0];
+     const element = document.getElementsByTagName("body")[0];
      console.log(element);
      ```
 
@@ -7722,7 +7834,11 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const users = [{ name: 'John', id: 1, city: 'Delhi' }, { name: 'Max', id: 2, city: 'London' }, { name: 'Rod', id: 3, city: 'Paris' }];
+     const users = [
+       { name: "John", id: 1, city: "Delhi" },
+       { name: "Max", id: 2, city: "London" },
+       { name: "Rod", id: 3, city: "Paris" },
+     ];
      console.table(users);
      ```
 
@@ -7759,11 +7875,11 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     document.querySelector('#copy-button').onclick = function () {
+     document.querySelector("#copy-button").onclick = function () {
        // Select the content
-       document.querySelector('#copy-input').select();
+       document.querySelector("#copy-input").select();
        // Copy to the clipboard
-       document.execCommand('copy');
+       document.execCommand("copy");
      };
      ```
 
@@ -7806,7 +7922,9 @@ puppeteer:
      ```js
      function flattenMultiArray(arr) {
        const flattened = [].concat(...arr);
-       return flattened.some((item) => Array.isArray(item)) ? flattenMultiArray(flattened) : flattened;
+       return flattened.some((item) => Array.isArray(item))
+         ? flattenMultiArray(flattened)
+         : flattened;
      }
      const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
      const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
@@ -7824,11 +7942,16 @@ puppeteer:
 
      ```js
      // Verbose approach
-     if (input === 'first' || input === 1 || input === 'second' || input === 2) {
+     if (
+       input === "first" ||
+       input === 1 ||
+       input === "second" ||
+       input === 2
+     ) {
        someFunction();
      }
      // Shortcut
-     if (['first', 1, 'second', 2].indexOf(input) !== -1) {
+     if (["first", 1, "second", 2].indexOf(input) !== -1) {
        someFunction();
      }
      ```
@@ -7845,7 +7968,7 @@ puppeteer:
 
      ```js
      window.onbeforeunload = function () {
-       alert('You work will be lost');
+       alert("You work will be lost");
      };
      ```
 
@@ -7860,7 +7983,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```html
-     <body oncontextmenu="return false;">
+     <body oncontextmenu="return false;"></body>
      ```
 
      </span>
@@ -7874,9 +7997,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const name = 'john';
+     const name = "john";
 
-     console.log(name.toUpperCase()); 
+     console.log(name.toUpperCase());
      // Behind the scenes treated as console.log(new String(name).toUpperCase());
      ```
 
@@ -7909,7 +8032,7 @@ puppeteer:
      1. یه کلاس `AbortControlle` ایجاد کنیم
      2. ویژگی سیگنال اون آبجکت ساخته شده رو دریافت کنیم و سیگنال رو به عنوان یه option به متد fetch ارسال کنیم
      3. برای لغو تمام fetch‌هایی که از اون سیگنال استفاده می‌کنن با ویژگی abort از AbortController رو فراخوانی کنیم.
-     برای مثال، بیاین یه سیگنال رو به چندین درخواست fetch ارسال کنیم، همه درخواست‌ها بااون سیگنال لغو میشن.
+        برای مثال، بیاین یه سیگنال رو به چندین درخواست fetch ارسال کنیم، همه درخواست‌ها بااون سیگنال لغو میشن.
 
      <span dir="ltr" align="left">
 
@@ -7917,21 +8040,25 @@ puppeteer:
      const controller = new AbortController();
      const { signal } = controller;
 
-     fetch('http://localhost:8000', { signal }).then((response) => {
-       console.log('Request 1 is complete!');
-     }).catch((e) => {
-       if (e.name === 'AbortError') {
-         // We know it's been canceled!
-       }
-     });
+     fetch("http://localhost:8000", { signal })
+       .then((response) => {
+         console.log("Request 1 is complete!");
+       })
+       .catch((e) => {
+         if (e.name === "AbortError") {
+           // We know it's been canceled!
+         }
+       });
 
-     fetch('http://localhost:8000', { signal }).then((response) => {
-       console.log('Request 2 is complete!');
-     }).catch((e) => {
-       if (e.name === 'AbortError') {
-         // We know it's been canceled!
-       }
-     });
+     fetch("http://localhost:8000", { signal })
+       .then((response) => {
+         console.log("Request 2 is complete!");
+       })
+       .catch((e) => {
+         if (e.name === "AbortError") {
+           // We know it's been canceled!
+         }
+       });
 
      // Wait 2 seconds to abort both requests
      setTimeout(() => controller.abort(), 2000);
@@ -7946,14 +8073,16 @@ puppeteer:
      API گفتار وب برای فعال کردن مرورگرهای مدرن برای شناسایی و ترکیب گفتار (یعنی داده‌های صوتی در برنامه‌های وب) استفاده می‌شه. این API توسط انجمن W3C در سال 2012 معرفی شد و دارای دو بخش اصلیه.
 
      1. **تشخیص گفتار (تشخیص گفتار ناهمزمان یا گفتار به متن):** این امکان رو فراهم میکنه که زمینه صدا رو از ورودی صوتی تشخیص داده و به اون پاسخ بدین. این توسط رابط "SpeechRecognition" قابل دسترسیه.
-      مثال زیر نحوه استفاده از این API برای دریافت متن از گفتار رو نشون میده.
+        مثال زیر نحوه استفاده از این API برای دریافت متن از گفتار رو نشون میده.
 
      <span dir="ltr" align="left">
 
      ```js
-     window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition; // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
+     window.SpeechRecognition =
+       window.webkitSpeechRecognition || window.SpeechRecognition; // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
      const recognition = new window.SpeechRecognition();
-     recognition.onresult = (event) => { // SpeechRecognitionEvent type
+     recognition.onresult = (event) => {
+       // SpeechRecognitionEvent type
        const speechToText = event.results[0][0].transcript;
        console.log(speechToText);
      };
@@ -7971,9 +8100,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     if ('speechSynthesis' in window) {
-       const speech = new SpeechSynthesisUtterance('Hello World!');
-       speech.lang = 'en-US';
+     if ("speechSynthesis" in window) {
+       const speech = new SpeechSynthesisUtterance("Hello World!");
+       speech.lang = "en-US";
        window.speechSynthesis.speak(speech);
      }
      ```
@@ -7982,25 +8111,25 @@ puppeteer:
 
      نمونه‌های بالا رو می‌شه روی کنسول برنامه‌نویس مرورگر کروم (33+) تست کرد.
      **توجه:** این API هنوز یه پیش‌نویس فعاله و فقط روی مرورگرهای کروم و فایرفاکس وجود داره(البته کروم فقط مشخصات رو اجرا میکنه)
-     
+
      **[فهرست](#فهرست)**
 
 385. ### حداقل timeout توی throttling چقدره؟
 
      هم مرورگر و هم محیط‌های جاواسکریپت NodeJS با حداقل تاخیری که بیشتر از 0 میلی ثانیه اس throttles رو انجام میدن. یعنی حتی اگه تنظیم یه تاخیر 0ms به طور آنی اتفاق نیوفته.
-      **مرورگرها:** حداقل 4 میلی ثانیه تاخیر دارن. این throttles زمانی اتفاق میوفته که تماس‌های متوالی به دلیل تودرتوی Callback (عمق معین) یا پس از تعداد معینی فواصل متوالی آغاز شه.
-      توجه: مرورگرهای قدیمی حداقل 10 میلی ثانیه تاخیر دارن.
-      **Nodejs:** حداقل 1ms تاخیر دارن. این throttles زمانی اتفاق میوفته که تاخیر بزرگتر از 2147483647 یا کمتر از 1 باشه.
-      بهترین مثال برای توضیح این رفتار throttling وقفه، ترتیب قطعه کد.
+     **مرورگرها:** حداقل 4 میلی ثانیه تاخیر دارن. این throttles زمانی اتفاق میوفته که تماس‌های متوالی به دلیل تودرتوی Callback (عمق معین) یا پس از تعداد معینی فواصل متوالی آغاز شه.
+     توجه: مرورگرهای قدیمی حداقل 10 میلی ثانیه تاخیر دارن.
+     **Nodejs:** حداقل 1ms تاخیر دارن. این throttles زمانی اتفاق میوفته که تاخیر بزرگتر از 2147483647 یا کمتر از 1 باشه.
+     بهترین مثال برای توضیح این رفتار throttling وقفه، ترتیب قطعه کد.
 
      <span dir="ltr" align="left">
 
      ```js
      function runMeFirst() {
-       console.log('My script is initialized');
+       console.log("My script is initialized");
      }
      setTimeout(runMeFirst, 0);
-     console.log('Script loaded');
+     console.log("Script loaded");
      ```
 
      </span>
@@ -8022,10 +8151,10 @@ puppeteer:
 
      ```js
      function runMeFirst() {
-       console.log('My script is initialized');
+       console.log("My script is initialized");
      }
      runMeFirst();
-     console.log('Script loaded');
+     console.log("Script loaded");
      ```
 
      </span>
@@ -8053,7 +8182,8 @@ puppeteer:
 
      وظیفه هر کد/برنامه جاواسکریپتیه که قراره توسط مکانیسم‌های استانداره اجرا شه، مثل شروع اولیه اجرای یه برنامه، اجرای یه رویداد، callback یا یه بازه زمانی یا وقفه در حال اجرا. همه این وظایف تو یه صف کار برنامه ریزی میشن
      موارد استفاده برای افزودن وظایف به صف کار اینا هستن.
-     1. موقعی که یه برنامه جاواسکریپت جدید مستقیماً از کنسول اجرا می‌شه یا توسط عنصر ```<script>``` اجرا می‌شه، وظیفه به صف کار اضافه می‌شه.
+
+     1. موقعی که یه برنامه جاواسکریپت جدید مستقیماً از کنسول اجرا می‌شه یا توسط عنصر `<script>` اجرا می‌شه، وظیفه به صف کار اضافه می‌شه.
      2. موقعی که یه رویداد فراخونی میشه، callback رویداد به صف کار اضافه می‌شه
      3. وقتی به یه setTimeout یا setInterval رسید، callback مربوطه به صف کار اضافه می‌شه
 
@@ -8065,7 +8195,7 @@ puppeteer:
      منابع اصلی Microtaskها عبارتند از Promise.resolve، Promise.reject، MutationObservers، IntersectionObservers و غیره.
 
      **توجه:** همه این Microtaskها توی همون چرخش event-loop پردازش میشن.
-     
+
      **[فهرست](#فهرست)**
 
 389. ### event-loopهای مختلف کدوما هستن؟
@@ -8106,13 +8236,13 @@ puppeteer:
 
 392. ### تفاوت‌های بینPromiseها و observableها کدوما هستن؟
 
-      | Promise‌ها                                     | observableها                                                                            |
-      |------------------------------------------------|-----------------------------------------------------------------------------------------|
-      | فقط یه مقدار رو تو یه زمان منتشر میکنه         | چندین مقدار رو تو یه دوره زمانی منتشر میکنه (جریان مقادیری از 0 تا چندگانه)             |
-      | قراره فوراً فراخوانی شن                        | اونا برای فراخوانی نیاز به اشتراک دارن                                                  |
-      | Promise همیشه ناهمزمانه حتی اگه بلافاصله حل شه | observableها میتونن همزمان یا ناهمزمان                                                  |
-      | هیچ اپراتور ارائه نمیده                        | اپراتورهایی مانند map، forEach، filter، reduce، retry و retryWhen و غیره رو ارائه میده. |
-      | قابل لغو نیست                                  | با استفاده از روش unsubscribe لغو میشن                                                  |
+     | Promise‌ها                                     | observableها                                                                            |
+     | ---------------------------------------------- | --------------------------------------------------------------------------------------- |
+     | فقط یه مقدار رو تو یه زمان منتشر میکنه         | چندین مقدار رو تو یه دوره زمانی منتشر میکنه (جریان مقادیری از 0 تا چندگانه)             |
+     | قراره فوراً فراخوانی شن                        | اونا برای فراخوانی نیاز به اشتراک دارن                                                  |
+     | Promise همیشه ناهمزمانه حتی اگه بلافاصله حل شه | observableها میتونن همزمان یا ناهمزمان                                                  |
+     | هیچ اپراتور ارائه نمیده                        | اپراتورهایی مانند map، forEach، filter، reduce، retry و retryWhen و غیره رو ارائه میده. |
+     | قابل لغو نیست                                  | با استفاده از روش unsubscribe لغو میشن                                                  |
 
      **[فهرست](#فهرست)**
 
@@ -8144,7 +8274,7 @@ puppeteer:
 
      shim کتابخونه‌ایه که یه API جدید رو با استفاده از ابزارهای اون محیط به یه محیط قدیمی تر میاره. لزوماً محدود به یه برنامه وب نیست. برای مثال، es5-shim.js برای شبیه سازی ویژگی‌های ES5 توی مرورگرهای قدیمی (عمدتا قبل از IE9) استفاده می‌شه.
      در حالی که polyfill یه قطعه کد (یا افزونه) اس که فناوری رو ارائه میکنه که شما، توسعه‌دهنده، از مرورگر انتظار دارید که به صورت بومی ارائه کنه.
-     
+
      تو یه جمله ساده، polyfill یه shim برای APIهای مرورگره.
 
      **[فهرست](#فهرست)**
@@ -8175,9 +8305,10 @@ puppeteer:
 398. ### babel چیه؟
 
      Babel یه ترانسپایلر جاواسکریپت برای تبدیل کد ECMAScript 2015+ به یه نسخه سازگار جاواسکریپت تو مرورگرها یا محیط‌های فعلی و قدیمی تره. که میشه موارد زیر رو درموردش نوشت:
-     1.  تبدیل syntax
-     2.  ویژگی‌های Polyfill که در محیط هدف شما وجود نداره (با استفاده از @babel/polyfill)
-     3.  تبدیل کد منبع
+
+     1. تبدیل syntax
+     2. ویژگی‌های Polyfill که در محیط هدف شما وجود نداره (با استفاده از @babel/polyfill)
+     3. تبدیل کد منبع
 
      **[فهرست](#فهرست)**
 
@@ -8203,7 +8334,7 @@ puppeteer:
 
      توابعی که با `Function-constructor` ایجاد می‌شن، برای زمینه‌های ایجاد خود بسته ایجاد نمی‌کنن، اما همیشه در محدوده جهانی ایجاد میشن یعنی تابع فقط میتونه به متغیرهای محلی خود و متغیرهای دامنه جهانی دسترسی داشته باشه. در حالی که اعلان‌های تابع میتونن به متغیرهای تابع بیرونی (بسته شدن) هم دسترسی داشته باشن.
 
-      بیاین این تفاوت رو با یه مثال ببینیم،
+     بیاین این تفاوت رو با یه مثال ببینیم،
 
      **Function Constructor:**
 
@@ -8213,7 +8344,7 @@ puppeteer:
      const a = 100;
      function createFunction() {
        const a = 200;
-       return new Function('return a;');
+       return new Function("return a;");
      }
      console.log(createFunction()()); // 100
      ```
@@ -8300,16 +8431,16 @@ puppeteer:
 405. ### observable چیه؟
 
      `Observable` اساساً تابعیه که میتونه جریانی از مقادیر رو به صورت همزمان یا ناهمزمان به یه ناظر در طول زمان برگردونه. مصرف کننده میتونه با فراخوانی متد `subscribe` مقدار رو دریافت کنه.
-      بیاین به یه مثال ساده از یه Observable نگاه کنیم:
+     بیاین به یه مثال ساده از یه Observable نگاه کنیم:
 
      <span dir="ltr" align="left">
 
      ```js
-     import { Observable } from 'rxjs';
+     import { Observable } from "rxjs";
 
      const observable = new Observable((observer) => {
        setTimeout(() => {
-         observer.next('Message from a Observable!');
+         observer.next("Message from a Observable!");
        }, 3000);
      });
 
@@ -8326,7 +8457,7 @@ puppeteer:
 
 406. ### تفاوت‌های بین توابع و کلاس‌ها چیه؟
 
-     تفاوت اصلی بین اعلان‌های تابع و اعلان‌های کلاس `hoisting` هس. اعلان‌های تابع  میشن hoist اما اعلان‌های کلاس نه.
+     تفاوت اصلی بین اعلان‌های تابع و اعلان‌های کلاس `hoisting` هس. اعلان‌های تابع میشن hoist اما اعلان‌های کلاس نه.
 
      **Classes:**
 
@@ -8347,8 +8478,7 @@ puppeteer:
      ```js
      const user = new User(); // No error
 
-     function User() {
-     }
+     function User() {}
      ```
 
      </span>
@@ -8365,8 +8495,7 @@ puppeteer:
 
      ```js
      async function logger() {
-
-       const data = await fetch('http://someapi.com/users'); // pause until fetch returns
+       const data = await fetch("http://someapi.com/users"); // pause until fetch returns
        console.log(data);
      }
      logger();
@@ -8380,23 +8509,23 @@ puppeteer:
 
 408. ### چطوری خطاهای ایجاد شده هنگام استفاده از Promiseها رو کنترل کنیم؟
 
-     موقع استفاده از کدهایasync و ناهمزمان، Promiseهای ES6 میتونن زندگی برنامه‌نویس رو بدون داشتن ترس از callbackها و مدیریت خطا در هر خط  آسان‌تر می‌کنن. اما Promiseها مشکلاتی دارن و بزرگ‌ترین اونا به‌طور پیش‌فرض مخفی کردن خطاهاس.
+     موقع استفاده از کدهایasync و ناهمزمان، Promiseهای ES6 میتونن زندگی برنامه‌نویس رو بدون داشتن ترس از callbackها و مدیریت خطا در هر خط آسان‌تر می‌کنن. اما Promiseها مشکلاتی دارن و بزرگ‌ترین اونا به‌طور پیش‌فرض مخفی کردن خطاهاس.
 
      فرض کنیم انتظار دارین برای تمام موارد زیر یه خطا توی کنسول چاپ بشه.
 
      <span dir="ltr" align="left">
 
      ```js
-     Promise.resolve('promised value').then(() => {
-       throw new Error('error');
+     Promise.resolve("promised value").then(() => {
+       throw new Error("error");
      });
 
-     Promise.reject('error value').catch(() => {
-       throw new Error('error');
+     Promise.reject("error value").catch(() => {
+       throw new Error("error");
      });
 
      new Promise((resolve, reject) => {
-       throw new Error('error');
+       throw new Error("error");
      });
      ```
 
@@ -8409,11 +8538,13 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     Promise.resolve('promised value').th(() => {
-       throw new Error('error');
-     }).catch((error) => {
-       console.error(error.stack);
-     });
+     Promise.resolve("promised value")
+       .th(() => {
+         throw new Error("error");
+       })
+       .catch((error) => {
+         console.error(error.stack);
+       });
      ```
 
      </span>
@@ -8425,8 +8556,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     Promise.resolve('promised value').done(() => {
-       throw new Error('error');
+     Promise.resolve("promised value").done(() => {
+       throw new Error("error");
      });
      ```
 
@@ -8450,13 +8581,13 @@ puppeteer:
 
      <span dir="ltr" align="left">
 
-      ```js
-      getDataFromHttp()
-        .then((result) => displayData(processDataAsyn(result)));
+     ```js
+     getDataFromHttp().then((result) => displayData(processDataAsyn(result)));
      ```
+
      </span>
 
-      سپس فراموش کردین که بلوک «انجام شد» رو به بلوک then اضافه کنیم که منجر به خطاهای خاموش می‌شه.
+     سپس فراموش کردین که بلوک «انجام شد» رو به بلوک then اضافه کنیم که منجر به خطاهای خاموش می‌شه.
 
      3. **Extend ES6 Promises by Bluebird:**
 
@@ -8477,7 +8608,7 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     Promise.reject('error value').catch(() => {});
+     Promise.reject("error value").catch(() => {});
      ```
 
      </span>
@@ -8534,7 +8665,7 @@ puppeteer:
        one: 1,
        two: 2,
        three: 3,
-       * [Symbol.iterator]() {
+       *[Symbol.iterator]() {
          for (const key in this) {
            yield this[key];
          }
@@ -8555,7 +8686,7 @@ puppeteer:
 
      فراخونی دنباله یه فراخوانی فرعی یا تابعیه که به عنوان آخرین عمل یه تابع فراخوانی انجام می‌شه. در حالی که **فراخوانی دنباله مناسب (PTC)** تکنیکیه که تو اون برنامه یا کد فریم‌های پشته ای(stack) اضافی برای بازگشت ایجاد نمیکنه، زمانی که فراخوانی تابع یه فراخوانی دنباله اس.
 
-     برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل پایین به پشته(stack) برای هر مرحله بستگی داره. هر مرحله باید تا "n * فاکتوریل(n - 1)" پردازش شه:
+     برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل پایین به پشته(stack) برای هر مرحله بستگی داره. هر مرحله باید تا "n \* فاکتوریل(n - 1)" پردازش شه:
 
      <span dir="ltr" align="left">
 
@@ -8597,23 +8728,22 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      function isPromise(object) {
-        if (Promise && Promise.resolve) {
-          return Promise.resolve(object) === object;
-        }
-        throw 'Promise not supported in your environment';
-      
-      }
+     ```js
+     function isPromise(object) {
+       if (Promise && Promise.resolve) {
+         return Promise.resolve(object) === object;
+       }
+       throw "Promise not supported in your environment";
+     }
 
-      const i = 1;
-      const promise = new Promise((resolve, reject) => {
-        resolve();
-      });
+     const i = 1;
+     const promise = new Promise((resolve, reject) => {
+       resolve();
+     });
 
-      console.log(isPromise(i)); // false
-      console.log(isPromise(p)); // true
-      ```
+     console.log(isPromise(i)); // false
+     console.log(isPromise(p)); // true
+     ```
 
       </span>
 
@@ -8621,18 +8751,18 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      function isPromise(value) {
-        return Boolean(value && typeof value.then === 'function');
-      }
-      const i = 1;
-      const promise = new Promise((resolve, reject) => {
-        resolve();
-      });
+     ```js
+     function isPromise(value) {
+       return Boolean(value && typeof value.then === "function");
+     }
+     const i = 1;
+     const promise = new Promise((resolve, reject) => {
+       resolve();
+     });
 
-      console.log(isPromise(i)); // false
-      console.log(isPromise(promise)); // true
-      ```
+     console.log(isPromise(i)); // false
+     console.log(isPromise(promise)); // true
+     ```
 
       </span>
 
@@ -8647,19 +8777,19 @@ puppeteer:
 
       <span dir="ltr" align="left">
 
-      ```js
-      function Myfunc() {
-        if (new.target) {
-          console.log('called with new');
-        } else {
-          console.log('not called with new');
-        }
-      }
+     ```js
+     function Myfunc() {
+       if (new.target) {
+         console.log("called with new");
+       } else {
+         console.log("not called with new");
+       }
+     }
 
-      new Myfunc(); // called with new
-      Myfunc(); // not called with new
-      Myfunc.call({}); // not called with new
-      ```
+     new Myfunc(); // called with new
+     Myfunc(); // not called with new
+     Myfunc.call({}); // not called with new
+     ```
 
       </span>
 
@@ -8675,7 +8805,7 @@ puppeteer:
 
 415. ### تفاوت‌های بین عملگر spread و پارامتر rest چیه؟
 
-     پارامتر Rest تمام عناصر باقی مانده رو تو یه آرایه جمع آوری میکنه. در حالی که عملگر Spread به تکرارپذیرها (آرایه‌ها / اشیاء / رشته‌ها) اجازه میده تا به آرگومان‌ها / عناصر منفرد گسترش  پیدا کنن. یعنی پارامتر Rest مخالف عملگر spread هس.
+     پارامتر Rest تمام عناصر باقی مانده رو تو یه آرایه جمع آوری میکنه. در حالی که عملگر Spread به تکرارپذیرها (آرایه‌ها / اشیاء / رشته‌ها) اجازه میده تا به آرگومان‌ها / عناصر منفرد گسترش پیدا کنن. یعنی پارامتر Rest مخالف عملگر spread هس.
 
      **[فهرست](#فهرست)**
 
@@ -8685,14 +8815,14 @@ puppeteer:
 
        <span dir="ltr" align="left">
 
-       ```js
-       function* myGenFunc() {
-         yield 1;
-         yield 2;
-         yield 3;
-       }
-       const genObj = myGenFunc();
-       ```
+     ```js
+     function* myGenFunc() {
+       yield 1;
+       yield 2;
+       yield 3;
+     }
+     const genObj = myGenFunc();
+     ```
 
        </span>
 
@@ -8700,14 +8830,14 @@ puppeteer:
 
        <span dir="ltr" align="left">
 
-       ```js
-       const myGenFunc = function* () {
-         yield 1;
-         yield 2;
-         yield 3;
-       };
-       const genObj = myGenFunc();
-       ```
+     ```js
+     const myGenFunc = function* () {
+       yield 1;
+       yield 2;
+       yield 3;
+     };
+     const genObj = myGenFunc();
+     ```
 
        </span>
 
@@ -8715,16 +8845,16 @@ puppeteer:
 
        <span dir="ltr" align="left">
 
-       ```js
-       const myObj = {
-         * myGeneratorMethod() {
-           yield 1;
-           yield 2;
-           yield 3;
-         },
-       };
-       const genObj = myObj.myGeneratorMethod();
-       ```
+     ```js
+     const myObj = {
+       *myGeneratorMethod() {
+         yield 1;
+         yield 2;
+         yield 3;
+       },
+     };
+     const genObj = myObj.myGeneratorMethod();
+     ```
 
        </span>
 
@@ -8732,17 +8862,17 @@ puppeteer:
 
        <span dir="ltr" align="left">
 
-       ```js
-       class MyClass {
-         * myGeneratorMethod() {
-           yield 1;
-           yield 2;
-           yield 3;
-         }
+     ```js
+     class MyClass {
+       *myGeneratorMethod() {
+         yield 1;
+         yield 2;
+         yield 3;
        }
-       const myObject = new MyClass();
-       const genObj = myObject.myGeneratorMethod();
-       ```
+     }
+     const myObject = new MyClass();
+     const genObj = myObject.myGeneratorMethod();
+     ```
 
        </span>
 
@@ -8750,17 +8880,17 @@ puppeteer:
 
        <span dir="ltr" align="left">
 
-       ```js
-       const SomeObj = {
-         * [Symbol.iterator]() {
-           yield 1;
-           yield 2;
-           yield 3;
-         },
-       };
+     ```js
+     const SomeObj = {
+       *[Symbol.iterator]() {
+         yield 1;
+         yield 2;
+         yield 3;
+       },
+     };
 
-       console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
-       ```
+     console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
+     ```
 
        </span>
 
@@ -8789,9 +8919,9 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     const arr = ['a', 'b', 'c'];
+     const arr = ["a", "b", "c"];
 
-     arr.newProp = 'newVlue';
+     arr.newProp = "newVlue";
 
      // key are the property keys
      for (const key in arr) {
@@ -8855,8 +8985,8 @@ puppeteer:
      <span dir="ltr" align="left">
 
      ```js
-     isNaN('hello'); // true
-     Number.isNaN('hello'); // false
+     isNaN("hello"); // true
+     Number.isNaN("hello"); // false
      ```
 
      </span>
